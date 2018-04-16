@@ -1,1 +1,20 @@
-theme: jekyll-theme-minimal
+# Site settings
+title: Fallbrook Research
+description: Equity Anatlytics
+# baseurl: "/particle" # the subpath of your site, e.g. /blog
+# url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+
+# User settings
+username: Fallbrook
+user_description: Applied informatics transforming market data into actionalble strategies. We aggregate and analyze market data to generate precise informatics that lead to actionable quantative equity strategies. Use our solutions to build and protect your wealth.
+user_title: Research and Analytics
+email: rob@fallbrook.com
+twitter_username: Fallbrook_RA
+github_username: d00d
+gplus_username:  rdubnick
+
+# Google-analytics
+google-analytics:
+  id: "UA-117521095-1"
+
+exclude: ['package.json', 'src' , 'node_modules']
