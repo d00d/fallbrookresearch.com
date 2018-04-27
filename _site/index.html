@@ -1,17 +1,58 @@
- 
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Fallbrook Research</title>
+  <meta name="description" content="Equity Anatlytics">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+  
+  <body>    
+      
+      <div id="particles-js">
+  <div class="header">
+      <h1>
+        <span class="site-title">Fallbrook</span>
+        <span class="site-description">Research & Analytics</span>
+      </h1>
+
+      <div class="header-icons">
+        <a aria-label="Send email" href="#"><i class="icon fa fa-envelope"></i></a>
+        <a aria-label="Twitter" target="_blank" href="https://twitter.com/Fallbrook_RA?lang=en"><i class="icon fa fa-twitter" aria-hidden="true"></i></a>
+        <a aria-label="My Google Plus" target="_blank" href="#"><i class="icon fa fa-sitemap" aria-hidden="true"></i></a>
+        <a aria-label="My Blog" target="_blank" href="#"><i class="icon fa fa-pied-piper-alt" aria-hidden="true"></i></a>
+        <a aria-label="My Blog" target="_blank" href="./blog"><i class="icon fa fa-rss" aria-hidden="true"></i></a>
+      </div>
+      <div class="header-links">
+        <a class="link" href="#about" data-scroll>About</a>
+        <a class="link" href="#projects" data-scroll>Projects</a>
+      </div>
+  </div>
+  <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
+</div>
+
+      
+      <section id="about">
+         
 <div class="user-details">
   
   <div class="images-Center">
-    <img alt="Fallbrook Research" src="{{ "/assets/img/logo.jpg" | prepend: site.baseurl }}" />
+    <img alt="Fallbrook Research" src="/assets/img/logo.jpg" />
   </div>
 
   <h2> About Us </h2>
 
-      <p> {{site.user_description}} </p>
+      <p> Applied informatics transforming market data into systematic and rules-based investment strategies. We aggregate and analyze market data to generate precise informatics that lead to actionable quantative equity strategies. Use our solutions to build and protect your wealth. </p>
 </div>
 <div class="user-projects">
   <div class="images-right">
-    <img alt="library" src="{{ "/assets/img/library.jpg" | prepend: site.baseurl }}" />
+    <img alt="library" src="/assets/img/library.jpg" />
   </div>
   <div class="contents">
     <h3> Factor-based Algorithms </h3>
@@ -24,7 +65,7 @@
 </div>
 <div class="user-projects">
   <div class="images-left">
-    <img alt="Fallbrook Research" src="{{ "/assets/img/mountains.jpg" | prepend: site.baseurl }}" />
+    <img alt="Fallbrook Research" src="/assets/img/mountains.jpg" />
   </div>
   <div class="contents-right">
     <h3> Z99 </h3>
@@ -45,9 +86,9 @@
  <!-- 
  <div class="user-details">
   <div class="images-Center">
-    <img alt="Fallbrook Research" src="{{ "/assets/img/logo.jpg" | prepend: site.baseurl }}" />
+    <img alt="Fallbrook Research" src="/assets/img/logo.jpg" />
   </div>
-  <p> {{site.user_description}} </p>
+  <p> Applied informatics transforming market data into systematic and rules-based investment strategies. We aggregate and analyze market data to generate precise informatics that lead to actionable quantative equity strategies. Use our solutions to build and protect your wealth. </p>
 </div>
   <div class="user">
     <div class="tech">
@@ -76,3 +117,41 @@
     </div>
 </div> -->
 
+
+      </section>
+      
+      <section id="projects">
+        
+<!-- Twitter Feed -->
+
+<a class="twitter-timeline" href="https://twitter.com/Fallbrook_RA?ref_src=twsrc%5Etfw">Tweets by Fallbrook_RA</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+      </section>
+      
+        
+      
+      <footer class="footer">
+    <p>&copy; Fallbrook Research & Analytics, LLC 2018 </p>
+    <p>via Jekyll <a href="https://github.com/d00d">RRD</a></p>
+</footer>
+<script src="particles.js"></script>
+<script src="js/app.js"></script>
+<script src="/assets/js/sweet-scroll.min.js"></script>
+<script src="/assets/js/main.js"></script>
+
+<!-- Google Analytics Include -->
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-117521095-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+
+
+      
+  </body>
