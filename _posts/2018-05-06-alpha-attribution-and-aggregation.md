@@ -1,24 +1,23 @@
 ---
 layout: post
-title: Attribution & Aggregation 
+title: Attribution & Aggregation
+published: true
 ---
 
-# Attribution & Aggregation
+## Attributions & Aggregation
 
-## Quantative Trade Strategies
+### Quantative Trade Strategies
 
 Algorithmic Trading is a technique of deploying algorithms that automatically buy and sell stocks in response to market data. 
 
 ### The alpha idea
-At fallbrook we work the full lifecycle srom the first step in developing a trading algorithm is coming up with an "alpha idea".  
+At fallbrook we work the full lifecycle srom the first step in developing a trading algorithm is coming up with an "alpha idea" to iterating its implementation.
 
-**_So, what is alpha?_**
+**_What is alpha?_**
 
 Basically, the return of a portfolio can be written as:
 
-
 > r = beta * r_m + alpha 
-
 
 Where beta measures the correlation of the portfolio return to the overall market return (r_ _m), and alpha is the excess 
 return. For instance, an index fund has alpha=0, beta=1. But, what I am really after is a positive non-zero alpha, which would indicate that my algorithm is doing better than the market, and at the same time beta=0, i.e. I want my algorithm to be independent form the market, "market-neutral".
@@ -46,6 +45,4 @@ To summarize, the algorithmic trading workflow is this:
 I hope this post will be helpful introduction to algorithmic trading for some, and I appreciate any comments and feedback.
  
 ####Credits
-I learned most of the things from the Quantopian tutorials, in particular the Sentdex videos. 
-
-
+I learned most of the things from the Quantopian tutorials, in particular the Sentdex videos.
