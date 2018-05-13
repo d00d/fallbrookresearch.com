@@ -19,8 +19,6 @@ Basically, the return of a portfolio can be written as:
 
 > _r = beta * rm + alpha_
 
-	\alpha
-
 Where beta measures the correlation of the portfolio return to the overall market return (r_ _m), and alpha is the excess return. 
 
 1. For instance, an index fund has alpha=0, beta=1. But, what I am really after is a positive non-zero alpha, which would indicate that my algorithm is doing better than the market, and at the same time beta=0, i.e. I want my algorithm to be independent form the market, "market-neutral".
