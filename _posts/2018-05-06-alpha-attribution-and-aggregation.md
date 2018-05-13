@@ -43,7 +43,4 @@ To summarize, the algorithmic trading workflow is this:
 	2.	estimate alpha using alphalens
 	3.	run full backtest on past market data
 	4.	analyze the backtest using pyfolio
-I hope this post will be helpful introduction to algorithmic trading for some, and I appreciate any comments and feedback.
- 
-####Credits
-I learned most of the things from the Quantopian tutorials, in particular the Sentdex videos.
+
