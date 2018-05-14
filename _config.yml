@@ -1,12 +1,13 @@
 # Site settings
 title: Fallbrook Research
 description: Equity Anatlytics
+disqus: fallbrookr
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
-# url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+# url: "localhost:3000" # the base hostname & protocol for your site 
 
 # User settings
 username: Fallbrook
-user_description:  At Fallbrook Research we're extracting signals from noise with data science & machine learning to create quantitative trade strategies & fintech applications.
+user_description: At Fallbrook Research we're extracting signals from noise with data science & machine learning to create quantitative trade strategies & fintech applications.
 user_title: Research & Analytics
 email: rob@fallbrook.com
 twitter_username: Fallbrook_RA
