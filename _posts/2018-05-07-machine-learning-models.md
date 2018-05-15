@@ -21,4 +21,3 @@ Machine Learning is classified into four categories at high level depending on t
 - Semi-supervised Learning: This type of ml i.e. semi-supervised algorithms are the best candidates for the model building in the absence of labels for some data. So if data is mix of label and un-label then this can be the answer. Typically a small amount of labeled data with a large amount of unlabeled data is used here.
 
 [ Another Mental Model - the 80-20 Rule](/2018/05/13/mental-models-80-20.html "Another Mental Model - the 80-20 Rule")
-% post_url  2018-05-13-mental-models-80-20 %_
