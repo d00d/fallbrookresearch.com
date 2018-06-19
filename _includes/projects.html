@@ -1,9 +1,22 @@
 
 <!-- Twitter Feed -->
 
-</div>
+<!-- </div>
     <div class="images-Center">
         <img alt="Fallbrook Research" src="{{ "/assets/img/logo.jpg" | prepend: site.baseurl }}" />
 
 <a class="twitter-timeline" href="https://twitter.com/Fallbrook_RA?ref_src=twsrc%5Etfw">Tweets by Fallbrook_RA</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div> 
+-->
+<div class="user-projects" id="posts">
+        <h2> Recent Posts </h2>
+       <ul>
+      
+{% for item in site.posts %}
+
+   <li>{{item.date | date: '%B %d, %Y' }} - <a href="{{item.url}}"> {{item.title}} </a> </li>
+   <!-- <p>{{item.content  }}</p> -->
+
+{% endfor %}
+</ul> 
 </div>

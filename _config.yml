@@ -6,8 +6,8 @@ disqus: fallbrookr
 # url: "localhost:3000" # the base hostname & protocol for your site 
 
 # User settings
-username: Fallbrook
-user_description: At Fallbrook Research we're extracting signals from noise with data science & machine learning to create quantitative trade strategies & fintech applications.
+username: Fallbrook 
+user_description: At Fallbrook we're leveraging data science, quantitative finance, operational analytics, & machine learning methods to model systematic investement strategies, find signals in the noise, and generate Alpha.  Research for process workflow lifecycle including - alpha, beta, risk management, and execution & trade execution.
 user_title: Research & Analytics
 email: rob@fallbrook.com
 twitter_username: Fallbrook_RA

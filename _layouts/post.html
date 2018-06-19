@@ -1,8 +1,8 @@
 ---
 layout: blog-layout
 ---
-      <article {% if page.feature-img %}class="feature-image"{% endif %}>
-    
+    <article {% if page.feature-img %}class="feature-image"{% endif %}>
+    {% include post-nav.html %} 
     <header style="background-image: url('{{ site.baseurl }}/{{ page.feature-img }}')">
      
         <div class="user-projects">
@@ -24,12 +24,17 @@ layout: blog-layout
         </div>
        </article>
    
+   {% include post-nav.html %} 
    <div class="comments">
-      {% include disqus.html %}
+      {% if page.comments %}
+        {% include disqus.html %}
+      {% endif %}   
    </div>
 
-   <!-- Post navigation -->
-   {% if site.theme_settings.post_navigation %}
-   {% include post_nav.html %}
-   {% endif %}
+   <!-- Post navigation if site.theme_settings.post_navigation -->
+    
+   <!--  endif -->
+
+<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath:[['$','$']]}});</script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 

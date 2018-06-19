@@ -2,7 +2,7 @@
 layout: post 
 title: Machine Learning Models
 feature-img: white1.jpg
-author: Rob Dubnick
+author: R. Dubnick
 comments: true
 published: true
 ---
@@ -19,5 +19,3 @@ Machine Learning is classified into four categories at high level depending on t
 - Unsupervised learning: Machine gets inputs without desired outputs, the goal is to find structure in inputs. 
 - Reinforcement learning: In this algorithm interacts with a dynamic environment, and it must perform a certain goal without guide or teacher.
 - Semi-supervised Learning: This type of ml i.e. semi-supervised algorithms are the best candidates for the model building in the absence of labels for some data. So if data is mix of label and un-label then this can be the answer. Typically a small amount of labeled data with a large amount of unlabeled data is used here.
-
-[ Another Mental Model - the 80-20 Rule](/2018/05/13/mental-models-80-20.html "Another Mental Model - the 80-20 Rule")
