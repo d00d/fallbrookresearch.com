@@ -2,7 +2,7 @@
 layout: post
 title: Attribution & Aggregation
 feature-img: blue2.jpg
-author: Rob Dubnick
+author: R. Dubnick
 comments: true
 published: true
 ---

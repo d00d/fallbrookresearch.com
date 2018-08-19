@@ -14,8 +14,7 @@
 
   
   <body>    
-      
-      <div id="particles-js">
+    <div id="particles-js">
   <div class="header">
       <h1>
         <span class="site-title">Fallbrook</span>
@@ -38,10 +37,169 @@
   <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
 </div>
 
+
+  <section id="projects">
+    
+<!-- Twitter Feed -->
+
+<!-- </div>
+    <div class="images-Center">
+        <img alt="Fallbrook Research" src="/assets/img/logo.jpg" />
+
+<a class="twitter-timeline" href="https://twitter.com/Fallbrook_RA?ref_src=twsrc%5Etfw">Tweets by Fallbrook_RA</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div> 
+-->
+<div class="user-projects" id="posts">
+        <h2> Recent Posts </h2>
+       <ul>
       
 
+
+   <li>August 10, 2018 - <a href="/2018/08/10/risk-return-and-factor-models.html"> Risk, Return, and Factor Models Strategies </a> </li>
+   <!-- <p><h2 id="factors--risk-exposure">Factors &amp; Risk Exposure</h2>
+
+<p>Among mental models for Finance, a first principal is concerned with the relationship between Risk &amp; Return.   As financial managers have sought methods to price assets, quantify risk, explain performance, and achieve premiums beyond market returns some have turned toward factor-based investing strategies.</p>
+
+<p>What are Factors?   They are characteristics of stocks and other securities which drive performance to some degree and provide risk premium.   Use of factors can provide a strategic framework for asset allocation and defining systemic investment rules.    I think the evolution of factor models can be understood through the lens of CAPM and APT.</p>
+
+<h3 id="capms-uber-factor">CAPM’s Uber-Factor</h3>
+
+<p>In 1990, Bill Sharpe shared the Nobel Prize in Economics for his contributions on a theory of price formation for financial assets, this is the so-called capital asset pricing model (CAPM).   As with models, CAPM  is a bit of a faustian bargain explaining stock price movement in terms of it’s beta.</p>
+
+<p>According to the CAPM, systematic risk depends only upon exposure to the overall market, usually proxied by a broad stock market index, such as the S&amp;P 500.  In CAPM this risk exposure can be measured by beta.</p>
+
+<blockquote>
+  <p>Technically, beta is the covariance of the return of an asset with the return of the benchmark divided by the variance of the return of the benchmark over a certain period.</p>
+
+  <p>$ \beta = \frac{Covariance (r_i , r_m)}{ Variance (r_m)} $</p>
+</blockquote>
+
+<p>CAPM assumes a positive correlation between the amount of risk and potential for return.    In the “efficient” marketplace higher returns are generally achieved by accepting greater risks (e.g. exposure to the market).</p>
+
+<p>The general idea there was that only by exposing a well-diversified portfolio to higher market risk could an investor expect to achieve a higher rate of return. Under CAPM, the variability of an asset’s rate of return is relative to that of the overall market and its “beta” provides a relative measure of systematic (market) risk.</p>
+
+<p>Drinking the CAPM Kool-Aid means accepting that all expected price movements can be attributed to a single (relatively simple) statistical measure.   CAPM may have been favored by many in academia given its tempting simple elegance and teach-ability, but for all its ivory tower appeal  we find more dimensionality is at play than this one-trick pony can provide.   Moving beyond single-factor beta risk,  researchers have since observed many other factors contributing to risk/return profiles.</p>
+
+<p>We need a scheme to deal with those relationships.</p>
+
+<p>The factor approach has roots in what is deemed the arbitrage pricing theory (APT) Researchers seek to identify a set of factors (e.g., value, momentum, size, market, quality, low-vol, and so forth) that explain the so-called “cross-section” of returns, or the distribution of returns at a given point in time.</p>
+
+<p>Taking this aside we’d still want  specifically quantify and allocate said risk.</p>
+
+<p>Later Stephen A. Ross presented the arbitrage pricing theory (APT) which recognizes that several different broad risk sources may combine to influence an asset’s risk/return.   APT recognizes the interaction of many factors (e.g. inflation, interest rates, business activity, etc.) as contributing to rates of return.  Here factor analysis is employed to quantify the broad risk factors and to estimate individual securities’ degree of exposure to these factors.</p>
+
+<p>With APT a security effectively has a sensitivity to each systematic risk factor. A series of beta coefficients are estimated to measure the sensitivity to the respective factor risks for a particular security.   Unlike the CAPM, however, the individual factors, although precisely quantified, are not specifically associated with readily identifiable variables.</p>
+
+<p>Factor models offer a useful extension of the CAPM &amp; APT since they help us understand how key factors influence portfolio risk &amp; return.   This affords us an opportunity predict and control investment risk</p>
+
+<p>Factor models extend the framework of existing asset pricing models and allow us to decompose portfolios by constituent factor sensitivities and help us understand attributes that influence portfolio returns.   The mathematical representation of factor models are extensible, linear, and offer a high degree of transparent interpretability which lend them some intuitive appeal.</p>
+
+<h3 id="factors--arbitrage-pricing-theory-apt-relationship">Factors &amp; Arbitrage Pricing Theory (APT) relationship</h3>
+<p>For any given time period ($\bf t$), the difference between realized return $\bf r_i(t)$ and the expected return $\bf Er_i(t)$ for any asset is equal to the sum of all risk factor exposures (e.g. betas  $\bf \beta$) multiplied by the realization (the actual end-of-period value) for that risk factor $\bf \sum\nolimits_{i=1}^k \beta_{i} [P_i+f_i(t)] $ , plus an asset-specific idiosyncratic) error term $\bf \epsilon_i(t)$ .</p>
+
+<p>$\bf  E[r_i(t)] = P_0 + \sum\nolimits_{i=1}^k \beta_{i}P_i $ 
+$\bf P_i$ is the price of risk, or the risk premium for the  $\bf j^{th} $ risk factor.</p>
+
+<p><strong>Where:</strong></p>
+<ul>
+  <li>$\bf r_i(t)$ = the total return on asset i (cap gains + dividends) realized at the end of period  $\bf t$</li>
+  <li>$\bf E[r_i(t)]$ = expected return, at the beginning of period t</li>
+  <li>$\bf P_0$ = risk free risk premium</li>
+  <li>$\bf P_i$ = price of risk -or- risk premium for the $\bf i^{th}$ risk factor</li>
+  <li>$f_i(t)$ = $\bf i^{th}$ risk factor at time $\bf t$.</li>
+  <li>$ \beta_{i}P_i+ f_i $</li>
+</ul>
+
+<p>$\bf r_i(t) - P_0 = \beta_{i1} [P_1+ f_1(t)] + … + \beta_{iK} [P_K+f_K(t)] + \epsilon_i(t)$</p>
+
+<p>Beta exposures within a portfolio provide control over associated risk premiums  providing a scheme to manage inherent risk-return trade-offs.   Control the risk exposures and control the risk-return relationship.</p>
+
+<h3 id="estimating-an-apt-model">Estimating an APT model:</h3>
+<ol>
+  <li>The risk factors f,(t), f,(t), …,fK(t) can be computed using statistical techniques such as factor analysis or principal components.</li>
+  <li>K different well-diversified portfolios can substitute for the factors (see Appendix B).</li>
+  <li>Economic theory and knowledge of financial markets can be used to specify K risk factors that can be measured from available macroeconomic and financial data.</li>
+</ol>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({tex2jax: {inlineMath:[['$','$']]}});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/
+MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</p> -->
+
+
+
+   <li>May 07, 2018 - <a href="/2018/05/07/machine-learning-models.html"> Machine Learning Models </a> </li>
+   <!-- <p><p>Machine learning is subset to Artificial Intelligence which borrows principles from computer science. It is not an AI though; It is focal point where business and experience meet emerging technology and decides to work together. ML also has very close relationship to statistics; which is a graphical branch of mathematics. It instructs an algorithm to learn for itself by analyzing data. The more data it processes, the smarter the algorithm gets.  Until only recently even though foundation was laid down in 1950 ML remained largely confined to academia.</p>
+
+<p>ML has Organizations have had success with each type of learning, but making the right choice for your business problem requires an understanding of which conditions are best suited for each approach. Types of machine learning algorithms i.e. MLAlgos and which one to be used when is extremely important to know. The goal of the task and all the things that are being done in the field and put you in a better position to break down a real problem and design a machine learning system.</p>
+
+<h2 id="types-of-machine-learning">Types of Machine Learning</h2>
+<p>Before we get into MLAlgos lets understand some basics here. The approach of developing ML includes learning from data inputs based on “What has happened”. Evaluating and optimising different model results remains focus here. As on date Machine Learning is widely used in data analytics as a method to develop algorithms for making predictions on data. It is related to probability, statistics, and linear algebra.
+Machine Learning is classified into four categories at high level depending on the nature of the learning and learning system.  Some how I find difficult to accept Semi-supervised Learning.
+ </p>
+<h2 id="3-major--1-non-major-types">3 Major + 1 Non Major Types</h2>
+<ul>
+  <li>Supervised learning: Supervised learning gets labelled inputs and their desired outputs. The goal is to learn a general rule to map inputs to the output.</li>
+  <li>Unsupervised learning: Machine gets inputs without desired outputs, the goal is to find structure in inputs. </li>
+  <li>Reinforcement learning: In this algorithm interacts with a dynamic environment, and it must perform a certain goal without guide or teacher.</li>
+  <li>Semi-supervised Learning: This type of ml i.e. semi-supervised algorithms are the best candidates for the model building in the absence of labels for some data. So if data is mix of label and un-label then this can be the answer. Typically a small amount of labeled data with a large amount of unlabeled data is used here.</li>
+</ul>
+</p> -->
+
+
+
+   <li>May 06, 2018 - <a href="/2018/05/06/alpha-attribution-and-aggregation.html"> Attribution & Aggregation </a> </li>
+   <!-- <p><h3 id="quantative-trade-strategies">Quantative Trade Strategies</h3>
+<p>Algorithmic Trading is a technique of deploying algorithms that automatically buy and sell stocks in response to market data.</p>
+
+<h3 id="the-alpha-idea">The alpha idea</h3>
+<p>At fallbrook we work the full lifecycle srom the first step in developing a trading algorithm is coming up with an “alpha idea” to iterating its implementation.</p>
+
+<p><strong><em>What is alpha?</em></strong></p>
+
+<p>Basically, the return of a portfolio can be written as:</p>
+
+<blockquote>
+  <p><em>r = beta * rm + alpha</em></p>
+</blockquote>
+
+<p>Where beta measures the correlation of the portfolio return to the overall market return (r_ _m), and alpha is the excess return.</p>
+
+<ol>
+  <li>For instance, an index fund has alpha=0, beta=1. But, what I am really after is a positive non-zero alpha, which would indicate that my algorithm is doing better than the market, and at the same time beta=0, i.e. I want my algorithm to be independent form the market, “market-neutral”.</li>
+</ol>
+
+<p>To get started, I want to try the following alpha idea: Companies with a high revenue growth are doing well, and I want to invest in them. Companies with low revenue growth are doing poorly, and I want to short them.</p>
+
+<blockquote>
+  <p>•   Backtest on a larger timeframe.
+	• Try adding more alpha factors.
+	• Analyze alpha factor correlations.
+	• Weight distribution: how to optimally weigh the factors? (this is currently one of the fields of active research, and a field where Machine Learning could help.)
+	• Optimize trading behavior, e.g. the trading quantiles.
+	• Analyze sector exposure.
+	• etc.</p>
+</blockquote>
+
+<h2 id="summary">Summary</h2>
+<p>To summarize, the algorithmic trading workflow is this:
+	1.  come up with an “alpha idea”
+	2.  estimate alpha using alphalens
+	3.  run full backtest on past market data
+	4.  analyze the backtest using pyfolio</p>
+</p> -->
+
+
+</ul> 
+</div>
+  </section>  
+
   <section id="about"> 
-   
+     
 <div class="user-details">
       <h2> About Fallbrook Research </h2>
       <p> At Fallbrook we're leveraging data science, quantitative finance, operational analytics, & machine learning methods to model systematic investement strategies, find signals in the noise, and generate Alpha.  Research for process workflow lifecycle including - alpha, beta, risk management, and execution & trade execution. </p>
@@ -112,140 +270,10 @@
 
  
   </section>  
-
-      
-      <section id="projects">
-        
-<!-- Twitter Feed -->
-
-<!-- </div>
-    <div class="images-Center">
-        <img alt="Fallbrook Research" src="/assets/img/logo.jpg" />
-
-<a class="twitter-timeline" href="https://twitter.com/Fallbrook_RA?ref_src=twsrc%5Etfw">Tweets by Fallbrook_RA</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div> 
--->
-<div class="user-projects" id="posts">
-        <h2> Recent Posts </h2>
-       <ul>
-      
-
-
-   <li>June 10, 2018 - <a href="/2018/06/10/factor-models-arbitrage-pricing-theory-oh-my.html"> Risk, Arbitrage Pricing Theory, & Factor Models </a> </li>
-   <!-- <p><h3 id="factor-models-can-provide-a-framework-to-segregate-and-manage-risks">Factor Models can provide a framework to segregate and manage risks</h3>
-<p>One of the most widely accepted financial principles is the tradeoff between risk and return.    Its generally held that In an efficient marketplace, higher returns are achieved by accepting greater risks.</p>
-
-<p>Since we’d like to be able to manage those risks, divide them up, hedge them and even use it when needed.   As the old adage says “if you can’t measure it, you can’t manage it”.    Factor Models can provide a framework for doing this. Factor models can be understood through the lens of CAPM and APT.</p>
-
-<p>Bill Sharpe shared the 1990 Nobel Memorial Prize in Economic Sciences for the capital asset pricing model (CAPM) which postulates that a single type of risk, known as market risk, affects expected security returns.   The general idea there was that only by exposing a well-diversified portfolio to higher market risk could an investor expect to achieve a higher rate of return. Under CAPM, the variability of an asset’s rate of return is relative to that of the overall market. Its “Beta” provides a relative measure of systematic (market) risk.</p>
-
-<p>Later Stephen A. Ross presented the arbitrage pricing theory (APT) which recognizes that several different broad risk sources may combine to influence an asset’s risk/return.   APT recognizes the interaction of many factors (e.g. inflation, interest rates, business activity, etc.) as contributing to rates of return.  Here factor analysis is employed to quantify the broad risk factors and to estimate individual securities’ degree of exposure to these factors.</p>
-
-<p>With APT a security effectively has a sensitivity to each systematic risk factor. A series of beta coefficients are estimated to measure the sensitivity to the respective factor risks for a particular security.   Unlike the CAPM, however, the individual factors, although precisely quantified, are not specifically associated with readily identifiable variables.</p>
-
-<p>Factor models offer a useful extension of the CAPM &amp; APT since they help us understand how key factors influence portfolio risk &amp; return.   This affords us an opportunity predict and control investment risk</p>
-
-<p>Factor models extend the framework of existing asset pricing models and allow us to decompose portfolios by constituent factor sensitivities and help us understand attributes that influence portfolio returns.   The mathematical representation of factor models are extensible, linear, and offer a high degree of transparent interpretability which lend them some intuitive appeal.</p>
-
-<h3 id="factors--arbitrage-pricing-theory-apt-relationship">Factors &amp; Arbitrage Pricing Theory (APT) relationship</h3>
-<p>For any given time period ($\bf t$), the difference between realized return $\bf r_i(t)$ and the expected return $\bf Er_i(t)$ for any asset is equal to the sum of all risk factor exposures (e.g. betas  $\bf \beta$) multiplied by the realization (the actual end-of-period value) for that risk factor $\bf \sum\nolimits_{i=1}^k \beta_{i} [P_i+f_i(t)] $ , plus an asset-specific idiosyncratic) error term $\bf \epsilon_i(t)$ .</p>
-
-<p>$\bf  E[r_i(t)] = P_0 + \sum\nolimits_{i=1}^k \beta_{i}P_i $ 
-$\bf P_i$ is the price of risk, or the risk premium for the  $\bf j^{th} $ risk factor.</p>
-
-<p><strong>Where:</strong></p>
-<ul>
-  <li>$\bf r_i(t)$ = the total return on asset i (cap gains + dividends) realized at the end of period  $\bf t$</li>
-  <li>$\bf E[r_i(t)]$ = expected return, at the beginning of period t</li>
-  <li>$\bf P_0$ = risk free risk premium</li>
-  <li>$\bf P_i$ = price of risk -or- risk premium for the $\bf i^{th}$ risk factor</li>
-  <li>$f_i(t)$ = $\bf i^{th}$ risk factor at time $\bf t$.</li>
-  <li>$ \beta_{i}P_i+ f_i $</li>
-</ul>
-
-<p>$\bf r_i(t) - P_0 = \beta_{i1} [P_1+ f_1(t)] + … + \beta_{iK} [P_K+f_K(t)] + \epsilon_i(t)$</p>
-
-<p>Beta exposures within a portfolio provide control over associated risk premiums  providing a scheme to manage inherent risk-return trade-offs.   Control the risk exposures and control the risk-return relationship.</p>
-
-<h3 id="estimating-an-apt-model">Estimating an APT model:</h3>
-<ol>
-  <li>The risk factors f,(t), f,(t), …,fK(t) can be computed using statistical techniques such as factor analysis or principal components.</li>
-  <li>K different well-diversified portfolios can substitute for the factors (see Appendix B).</li>
-  <li>Economic theory and knowledge of financial markets can be used to specify K risk factors that can be measured from available macroeconomic and financial data.</li>
-</ol>
-</p> -->
-
-
-
-   <li>May 07, 2018 - <a href="/2018/05/07/machine-learning-models.html"> Machine Learning Models </a> </li>
-   <!-- <p><p>Machine learning is subset to Artificial Intelligence which borrows principles from computer science. It is not an AI though; It is focal point where business and experience meet emerging technology and decides to work together. ML also has very close relationship to statistics; which is a graphical branch of mathematics. It instructs an algorithm to learn for itself by analyzing data. The more data it processes, the smarter the algorithm gets.  Until only recently even though foundation was laid down in 1950 ML remained largely confined to academia.</p>
-
-<p>ML has Organizations have had success with each type of learning, but making the right choice for your business problem requires an understanding of which conditions are best suited for each approach. Types of machine learning algorithms i.e. MLAlgos and which one to be used when is extremely important to know. The goal of the task and all the things that are being done in the field and put you in a better position to break down a real problem and design a machine learning system.</p>
-
-<h2 id="types-of-machine-learning">Types of Machine Learning</h2>
-<p>Before we get into MLAlgos lets understand some basics here. The approach of developing ML includes learning from data inputs based on “What has happened”. Evaluating and optimising different model results remains focus here. As on date Machine Learning is widely used in data analytics as a method to develop algorithms for making predictions on data. It is related to probability, statistics, and linear algebra.
-Machine Learning is classified into four categories at high level depending on the nature of the learning and learning system.  Some how I find difficult to accept Semi-supervised Learning.
- </p>
-<h2 id="3-major--1-non-major-types">3 Major + 1 Non Major Types</h2>
-<ul>
-  <li>Supervised learning: Supervised learning gets labelled inputs and their desired outputs. The goal is to learn a general rule to map inputs to the output.</li>
-  <li>Unsupervised learning: Machine gets inputs without desired outputs, the goal is to find structure in inputs. </li>
-  <li>Reinforcement learning: In this algorithm interacts with a dynamic environment, and it must perform a certain goal without guide or teacher.</li>
-  <li>Semi-supervised Learning: This type of ml i.e. semi-supervised algorithms are the best candidates for the model building in the absence of labels for some data. So if data is mix of label and un-label then this can be the answer. Typically a small amount of labeled data with a large amount of unlabeled data is used here.</li>
-</ul>
-</p> -->
-
-
-
-   <li>May 06, 2018 - <a href="/2018/05/06/alpha-attribution-and-aggregation.html"> Attribution & Aggregation </a> </li>
-   <!-- <p><h3 id="quantative-trade-strategies">Quantative Trade Strategies</h3>
-<p>Algorithmic Trading is a technique of deploying algorithms that automatically buy and sell stocks in response to market data.</p>
-
-<h3 id="the-alpha-idea">The alpha idea</h3>
-<p>At fallbrook we work the full lifecycle srom the first step in developing a trading algorithm is coming up with an “alpha idea” to iterating its implementation.</p>
-
-<p><strong><em>What is alpha?</em></strong></p>
-
-<p>Basically, the return of a portfolio can be written as:</p>
-
-<blockquote>
-  <p><em>r = beta * rm + alpha</em></p>
-</blockquote>
-
-<p>Where beta measures the correlation of the portfolio return to the overall market return (r_ _m), and alpha is the excess return.</p>
-
-<ol>
-  <li>For instance, an index fund has alpha=0, beta=1. But, what I am really after is a positive non-zero alpha, which would indicate that my algorithm is doing better than the market, and at the same time beta=0, i.e. I want my algorithm to be independent form the market, “market-neutral”.</li>
-</ol>
-
-<p>To get started, I want to try the following alpha idea: Companies with a high revenue growth are doing well, and I want to invest in them. Companies with low revenue growth are doing poorly, and I want to short them.</p>
-
-<blockquote>
-  <p>•   Backtest on a larger timeframe.
-	• Try adding more alpha factors.
-	• Analyze alpha factor correlations.
-	• Weight distribution: how to optimally weigh the factors? (this is currently one of the fields of active research, and a field where Machine Learning could help.)
-	• Optimize trading behavior, e.g. the trading quantiles.
-	• Analyze sector exposure.
-	• etc.</p>
-</blockquote>
-
-<h2 id="summary">Summary</h2>
-<p>To summarize, the algorithmic trading workflow is this:
-	1.  come up with an “alpha idea”
-	2.  estimate alpha using alphalens
-	3.  run full backtest on past market data
-	4.  analyze the backtest using pyfolio</p>
-</p> -->
-
-
-</ul> 
-</div>
-      </section>
-      
+  
         
       
-       
+     
 <div id="text-14" class="widget widget_text">
 <!-- 
 	<h4>Let&#8217;s Talk!</h4>
@@ -279,5 +307,6 @@ ga('send', 'pageview');
 
 
 
-      
   </body>
+  </html>
+  

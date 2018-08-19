@@ -33,21 +33,44 @@
         <div class="user-projects">
 
           <header style="background-image: url('/assets/img/post-headers/white1.jpg')">
-             <h2 class="title">Risk, Arbitrage Pricing Theory, & Factor Models</h2>
+             <h2 class="title">Risk, Return, and Factor Models Strategies</h2>
              
              
 
              <p class="meta">
-                June 10, 2018
-                 - R. Dubnick
+                August 10, 2018
+                 - R Dubnick
              </p>
           </header>
-          <section class="post-content"><h3 id="factor-models-can-provide-a-framework-to-segregate-and-manage-risks">Factor Models can provide a framework to segregate and manage risks</h3>
-<p>One of the most widely accepted financial principles is the tradeoff between risk and return.    Its generally held that In an efficient marketplace, higher returns are achieved by accepting greater risks.</p>
+          <section class="post-content"><h2 id="factors--risk-exposure">Factors &amp; Risk Exposure</h2>
 
-<p>Since we’d like to be able to manage those risks, divide them up, hedge them and even use it when needed.   As the old adage says “if you can’t measure it, you can’t manage it”.    Factor Models can provide a framework for doing this. Factor models can be understood through the lens of CAPM and APT.</p>
+<p>Among mental models for Finance, a first principal is concerned with the relationship between Risk &amp; Return.   As financial managers have sought methods to price assets, quantify risk, explain performance, and achieve premiums beyond market returns some have turned toward factor-based investing strategies.</p>
 
-<p>Bill Sharpe shared the 1990 Nobel Memorial Prize in Economic Sciences for the capital asset pricing model (CAPM) which postulates that a single type of risk, known as market risk, affects expected security returns.   The general idea there was that only by exposing a well-diversified portfolio to higher market risk could an investor expect to achieve a higher rate of return. Under CAPM, the variability of an asset’s rate of return is relative to that of the overall market. Its “Beta” provides a relative measure of systematic (market) risk.</p>
+<p>What are Factors?   They are characteristics of stocks and other securities which drive performance to some degree and provide risk premium.   Use of factors can provide a strategic framework for asset allocation and defining systemic investment rules.    I think the evolution of factor models can be understood through the lens of CAPM and APT.</p>
+
+<h3 id="capms-uber-factor">CAPM’s Uber-Factor</h3>
+
+<p>In 1990, Bill Sharpe shared the Nobel Prize in Economics for his contributions on a theory of price formation for financial assets, this is the so-called capital asset pricing model (CAPM).   As with models, CAPM  is a bit of a faustian bargain explaining stock price movement in terms of it’s beta.</p>
+
+<p>According to the CAPM, systematic risk depends only upon exposure to the overall market, usually proxied by a broad stock market index, such as the S&amp;P 500.  In CAPM this risk exposure can be measured by beta.</p>
+
+<blockquote>
+  <p>Technically, beta is the covariance of the return of an asset with the return of the benchmark divided by the variance of the return of the benchmark over a certain period.</p>
+
+  <p>$ \beta = \frac{Covariance (r_i , r_m)}{ Variance (r_m)} $</p>
+</blockquote>
+
+<p>CAPM assumes a positive correlation between the amount of risk and potential for return.    In the “efficient” marketplace higher returns are generally achieved by accepting greater risks (e.g. exposure to the market).</p>
+
+<p>The general idea there was that only by exposing a well-diversified portfolio to higher market risk could an investor expect to achieve a higher rate of return. Under CAPM, the variability of an asset’s rate of return is relative to that of the overall market and its “beta” provides a relative measure of systematic (market) risk.</p>
+
+<p>Drinking the CAPM Kool-Aid means accepting that all expected price movements can be attributed to a single (relatively simple) statistical measure.   CAPM may have been favored by many in academia given its tempting simple elegance and teach-ability, but for all its ivory tower appeal  we find more dimensionality is at play than this one-trick pony can provide.   Moving beyond single-factor beta risk,  researchers have since observed many other factors contributing to risk/return profiles.</p>
+
+<p>We need a scheme to deal with those relationships.</p>
+
+<p>The factor approach has roots in what is deemed the arbitrage pricing theory (APT) Researchers seek to identify a set of factors (e.g., value, momentum, size, market, quality, low-vol, and so forth) that explain the so-called “cross-section” of returns, or the distribution of returns at a given point in time.</p>
+
+<p>Taking this aside we’d still want  specifically quantify and allocate said risk.</p>
 
 <p>Later Stephen A. Ross presented the arbitrage pricing theory (APT) which recognizes that several different broad risk sources may combine to influence an asset’s risk/return.   APT recognizes the interaction of many factors (e.g. inflation, interest rates, business activity, etc.) as contributing to rates of return.  Here factor analysis is employed to quantify the broad risk factors and to estimate individual securities’ degree of exposure to these factors.</p>
 
@@ -83,6 +106,14 @@ $\bf P_i$ is the price of risk, or the risk premium for the  $\bf j^{th} $ risk 
   <li>K different well-diversified portfolios can substitute for the factors (see Appendix B).</li>
   <li>Economic theory and knowledge of financial markets can be used to specify K risk factors that can be measured from available macroeconomic and financial data.</li>
 </ol>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({tex2jax: {inlineMath:[['$','$']]}});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/
+MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
 </section>
           <!-- {-% include tags_list.html tags=page.tags tag_count=page.tags.size %-} -->
         </div>
