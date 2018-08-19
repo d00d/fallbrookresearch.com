@@ -7,31 +7,42 @@ comments: true
 published: true
 ---
 ## Factor Models & Risk Exposure
+Among financial models, a core tenet is concerns the relationship between Risk & Return.   As financial managers seek methods to: price assets, quantify investment risks, explain performance, and achieve premiums above market returns, Factors are an effective tool to leverage in investment strategies.  
 
-Among mental models for Finance, one of the first principals is concerned with the relationship between Risk & Return.   As financial managers have sought methods to price assets, quantify risk, explain performance, and achieve premiums beyond market returns some have turned toward factor-based investing strategies.
+**What are Factors?**   
 
-What are Factors?   They are characteristics of stocks and other securities which drive performance to some degree and provide risk premium.   Factors are underlying drivers of investment returns such as inflation, interest rates, or GDP growth.   Use of factors can provide a strategic framework for asset allocation and defining systemic investment rules.    Recent proliferation of _[smart beta](https://www.investopedia.com/terms/s/smart-beta.asp "Smart Beta")_ products seek out exposures via transparent rules-based approaches to building portfolios which tend to deliver fairly static exposures to characteristics historically associated with excess risk-adjusted returns.
+One way to look at them is as underlying characteristics within stocks and other securities which drive [risk premium](https://www.investopedia.com/terms/r/riskpremium.asp "risk premium").   These are the elemental aspects of risk and return and literally hundreds of such factors have been identified to date (e.g.  growth rates, sector affiliation, value, size, quality, volatility, momentum, etc…)
+
+Use of factors can help provide a scheme to isolate the characteristics influenced economic catalysts.  Factor analysis can provide valuable support for risk-management, strategic asset allocation, and portfolio construction.    These attributes help to isolate and aggregate security by their asset characteristics.   such that systemic investment rules can be build upon them.
+
+Recent proliferation of _[smart beta](https://www.investopedia.com/terms/s/smart-beta.asp "Smart Beta")_ products seek out exposures via transparent rules-based approaches to building portfolios which tend to deliver fairly static exposures to characteristics historically associated with excess risk-adjusted returns.  Smart beta and factor investing are just fashionable marketing labels for a wide range of risk-based approaches that sit somewhere beyond active and passive investment management but possess attributes of both.  
 
 I think the evolution of factor models can be understood through the lens of CAPM and APT.
 
 ### CAPM’s Uber-Factor
 
-In 1990, Bill Sharpe shared the Nobel Prize in Economics for his contributions on a theory of price formation for financial assets, this is the so-called capital asset pricing model (CAPM).  As with models, CAPM  is a bit of a Faustian bargain explaining stock price movement in terms of it’s beta.  According to the CAPM, systematic risk depends only upon exposure to the overall market, usually proxied by a broad stock market index, such as the S&P 500.  In CAPM this risk exposure can be measured as a [linear relationship](https://www.investopedia.com/terms/l/linearrelationship.asp "Linear Relationship") between returns and an investment’s _beta_ with the market.
+In 1990, Bill Sharpe shared the Nobel Prize in Economics for his contributions on a theory of price formation for financial assets, this is the so-called Capital Asset Pricing Model ([CAPM](https://www.investopedia.com/terms/c/capm.asp "capm")).   This was the first theory to measure systematic risk which, according to the CAPM, depends only upon exposure to the overall market.   
 
-> Technically speaking, beta is defined as the [covariance](https://en.m.wikipedia.org/wiki/Covariance "Covariance") of the return of an asset with the return of the benchmark divided by the variance of the return of the benchmark over a certain period.
+As with other models, CAPM  is a bit of a Faustian bargain explaining stock price movement in terms of it’s exposure to the market as measured in beta ($ \beta $).  This [linear relationship](https://www.investopedia.com/terms/l/linearrelationship.asp "Linear Relationship") measures investment’s return in terms of its exposure to the market.
+Technically speaking… 
+> beta ($ \beta $) is the [covariance](https://en.m.wikipedia.org/wiki/Covariance "Covariance") of the return of an asset with the return of the benchmark divided by the variance of the return of the benchmark over a certain period.
 > 
 > $ \beta = \frac{Covariance (r_i , r_m)}{ Variance (r_m)} $ 
+> 
+> This coefficient of the independent variable ( $r_m$ - market’s rate of return) in an ordinary least squares regression equation explains the dependent variable ($r_i$ - a security's rate of return).  This $ \beta $ measures a security's relative amount of systematic (market) risk.   A $ \beta $  equal to 1.0 reflects risk on par to that of the overall market, a $ \beta $  \< 1.0 indicates lower-than-market risk and a $ \beta $  \> 1.0 denotes greater- than-market risk. 
 
-CAPM assumes a positive [correlation](https://en.m.wikipedia.org/wiki/Correlation_and_dependence "Correlation") between the amount of risk and potential for return.  In the “efficient” marketplace higher returns are generally achieved by accepting greater risk and market exposure.
+CAPM assumes a positive [correlation](https://en.m.wikipedia.org/wiki/Correlation_and_dependence "Correlation") between the amount of [market risk](https://www.investopedia.com/terms/m/marketrisk.asp "market risk") and potential for return.  In the “efficient” marketplace higher returns are generally achieved by accepting greater market exposure.  The general idea there was that only by exposing a well-diversified portfolio to higher market risk could an investor expect to ramp up the rate of return. 
 
-The general idea there was that only by exposing a well-diversified portfolio to higher market risk could an investor expect to achieve a higher rate of return. 
-Under CAPM, the variability of an asset's rate of return is relative to that of the overall market and its “beta” provides a relative measure of systematic (market) risk.  
+Under CAPM, the variability of an asset's rate of return is relative to that of the overall market and its “beta” provides a relative measure of systematic (market) risk.   
 
-Drinking the CAPM Kool-Aid means accepting that price movements are attributed to a single (relatively-simple) statistical measure.   CAPM has been favored by many in academia, perhaps given the temptation of simple elegance and teach-ability.  However, for all its ivory tower appeal we quickly intuit that more dimensionality is at play than the one-trick pony can explain.   We need a scheme to deal with those additional relationships.  Moving beyond single-factor market exposure beta risk brings us to the more multivariate approach introduced by the Arbitrage Pricing Theory (APT).
+In modern portfolio theory academics generally agreed that non-systematic risks (e.g. individual companies) cancel out within well-diversified portfolios. 
+Drinking the CAPM Kool-Aid has meant accepting that price movements are attributed to a single, relatively-simple statistical measure (systemic risk).   CAPM has been favored by many in academia, perhaps given the temptation of simple elegance and teach-ability.  
+
+However, for all its ivory tower appeal we quickly intuit that more dimensionality is at play than the one-trick pony can explain.   We need a scheme to deal with those additional relationships.  Moving beyond single-factor market exposure beta risk brings us to the more multivariate approach introduced by the [Arbitrage Pricing Theory (APT)](https://www.investopedia.com/terms/a/apt.asp "APT").
 
 ### Arbitrage Pricing Theory (APT)
 
-Stephen A. Ross presented the arbitrage pricing theory (APT) which recognizes that several different broad risk sources may combine to influence an asset’s risk/return.   APT recognizes the interaction of many factors (e.g. inflation, interest rates, business activity, etc.) as contributing to rates of return.  Here factor analysis is employed to quantify the broad risk factors and to estimate individual securities' degree of exposure to these factors. 
+Stephen A. Ross was one of the first to look beyond “the market factor” while still focusing on systemic risk.  APT recognizes the interaction of many factors (e.g. inflation, interest rates, business activity, etc.) as contributing to rates of return.  Here factor analysis is employed to quantify the broad risk factors and to estimate individual securities' degree of exposure to these factors. 
 
 The factor approach has roots in what is deemed the arbitrage pricing theory (APT) where researchers seek to identify a set of factors (e.g., value, momentum, size, market, quality, low-vol, and so forth) that explain the so-called “cross-section” of returns, or the distribution of returns at a given point in time.
 
