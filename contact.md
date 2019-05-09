@@ -1,5 +1,9 @@
 ---
-layout: page
+layout: blog-layout
 title: contact
 ---
-# Contact Information:
+
+# Constact Us at:
+
+### info@fallbrookresearch.com
+
