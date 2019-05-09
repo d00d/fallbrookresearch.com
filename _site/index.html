@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  
+
   <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,8 +12,7 @@
   <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 
-  
-  <body>    
+  <body>
     <div id="particles-js">
   <div class="header">
       <h1>
@@ -37,300 +36,96 @@
   <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
 </div>
 
-
-  <section id="projects">
-    
-<!-- Twitter Feed -->
-
-<!-- </div>
-    <div class="images-Center">
-        <img alt="Fallbrook Research" src="/assets/img/logo.jpg" />
-
-<a class="twitter-timeline" href="https://twitter.com/Fallbrook_RA?ref_src=twsrc%5Etfw">Tweets by Fallbrook_RA</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div> 
--->
-<div class="user-projects" id="posts">
-        <h2> Recent Posts </h2>
-       <ul>
-      
-
-
-   <li>September 04, 2018 - <a href="/2018/09/04/factor-models-and-risk-exposure.html"> Factor Models & Risk Exposure </a> </li>
-   <!-- <p><h2 id="factor-models--risk-exposure">Factor Models &amp; Risk Exposure</h2>
-<p>One of the <a href="https://en.wikipedia.org/wiki/First_principle" title="first principles">first principles</a> underlying Financial market dynamics concerns the relationship between Risk &amp; Return.</p>
-
-<p>As investment managers reach for ways to price assets, quantify investment risks, explain performance, and construct portfolios to achieve premiums above market returns, the use of quantitative models have become en vogue.</p>
-
-<p>Factors and <a href="https://www.investopedia.com/terms/m/multifactor-model.asp" title="Multi-Factor Models">factor-based models</a> provide some utility in explaining market equilibrium asset prices, decomposing risk and then re-recombine assets with these factors within a portfolio to specifically targeted risk profiles.  Having a scheme to isolate characteristics influenced by economic catalysts has a variety of applications including: risk-management, investment product development, strategic asset allocation, and portfolio construction.</p>
-
-<p><strong>What are Factors?</strong></p>
-
-<p>Factors can be viewed as the underlying characteristics within stocks and other securities, which to varying degrees,  explain and determine their <a href="https://www.investopedia.com/terms/r/riskpremium.asp" title="risk premium">risk premium</a>.</p>
-
-<p>There are a wide variety of factors which associate with an asset’s expected returns.   There are <em>macroeconomic factors</em> which capture broad risks across asset classes such as credit, inflation, and liquidity.   There are <em>style factors</em> which look to explain returns and risks within asset classes such as value, quality, and momentum.  Literally hundreds of such factors have been identified and published since researchers <a href="https://www.chicagobooth.edu/faculty/directory/f/eugene-f-fama" title="Eugene Fama">Eugene Fama </a>and <a href="http://mba.tuck.dartmouth.edu/pages/faculty/ken.french/biography.html" title="Kenneth French">Kenneth French</a> introduced their classic <a href="https://www.investopedia.com/terms/f/famaandfrenchthreefactormodel.asp" title="3-factor model">three-factor model</a>, consisting of market risk, size, and value, in 1993. </p>
-
-<p>Factors have become a factor in the investment business where industry-aligned benchmark providers like FTSE Russell, MSCI, and S&amp;P Dow Jones have generated volumes of research and indexes supporting an expanding collection of newly-minted factors.  Over the last few years the use of factors has enabled development of smart beta products generating significant new fund flows.  <em><a href="https://www.investopedia.com/terms/s/smart-beta.asp" title="Smart Beta">smart beta</a></em>  and factor investing are just fashionable marketing labels for a wide range of risk-based approaches that sit somewhere beyond active and passive investment management but possess attributes of both.  Applications for factors is common in quantitative finance where quants may rank stocks by using a combination of fundamental factors and price-based factors for use in cross-sectional equity models or various methods of performance attribution.</p>
-
-<p>The evolution of risk measurement and factor-based models can be understood in historical context through the evolution of prior asset models like <a href="https://www.investopedia.com/terms/c/capm.asp" title="CAPM">CAPM</a> and the <a href="https://www.investopedia.com/terms/a/apt.asp" title="APT">APT</a>.</p>
-
-<h3 id="capms-uber-factor">CAPM’s Uber-Factor</h3>
-
-<p>In 1990, Bill Sharpe shared the Nobel Prize in Economics for his contributions on a theory of price formation for financial assets, this is the so-called Capital Asset Pricing Model (CAPM).   This was the first theory to measure systematic risk which, according to the CAPM, depends only upon exposure to the market.</p>
-
-<p>As with many models, CAPM  is a bit of a Faustian bargain in terms of explaining individual stock returns in terms of idiosyncratic / company-specific forces which tend to cancel each other within well-diversified portfolios.   However, CAPM holds that even these diversified portfolios are not ‘risk-free’ given their exposure to a <em>single</em> type of systemic risk known as <a href="https://www.investopedia.com/terms/m/marketrisk.asp" title="market risk">market risk</a>.</p>
-
-<p>This market risk cannot be diversified away due to the pervasive influence of wider common economic forces.  Further it is the very degree of this exposure that is considered to be the source of expected return.  This market risk explains the variability of an asset’s rate of return relative to that of the overall market <sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>.</p>
-
-<p>This single-factor market risk is measured by its <strong>beta $ \beta $</strong> <sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup> which reflects a <a href="https://www.investopedia.com/terms/l/linearrelationship.asp" title="Linear Relationship">linear relationship</a> between an investment’s rate return relative to the market’s rate of return.</p>
-
-<p>CAPM assumes a positive <a href="https://en.m.wikipedia.org/wiki/Correlation_and_dependence" title="Correlation">correlation</a> between the amount of market exposure and the degree to which  for return.  In the “efficient” marketplace,  an investor could expect to ramp up the rate of return, by exposing a well-diversified portfolio to higher market risk.   In this scenario the variability of an asset’s rate of return is relative to that of the overall market and its “beta” provides a relative measure of systematic (market) risk.</p>
-
-<p>Drinking the CAPM Kool-Aid has meant accepting that price movements are attributed to a single, relatively-simple statistical measure (systemic risk).   This model has been favored by many in academia, perhaps given the tempting simplicity and teach-ability.  However, for all its ivory tower appeal it seems this one trick pony doesn’t fully explain the cross section of stock returns.</p>
-
-<p>Needing a scheme to deal with various relationships looking beyond this single-factor market beta brings us to a <em>multivariate</em> approach as introduced by the <a href="https://www.investopedia.com/terms/a/apt.asp" title="APT">Arbitrage Pricing Theory (APT)</a>.</p>
-
-<h3 id="multi-factor-arbitrage-pricing-theory-apt">Multi-Factor Arbitrage Pricing Theory (APT)</h3>
-
-<p><a href="https://en.wikipedia.org/wiki/Stephen_Ross_(economist)" title="Stephen A. Ross">Stephen A. Ross</a> was one of the first to look beyond “the market factor” while still focusing on systemic risk.  APT is more general than the CAPM, it accepts a variety of different risk sources as it recognizes the interaction of many factors (e.g. inflation, interest rates, business activity, etc.) as contributing to rates of return.  Assets have risk exposures (betas) with respect to each of these systematic risks.  These risk exposures are rewarded in the market with additional expected return, and thus the aggregate risk exposure profile explains volatility and performance of the well-diversified portfolio</p>
-
-<p>Multi-factor model math is slightly more complex but still in a common linear model with an underlying concept more intuitively satisfying.   APT facilitates multi-factor analysis of many broad risk factors and to estimate individual securities’ degree of exposure to these factors to explain the so-called “cross-section” of returns at a given point in time.</p>
-
-<p>Models with APT a security effectively has a sensitivity to each systematic risk factor. A series of beta coefficients are estimated to measure the sensitivity to the respective factor risks for a particular security.   Unlike the CAPM, however, the individual factors, although precisely quantified, are not specifically associated with readily identifiable variables.</p>
-
-<p>Factor models offer a useful extension of the CAPM &amp; APT since they help us understand how key factors influence portfolio risk &amp; return.   This affords us an opportunity predict and control investment risk</p>
-
-<p>Factor models extend the framework of existing asset pricing models and allow us to decompose portfolios by constituent factor sensitivities and help us understand attributes that influence portfolio returns.   The mathematical representation of factor models are extensible, linear, and offer a high degree of transparent interpretability which lend them some intuitive appeal.</p>
-
-<h3 id="factors--arbitrage-pricing-theory-apt-relationship">Factors &amp; Arbitrage Pricing Theory (APT) relationship</h3>
-<p>For any given time period ($\bf t$), the difference between realized return $\bf r_i(t)$ and the expected return $\bf Er_i(t)$ for any asset is equal to the sum of all risk factor exposures (e.g. betas  $\bf \beta$) multiplied by the realization (the actual end-of-period value) for that risk factor $\bf \sum\nolimits_{i=1}^k \beta_{i} [P_i+f_i(t)] $ , plus an asset-specific idiosyncratic) error term $\bf \epsilon_i(t)$ .</p>
-
-<p>$\bf  E[r_i(t)] = P_0 + \sum\nolimits_{i=1}^k \beta_{i}P_i $ 
-$\bf P_i$ is the price of risk, or the risk premium for the  $\bf j^{th} $ risk factor.</p>
-
-<p><strong>Where:</strong></p>
-<ul>
-  <li>$\bf r_i(t)$ = the total return on asset i (cap gains + dividends) realized at the end of period  $\bf t$</li>
-  <li>$\bf E[r_i(t)]$ = expected return, at the beginning of period t</li>
-  <li>$\bf P_0$ = risk free risk premium</li>
-  <li>$\bf P_i$ = price of risk -or- risk premium for the $\bf i^{th}$ risk factor</li>
-  <li>$f_i(t)$ = $\bf i^{th}$ risk factor at time $\bf t$.</li>
-  <li>$ \beta_{i}P_i+ f_i $</li>
-</ul>
-
-<p>$\bf r_i(t) - P_0 = \beta_{i1} [P_1+ f_1(t)] + … + \beta_{iK} [P_K+f_K(t)] + \epsilon_i(t)$</p>
-
-<p>Beta exposures within a portfolio provide control over associated risk premiums  providing a scheme to manage inherent risk-return trade-offs.   Control the risk exposures and control the risk-return relationship.</p>
-
-<h3 id="estimating-an-apt-model">Estimating an APT model:</h3>
-<ol>
-  <li>The risk factors f,(t), f,(t), …,fK(t) can be computed using statistical techniques such as factor analysis or principal components.</li>
-  <li>K different well-diversified portfolios can substitute for the factors (see Appendix B).</li>
-  <li>Economic theory and knowledge of financial markets can be used to specify K risk factors that can be measured from available macroeconomic and financial data.</li>
-</ol>
-
-<h3 id="factor-rotation---a-nod-to-mean-reversion">Factor Rotation - a nod to mean reversion</h3>
-
-<p>The CAPM is clear about the source of risk (the market) but suffers because no practical measure of the market exists. The APT causes difficulties because it does not identify the number of important factors or define them.   The statistical process of factor analysis is employed to quantify the broad risk factors and to estimate individual securities’ degree of exposure to these factors.</p>
-
-<p>Financial researchers and investment managers undoubtedly agree that only a few important factors explain an overwhelming degree of investment risk and return. Therefore, the appeal of factor models that define these factors becomes apparent.</p>
-
-<p>Factors can be used to  to avoid large chunks of the market and then build more differentiated portfolios of stocks with only the best overall factor profiles.   While not as scaleable as smart beta, this alpha-oriented approach has led to much better results for investors.</p>
-
-<p>According to a factor model, the return-generating process for a security is driven by the presence of the various common factors and the security’s unique sensitivities to each factor (factor loadings). The common factors may be readily identifiable fundamental factors such as price-earnings ratio, size, yield, and growth.</p>
-
-<p>A security effectively has a sensitivity to each systematic risk factor. A series of beta coefficients are estimated to measure the sensitivity to the respective factor risks for a particular security. Unlike the CAPM, however, the individual factors, although precisely quantified, are not specifically associated with readily identifiable variables.</p>
-
-<p>Although considerable discussion continues about the number and the identification of these broad factors, the APT nevertheless provides investment managers with a valuable risk-management tool.</p>
-
-<p>A good portfolio manager, whether explicitly or implicitly, evaluates the impact of a series of broad factors on the performances of various securities. In this sense, a reliable factor model provides a valuable tool to assist portfolio managers with the identification of pervasive factors that affect large members of securities.</p>
-
-<p>Factor models can be used to decompose 
-portfolio risk according to common factor exposure and to evaluate how much of a portfolio’s return was attributable to each common factor exposure. Consequently, factor models offer a useful extension of the CAPM and the APT because they advance our understanding about how key factors influence portfolio risk and return.</p>
-
-<p>Sharpe (1984) effectively summarizes why investment professionals should pay heed to factor models:</p>
-<blockquote>
-  <p>While the relative importance of various actors changes over time, as do the preferences of investors, we need not completely abandon a valuable framework within which we can approach investment decisions methodically. We have developed a useful set of tools and should certainly continue to develop them. Meanwhile, we can use the tools we have, as long as we use them intelligently, cautiously, and humbly.</p>
-</blockquote>
-
-<p>The objective being select exposures to key factors that represents the best trade-off between risk taken and risk prem expected to be earned. To arrive at this result, we need to answer several questions, such as how to deﬁne the key risk factors driving returns; how to measure and estimate risk and risk premia; how to use these estimates to construct an optimal portfolio of risk exposures.  risk factor decomposition of asset returns, determinants o risk and risk premia, and optimal portfolio choice.</p>
-
-<p>investors to replace optimal  asset allocation with optimal  risk factor allocation— a much more tractable exercise. We can then focus on the optimal alloc of a risk budget to key risk factors rather than directly on a large menu assets in ﬁnancial markets.</p>
-
-<p>Principal components analysis is a statistical methodology useful for extracting the key driv - ers of a set of variables being studied. It reduces a collection of  N variables (e.g., changes in  riskless yields of N different maturities) to K factors (with K much smaller than  N), where  these factors (or principal components) capture most of the variation in the data. In par - ticular, the ﬁrst principal component (PC1) is a (normalized) linear combination of the  N  variables that has the maximum variance. The second principal component (PC2) is the (n - malized) linear combination of the underlying data that has the maximum variance among  all combinations that are uncorrelated with PC1, and so on. For a formal description, see  Campbell, Lo, and McKinley (1996, ch. 6).</p>
-
-<p><sup id="fnref:3"><a href="#fn:3" class="footnote">3</a></sup></p>
-
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({tex2jax: {inlineMath:[['$','$']]}});
-</script>
-
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/
-MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:1">
-      <p>Measured by a market index like the S&amp;P 500. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:2">
-      <p>beta $ beta $ is the <a href="https://en.m.wikipedia.org/wiki/Covariance" title="Covariance">covariance</a> of the return of an asset with the return of the benchmark, divided by the variance of the return of the benchmark over a certain period. 
- $ \bf \beta = \frac{Covariance (r_i , r_m)}{ Variance (r_m)} $</p>
-
-      <p>It is the coefficient of the independent variable ( $\bf r_m$ - market’s rate of return) in a least squares regression which explains the dependent variable ($\bf r_i$ - a security’s rate of return).</p>
-
-      <p>This $ \bf \beta $ measures an asset’s systematic (market - $\bf r_m$ ) risk.   A $\beta $  equal = 1.0 is <em>on par</em> with the overall market, a $ \beta $  &lt; 1.0 has lower-than-market risk and a $ \beta $  &gt; 1.0 indicates a greater- than-market risk. <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:3">
-      <p>Footnote one <a href="#fnref:3" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
-</p> -->
-
-
-
-   <li>May 07, 2018 - <a href="/2018/05/07/machine-learning-models.html"> Machine Learning Models </a> </li>
-   <!-- <p><p>Machine learning is subset to Artificial Intelligence which borrows principles from computer science. It is not an AI though; It is focal point where business and experience meet emerging technology and decides to work together. ML also has very close relationship to statistics; which is a graphical branch of mathematics. It instructs an algorithm to learn for itself by analyzing data. The more data it processes, the smarter the algorithm gets.  Until only recently even though foundation was laid down in 1950 ML remained largely confined to academia.</p>
-
-<p>ML has Organizations have had success with each type of learning, but making the right choice for your business problem requires an understanding of which conditions are best suited for each approach. Types of machine learning algorithms i.e. MLAlgos and which one to be used when is extremely important to know. The goal of the task and all the things that are being done in the field and put you in a better position to break down a real problem and design a machine learning system.</p>
-
-<h2 id="types-of-machine-learning">Types of Machine Learning</h2>
-<p>Before we get into MLAlgos lets understand some basics here. The approach of developing ML includes learning from data inputs based on “What has happened”. Evaluating and optimising different model results remains focus here. As on date Machine Learning is widely used in data analytics as a method to develop algorithms for making predictions on data. It is related to probability, statistics, and linear algebra.
-Machine Learning is classified into four categories at high level depending on the nature of the learning and learning system.  Some how I find difficult to accept Semi-supervised Learning.
- </p>
-<h2 id="3-major--1-non-major-types">3 Major + 1 Non Major Types</h2>
-<ul>
-  <li>Supervised learning: Supervised learning gets labelled inputs and their desired outputs. The goal is to learn a general rule to map inputs to the output.</li>
-  <li>Unsupervised learning: Machine gets inputs without desired outputs, the goal is to find structure in inputs. </li>
-  <li>Reinforcement learning: In this algorithm interacts with a dynamic environment, and it must perform a certain goal without guide or teacher.</li>
-  <li>Semi-supervised Learning: This type of ml i.e. semi-supervised algorithms are the best candidates for the model building in the absence of labels for some data. So if data is mix of label and un-label then this can be the answer. Typically a small amount of labeled data with a large amount of unlabeled data is used here.</li>
-</ul>
-</p> -->
-
-
-
-   <li>May 06, 2018 - <a href="/2018/05/06/alpha-attribution-and-aggregation.html"> Attribution & Aggregation </a> </li>
-   <!-- <p><h3 id="quantative-trade-strategies">Quantative Trade Strategies</h3>
-<p>Algorithmic Trading is a technique of deploying algorithms that automatically buy and sell stocks in response to market data.</p>
-
-<h3 id="the-alpha-idea">The alpha idea</h3>
-<p>At fallbrook we work the full lifecycle srom the first step in developing a trading algorithm is coming up with an “alpha idea” to iterating its implementation.</p>
-
-<p><strong><em>What is alpha?</em></strong></p>
-
-<p>Basically, the return of a portfolio can be written as:</p>
-
-<blockquote>
-  <p><em>r = beta * rm + alpha</em></p>
-</blockquote>
-
-<p>Where beta measures the correlation of the portfolio return to the overall market return (r_ _m), and alpha is the excess return.</p>
-
-<ol>
-  <li>For instance, an index fund has alpha=0, beta=1. But, what I am really after is a positive non-zero alpha, which would indicate that my algorithm is doing better than the market, and at the same time beta=0, i.e. I want my algorithm to be independent form the market, “market-neutral”.</li>
-</ol>
-
-<p>To get started, I want to try the following alpha idea: Companies with a high revenue growth are doing well, and I want to invest in them. Companies with low revenue growth are doing poorly, and I want to short them.</p>
-
-<blockquote>
-  <p>•   Backtest on a larger timeframe.
-	• Try adding more alpha factors.
-	• Analyze alpha factor correlations.
-	• Weight distribution: how to optimally weigh the factors? (this is currently one of the fields of active research, and a field where Machine Learning could help.)
-	• Optimize trading behavior, e.g. the trading quantiles.
-	• Analyze sector exposure.
-	• etc.</p>
-</blockquote>
-
-<h2 id="summary">Summary</h2>
-<p>To summarize, the algorithmic trading workflow is this:
-	1.  come up with an “alpha idea”
-	2.  estimate alpha using alphalens
-	3.  run full backtest on past market data
-	4.  analyze the backtest using pyfolio</p>
-</p> -->
-
-
-</ul> 
-</div>
-  </section>  
-
-  <section id="about"> 
-     
-<div class="user-details">
-      <h2> About Fallbrook Research </h2>
-      <p> At Fallbrook we're providing Decision support, operational intelligence, & service assurance for cloud-managed processes & data pipelines.  We leverage data science, quantitative finance, operational analytics, & machine learning methods to model systematic investement strategies, find signals in the noise, and generate Alpha.  Research for process workflow lifecycle including - alpha, beta, risk management, and execution & trade execution. </p>
-
+    <section id="about">
+      <div class="user-details">
+      <h2> About</h2>
+      <p> Technology & Financial consulting services for clients in financial, academic, and non-profit sectors.  Helping our clients adopt cloud-based architectures, digitize processes, and leverage quantitative methods and systems. </p>
 </div>
 <div class="user-projects">
   <div class="images-right">
     <img alt="library" src="/assets/img/library.jpg" />
   </div>
   <div class="contents">
-    <h3> <h3> Achieving an Edge with: </h3>
+    <h3> Gain an Edge with Fallbrook... </h3>
     <ul>
-      <li> Factor Analytics </li>
-      <li> Factor and Sector Rotation Trends </li>
-      <li> Beta Hedging </li>
-      <li> Systematic Trade Strategies </li>
-      <li> Optimizing Quantitative Research Processes </li>
-
+      <li> Cloud services design & implementation</li>
+      <li> Factor Analytics for Sector Rotation Trends </li>
+      <li> Beta Hedging & Risk-reduction Strategies</li>
+      <li> Valuation models</li>
     </ul>
-    <p> Re-engineering investment processes to increase alpha yields and more efficient risk management.</p>
-  </div>
-</div>
-<!-- <div class="user-projects">
-   <div class="images-left">
-    <img alt="Fallbrook Research" src="/assets/img/mountains.jpg" />
-  </div>
-  <div class="contents-right">
-    <p>
-      One of the most important developments in investing centers on the shift to systematic and rules-based investment strategies as compared with purely passive (index investing) to semi-passive (smart beta) to quant (factor-based) and other investment strategies.  Processes evolution can help structure teams to become more quantitative and systematic.  
-  </p>
-  <p>
-      Factors like momentum and value work but they don't work all the time.  We move beyond traditional linear regression algorithms used by many quants to better fit strategies.  At Fallbrook we leverage machine learning techniques to identify strategy fit within the current context and improve visiblity to shifts in risk and performance attribution.   
-</p>
-    <a class="project-link" href="#">Check it out</a>
-  </div>
-  <div class="user-details">
-  <div class="images-Center">
-    <img alt="Fallbrook Research" src="/assets/img/logo.jpg" />
-  </div>
-  <p> At Fallbrook we're providing Decision support, operational intelligence, & service assurance for cloud-managed processes & data pipelines.  We leverage data science, quantitative finance, operational analytics, & machine learning methods to model systematic investement strategies, find signals in the noise, and generate Alpha.  Research for process workflow lifecycle including - alpha, beta, risk management, and execution & trade execution. </p>
-</div>
-  <div class="user">
-    <div class="tech">
-      <h2>Design</h2>
-      <i class="devicon-html5-plain-wordmark"></i>
-      <i class="devicon-bootstrap-plain-wordmark colored"></i>
-      <i class="devicon-sass-original colored"></i>
-      <p>Mumblecore hexagon kombucha, pitchfork four loko raclette intelligentsia master cleanse.
-        Vinyl XOXO lumbersal</p>
-    </div>
-    <div class="tech">
-      <h2>Implementation</h2>
-      <i class="devicon-javascript-plain colored"></i>
-      <i class="devicon-react-original-wordmark colored"></i>
-      <i class="devicon-nodejs-plain-wordmark"></i>
-      <p>Mumblecore hexagon kombucha, pitchfork four loko raclette intelligentsia master cleanse.
-        Vinyl XOXO lumbersal</p>
-    </div>
-    <div class="tech">
-      <h2>Platform</h2>
-      <i class="devicon-git-plain"></i>
-      <i class="devicon-gulp-plain colored"></i>
-      <i class="devicon-atom-original-wordmark"></i>
-      <p>Mumblecore hexagon kombucha, pitchfork four loko raclette intelligentsia master cleanse.
-        Vinyl XOXO lumbersal</p>
-    </div>
-</div> -->
+    <p> Let us help you securely transform, optimize, and manage your processes in the the cloud.  Fallbrook provides design & implementation support for cloud-managed processes & data pipelines. We can help to leverage your with quantitative methods to identify opportunities & mitigate risks.</p>
 
- 
-  </section>  
-  
-        
+  </div>
+</div>
+
+    </section>
+    <section>
       
-     
+    </section>
+    <section>
+       <nav class="footer">
+  <a class="nav-toggle" id="open-nav" href="#">&#9776;</a>
+  <!-- <a class="editor-link btn" href="cloudcannon:collections/_data/navigation.yml" class="btn"><strong>&#9998;</strong> Edit navigation</a> -->
+  
+    
+    
+
+    
+    <a href="/
+" class=" highlight active" >Home</a>
+  
+    
+    
+
+    
+    <a href="/about/
+" class="" >About</a>
+  
+    
+    
+
+    
+    <a href="/services/
+" class=" highlight" >Services</a>
+  
+    
+    
+
+    
+    <a href="/posts
+" class="" >Blog</a>
+  
+    
+    
+
+    
+    <a href="/contact/
+" class="" >Contact</a>
+  
+</nav>
+
+<table>
+  <tr>
+  
+  
+      </div>
+    </td>
+  </tr>
+</table>
+
+<!-- <div id="main-menu" class="main-menu">
+  <ul>
+    <li><a href="/" class="current">Home</a></li>
+    <li><a href="/stuff/" class="">Stuff</a></li>
+    <li><a href="/projects/" class="">Projects</a></li>
+    <li><a href="/contact/" class="">Contact</a></li>
+  </ul> -->
+
+
+
+    </section>
+    <section>
+       
 <div id="text-14" class="widget widget_text">
 <!-- 
 	<h4>Let&#8217;s Talk!</h4>
@@ -364,6 +159,7 @@ ga('send', 'pageview');
 
 
 
-  </body>
-  </html>
-  
+    </section>
+    </body>
+</html>
+
