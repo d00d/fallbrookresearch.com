@@ -2,10 +2,6 @@
   link: /
   new_window: false
   highlight: true
-- name: About
-  link: /about/
-  new_window: false
-  highlight: true
 - name: Services
   link: /services/
   new_window: false
