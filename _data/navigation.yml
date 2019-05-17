@@ -3,7 +3,7 @@
   new_window: false
   highlight: true
 - name: Services
-  link: /services/
+  link: /services
   new_window: false
   highlight: true
 - name: Blog
@@ -11,6 +11,6 @@
   new_window: false
   highlight: false
 - name: Contact
-  link: /contact/
+  link: /contact
   new_window: false
   highlight: false
