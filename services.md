@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog-layout
 title: Managed Cloud Services
 ---
 Providing cloud expertise to consult, design, and deliver an optimal and cost-effective Cloud strategy for your requirements.  Experience building bespoke cloud native solutions leveraging the usage of AWS services.
