@@ -15,10 +15,12 @@ We're challeged by a world of increasing speed and complexity where the  implica
 
 These automations rely on data analysis and inference to train models which are applied for common classification and prediction tasks.
 
-These ML models are statistical pattern matchers and their utility is correlated can is highly correlated with the quality of the data their trained on. Data reflecting the real-world is required to make these work effectively.  The more high-quality data they processes, the more accurate and valuable these models become. 
+These ML models are statistical pattern matchers and their utility is correlated can is highly correlated with the quality of the data their trained on to make predictions without being explicitly programmed. Data reflecting the real-world is required to make these work effectively.  The more high-quality data they processes, the more accurate and valuable these models become. 
 
-Machine learning uses algorithms to parse data, learn from that data, and make informed decisions based on what it has learned.  Music recommendations & email filtering are common applications of this type of statistical prediction.  Machine learning becoming increasingly ubiquitous and given it lends itself to all manner of automation.
+Machine learning uses algorithms to parse data, discover patterns, and and optimize for the best output making informed decisions based on what it has learned.  Music recommendations & email filtering are common applications of this type of statistical prediction.  Machine learning becoming increasingly ubiquitous and given it lends itself to all manner of automation.
 
 ### Neural Networks
 Neural Networks have structures modeled after brains. deep learning algorithms which exist in layers, “artificial neural network”.  These neural networks have brought significant progress in areas such as speech recognition and image classification.
+
+In computational networks an activation function produces the output for a node given a set of inputs.  effects results of the model.
 
