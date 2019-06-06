@@ -84,13 +84,28 @@ src="/assets/img/logo.jpg"/>
 
       
 
+        <li> June 06, 2019 - <a href="/2019/06/06/recommender-systems.html"> Recommender Systems </a></li>
+
+        <!-- <p><h3 id="ubiquity">Ubiquity</h3>
+
+<p>Recommender Systems are increasingly omnipresent.  Like it or not, this growing branch of A.I. is now deeply embedded into our our lives.  Modern commercial applications leverage these information filtering predictors that are are all about us.   Whether product recommenders at Amazon, content recommenders for Twitter, or as playlist generators for the like video/audio likes of Netflix, YouTube &amp; Spotify recommender systems are one of the most successful applications of machine learning.</p>
+
+<p>These systems are generally used to, as accurately as possible, automate consumer preference selection and thereby accrue value to user and provider alike.</p>
+
+<h3 id="algorithms">Algorithms</h3>
+
+<p>Machine learning algorithms in recommender systems are typically classified into two categories — content based and collaborative filtering methods although modern recommenders combine both approaches</p>
+
+</p> -->
+      
+
         <li> May 29, 2019 - <a href="/2019/05/29/dreaming-deeply-with-neural-networks.html"> Dreaming Deeply with Neural Networks </a></li>
 
         <!-- <p><h3 id="deep-dream-algorithm-and-image-over-processing">Deep Dream algorithm and image over-processing</h3>
 
-<p><img src="/assets/img/input_color1.jpeg" alt="input0.jpeg" />
-<img src="/assets/img/dd-in11.jpeg" alt="dd-in11.jpeg" />
-<img src="/assets/img/dd-in18.jpeg" alt="dd-in18.jpeg" /></p>
+<p><img src="/assets/img/blog-cnn/input.jpg" alt="input.jpg" />
+<img src="/assets/img/blog-cnn/input_color1.jpeg" alt="input0.jpeg" />
+<img src="/assets/img/blog-cnn/dd-in11.jpeg" alt="dd-in11.jpeg" /></p>
 
 <p><a href="https://en.wikipedia.org/wiki/DeepDream" target="_blank">Deep Dream</a> is a computer vision program created by Google engineer Alex Mordvintsev which uses a convolutional neural network to find and enhance patterns in images.  The resulting algorithmic pareidolia produces facinating images having a dream-like hallucinogenic appearance.</p>
 
@@ -98,13 +113,18 @@ src="/assets/img/logo.jpg"/>
 
 <p>Depending on how models are developed this can rely on every area of the natural sciences and has applications in architecture, digital fabrication, art, engineering, biomedicine, etc.</p>
 
-<p>In general, artificial Neural Networks have significantly progressed speech and image classification. But even though these are very useful tools based on well-known mathematical methods, we actually understand surprisingly little of why certain models work and others don’t. So let’s take a look at some simple techniques for peeking inside these networks.  Computer Vision, Facial Recognition, and Speech Recognition, Self-driving cars are types of applications abound.</p>
+<p>In general, convolutional neural networks (CNNs) reflect a connectivity pattern manifest among neurons.  This resembles how the visual cortex functions from biology.  Inspired by nature, CNNs exploit local correlations and have significantly progressed fields of speech and image classification.</p>
+
+<p>These very useful tools are built upon well-known mathematical methods, we actually understand surprisingly little of why certain models work and others don’t. So let’s take a look at some simple techniques for peeking inside these networks.  Computer Vision, Facial Recognition, and Speech Recognition, Self-driving cars are types of applications abound.</p>
 
 <p>Artificial neural networks are trained via millions of training examples and gradually adjusting the network parameters until it gives the desired classification.  A network typically consists of 10-30 stacked layers of artificial neurons. Any given image is fed into the input layer, which then talks to the next layer, until eventually the “output” layer is reached. The network’s “answer” comes from its final output layer.</p>
 
 <p>It remains a challenge to understand exactly what is going on at each layer. We know that after training, each layer progressively extracts higher and higher-level features of the image, until the final layer essentially makes a decision on what the image shows. For example, the first layer maybe looks for edges or corners. Intermediate layers interpret the basic features to look for overall shapes or components, like a door or a leaf. The final few layers assemble those into complete interpretations—these neurons activate in response to very complex things such as entire buildings or trees.</p>
 
-<p>###Producing dreams</p>
+<h3 id="producing-dreams">Producing dreams</h3>
+
+<p><img src="/assets/img/blog-cnn/intro0.jpg" alt="intro0.jpeg" />
+<img src="/assets/img/blog-cnn/intro1.jpg" alt="intro1.jpeg" /></p>
 
 <p>Looking at Deep Dream, we have a computer vision program created by Google engineer Alex Mordvintsev that takes advantage of convolutional neural networks to recgonize and augment patterns in images, creating some amazing Dream-like hallucinogenic appearances in the deliberately over-processed images.</p>
 
@@ -122,17 +142,17 @@ First we implement a basic gradient ascent step function, applying the first two
 <p>Running the next code cell starts the detail generation process. You may see how new patterns start to form, iteration by iteration, octave by octave.
 The complexity of the details generated depends on which layer’s activations we try to maximize. Higher layers produce complex features, while lower ones enhance edges and textures, giving the image an impressionist feeling.</p>
 
-<p><img src="/assets/img/input.jpg" alt="input0.jpeg" />
-<img src="/assets/img/input0.jpeg" alt="input0.jpeg" />
-<img src="/assets/img/input_color1.jpeg" alt="input0.jpeg" /></p>
+<p><img src="/assets/img/blog-cnn/input.jpg" alt="input0.jpeg" />
+<img src="/assets/img/blog-cnn/input0.jpeg" alt="input0.jpeg" />
+<img src="/assets/img/blog-cnn/input_color1.jpeg" alt="input0.jpeg" /></p>
 
 <p>What if we feed the deepdream function its own output, after applying a little zoom to it? It turns out that this leads to an endless stream of impressions of the things that the network saw during training. Some patterns fire more often than others, suggestive of basins of attraction.</p>
 
 <p>We will start the process from the site logo image as above, but after some iteration the original image becomes irrelevant; even random noise can be used as the starting point.</p>
 
-<p><img src="/assets/img/input1.jpeg" alt="input0.jpeg" />
-<img src="/assets/img/input6a.jpeg" alt="input0.jpeg" />
-<img src="/assets/img/input16xxx.jpeg" alt="input0.jpeg" /></p>
+<p><img src="/assets/img/blog-cnn/input1.jpeg" alt="input0.jpeg" />
+<img src="/assets/img/blog-cnn/input6a.jpeg" alt="input0.jpeg" />
+<img src="/assets/img/blog-cnn/input16xxx.jpeg" alt="input0.jpeg" /></p>
 
 <p>So here’s one surprise: neural networks that were trained to discriminate between different kinds of images have quite a bit of the information needed to
 generate
