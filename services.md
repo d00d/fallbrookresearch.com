@@ -9,14 +9,13 @@ deliver and implement the project and provide 24/7 proactive support and monitor
 ### Amazon Web Services (AWS)
 As an AWS Premier Consulting Partner and Managed Services Provider, you can rest assured that you’ve come to the best place to design and implement your AWS cloud solution. Our extensive knowledge of the AWS technology suite, coupled with our tight partnership with AWS and our years of experience, means we can help you make the most of your AWS investment.
 
-### Next generation application architecture
-Leverage innovative ways to launch new applications or re-imagine existing applications to stay ahead of your competition. We take a pragmatic approach when making recommendations related to re-designing existing applications for the cloud. Decoupling application functions using approaches, such as serverless and event-driven architecture, enables an organisation to scale out services based on demand, but independently of each other.
-
 ### Cloud Transformation
 Operational transformation is achieved by adopting an efficient, scalable and secure platform along with support for process and cultural changes. The cloud adoption process is a journey starting with discovery and design.
 
 ### Cloud Managed DevOps
 Using DevOps to run Enterprise Production environments is a huge shift away from the traditional approach. The change requires a transformed platform and experienced DevOps capability to realise the full benefits.
+
+### AIOps
 
 ### Software & Data Integration
 Customer expectations are changing and, all the while, your data is growing in volume and complexity. The question is, how are you keeping up?

@@ -10,7 +10,7 @@ published: true
 
 ### Ubiquity
 
-Recommender Systems are increasingly omnipresent.  Like it or not, this growing branch of A.I. is now deeply embedded into our our lives.  Modern commercial applications leverage these information filtering predictors that are are all about us.   Whether product recommenders at Amazon, content recommenders for Twitter, or as playlist generators for the like video/audio likes of Netflix, YouTube & Spotify recommender systems are one of the most successful applications of machine learning.
+Recommender Systems are increasingly everywhere.  Like it or not, this omnipresent branch of A.I. is embedded into our our lives.  Modern commercial applications leverage these information filtering predictors that are are all about us.   Whether product recommenders at Amazon, content recommenders for Twitter, or as playlist generators for the like video/audio likes of Netflix, YouTube & Spotify recommender systems are one of the most successful applications of machine learning.
 
 These systems are generally used to, as accurately as possible, automate consumer preference selection and thereby accrue value to user and provider alike.
 
