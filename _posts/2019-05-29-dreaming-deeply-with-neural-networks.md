@@ -28,7 +28,7 @@ Artificial neural networks are trained via millions of training examples and gra
 
 It remains a challenge to understand exactly what is going on at each layer. We know that after training, each layer progressively extracts higher and higher-level features of the image, until the final layer essentially makes a decision on what the image shows. For example, the first layer maybe looks for edges or corners. Intermediate layers interpret the basic features to look for overall shapes or components, like a door or a leaf. The final few layers assemble those into complete interpretations—these neurons activate in response to very complex things such as entire buildings or trees.
 
-### Producing dreams
+### Producing Dreams
 
 ![intro0.jpeg]({{site.baseurl}}/assets/img/blog-cnn/intro0.jpg)
 ![intro1.jpeg]({{site.baseurl}}/assets/img/blog-cnn/intro1.jpg)
