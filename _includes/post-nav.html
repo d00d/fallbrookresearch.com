@@ -1,5 +1,4 @@
-
- <nav class="footer">
+<nav class="footer">
   <a class="nav-toggle" id="open-nav" href="#">&#9776;</a>
   <!-- <a class="editor-link btn" href="cloudcannon:collections/_data/navigation.yml" class="btn"><strong>&#9998;</strong> Edit navigation</a> -->
   {% for link in site.data.navigation %}
@@ -11,38 +10,7 @@
     {% if link.link == page.url %}
       {% assign class = class | append: " active" %}
     {% endif %}
-    <a href="{% include relative-src.html src=link.link %}" class="{{ class }}" {% if link.new_window %}target="_blank"{% endif %}>{{ link.name }}</a>
+
+    <a href="{% include relative-src.html src=link.link %}" class="{{ class }}" {% if link.new_window %}target="_blank"{% endif %}>{{link.name }}</a>
   {% endfor %}
 </nav>
-
-<table>
-  <tr>
-  {% if page.previous.url %}
-    <td>
-      <div id="previous-post" class="post-nav-post">
-      {{ site.theme_settings.str_previous_post }}<a href="{{ site.baseurl }}{{ page.previous.url }}"> {{ page.previous.title }} </a> < <
-
-      </div>
-    </td>
-  {% endif %}
-  {% if page.next.url %}
-  <td>
-    <div id="next-post" class="post-nav-post">
-      {{ site.theme_settings.str_next_post }}  > > <a href="{{ site.baseurl }}{{ page.next.url }}">{{ page.next.title }}</a>
-    </div>
-  </td>
-        {% endif %}
-      </div>
-    </td>
-  </tr>
-</table>
-
-<!-- <div id="main-menu" class="main-menu">
-  <ul>
-    <li><a href="{{site.baseurl}}/" class="{% if page.url == '/' %}current{% endif %}">Home</a></li>
-    <li><a href="{{site.baseurl}}/stuff/" class="{% if page.url contains 'stuff' %}current{% endif %}">Stuff</a></li>
-    <li><a href="{{site.baseurl}}/projects/" class="{% if page.url contains 'projects' %}current{% endif %}">Projects</a></li>
-    <li><a href="{{site.baseurl}}/contact/" class="{% if page.url contains 'contact' %}current{% endif %}">Contact</a></li>
-  </ul> -->
-
-

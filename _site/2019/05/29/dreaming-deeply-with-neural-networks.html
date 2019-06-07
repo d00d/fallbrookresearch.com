@@ -5,8 +5,7 @@
     <img alt="fallbrook"
 src="/assets/img/logo.jpg"/>
 
-    
- <nav class="footer">
+    <nav class="footer">
   <a class="nav-toggle" id="open-nav" href="#">&#9776;</a>
   <!-- <a class="editor-link btn" href="cloudcannon:collections/_data/navigation.yml" class="btn"><strong>&#9998;</strong> Edit navigation</a> -->
   
@@ -14,6 +13,7 @@ src="/assets/img/logo.jpg"/>
     
 
     
+
     <a href="/#main
 " class=" highlight" >Home</a>
   
@@ -21,6 +21,7 @@ src="/assets/img/logo.jpg"/>
     
 
     
+
     <a href="/services
 " class=" highlight" >Services</a>
   
@@ -28,6 +29,7 @@ src="/assets/img/logo.jpg"/>
     
 
     
+
     <a href="/posts
 " class="" >Blog</a>
   
@@ -35,74 +37,51 @@ src="/assets/img/logo.jpg"/>
     
 
     
+
     <a href="/contact
 " class="" >Contact</a>
   
 </nav>
 
-<table>
-  <tr>
-  
-    <td>
-      <div id="previous-post" class="post-nav-post">
-      <a href="/2018/09/04/factor-models-and-risk-exposure.html"> Factor Models & Risk Exposure </a> < <
-
-      </div>
-    </td>
-  
-  
-  <td>
-    <div id="next-post" class="post-nav-post">
-        > > <a href="/2019/06/06/recommender-systems.html">Recommender Systems</a>
-    </div>
-  </td>
-        
-      </div>
-    </td>
-  </tr>
-</table>
-
-<!-- <div id="main-menu" class="main-menu">
-  <ul>
-    <li><a href="/" class="">Home</a></li>
-    <li><a href="/stuff/" class="">Stuff</a></li>
-    <li><a href="/projects/" class="">Projects</a></li>
-    <li><a href="/contact/" class="">Contact</a></li>
-  </ul> -->
-
-
-
 
       <section id="about">
-            <article class="feature-image">
+         <div class="postnav1">
+    
+      
+        [ <a class="highlight" href="/2018/09/04/factor-models-and-risk-exposure.html"> Factor Models & Risk Exposure </a> &nbsp;] <&nbsp;&nbsp;<&nbsp;&nbsp;
+    
+    
+       &nbsp;&nbsp;>&nbsp;&nbsp;> [ <a href="/2019/06/06/recommender-systems.html">Recommender Systems</a> ]
+    
+ </div>
+<article class="feature-image">
 
-    <header style="background-image: url('/white1.jpg')">
+<header style="background-image: url('/white1.jpg')">
 
-        <div class="user-projects">
+  <div>
 
-          <header style="background-image: url('/assets/img/post-headers/white1.jpg')">
-             <h2 class="title">Dreaming Deeply with Neural Networks</h2>
+    <header style="background-image: url('/assets/img/post-headers/white1.jpg')">
+       <h2 class="title">Dreaming Deeply with Neural Networks</h2>
 
-             
+       
 
-             <p class="meta">
-                May 29, 2019
-                 - R. Dubnick
-             </p>
-          </header>
-          <section class="post-content"><h3 id="deep-dream-algorithm-and-image-over-processing">Deep Dream algorithm and image over-processing</h3>
+       <p class="meta">
+          May 29, 2019
+           - R. Dubnick
+       </p>
+    </header>
+
+    <section class="post-content"><h3 id="deep-dream-algorithm-and-image-over-processing">Deep Dream algorithm and image over-processing</h3>
 
 <p><img src="/assets/img/blog-cnn/input.jpg" alt="input.jpg" />
 <img src="/assets/img/blog-cnn/input_color1.jpeg" alt="input0.jpeg" />
 <img src="/assets/img/blog-cnn/dd-in11.jpeg" alt="dd-in11.jpeg" /></p>
 
-<p><a href="https://en.wikipedia.org/wiki/DeepDream" target="_blank">Deep Dream</a> is a computer vision program created by Google engineer Alex Mordvintsev which uses a convolutional neural network to find and enhance patterns in images.  The resulting algorithmic pareidolia produces facinating images having a dream-like hallucinogenic appearance.</p>
+<p><a href="https://en.wikipedia.org/wiki/DeepDream" target="_blank">Deep Dream</a> is a computer vision program created by Google engineer Alex Mordvintsev which uses a convolutional neural network to find and enhance patterns in images.  The resulting algorithmic pareidolia produces facinating images having a dream-like, kind of hallucinogenic appearance.</p>
 
-<p>This generative progression is a kind of <a href="https://en.wikipedia.org/wiki/Digital_morphogenesis" target="_blank">digital morphogenesis</a> allowing us to synthesize visual textures and recognize patterns iteratively.  This technique relfects a kind of digital confirmation bias existing wthin the computational model where emergent patterns depend on the variety of subjects the model was trained with and the layers of the model we filter.</p>
+<p>Depending on how models are developed this can rely on every area of the natural sciences and has applications in architecture, digital fabrication, art, engineering, biomedicine, etc.  In general, convolutional neural networks (CNNs) reflect a connectivity pattern manifest among neurons.  This resembles how the visual cortex functions from biology.  Inspired by nature, CNNs exploit local correlations and have significantly progressed fields of speech and image classification.</p>
 
-<p>Depending on how models are developed this can rely on every area of the natural sciences and has applications in architecture, digital fabrication, art, engineering, biomedicine, etc.</p>
-
-<p>In general, convolutional neural networks (CNNs) reflect a connectivity pattern manifest among neurons.  This resembles how the visual cortex functions from biology.  Inspired by nature, CNNs exploit local correlations and have significantly progressed fields of speech and image classification.</p>
+<p>This generative progression is a kind of <a href="https://en.wikipedia.org/wiki/Digital_morphogenesis" target="_blank">digital morphogenesis</a> allowing us to synthesize visual textures and recognize patterns.  This technique relfects a kind of digital confirmation bias existing wthin the computational model where emergent patterns depend on the variety of subjects the model was trained with and the layers of the model we filter.</p>
 
 <p>These very useful tools are built upon well-known mathematical methods, we actually understand surprisingly little of why certain models work and others don’t. So let’s take a look at some simple techniques for peeking inside these networks.  Computer Vision, Facial Recognition, and Speech Recognition, Self-driving cars are types of applications abound.</p>
 
@@ -110,7 +89,7 @@ src="/assets/img/logo.jpg"/>
 
 <p>It remains a challenge to understand exactly what is going on at each layer. We know that after training, each layer progressively extracts higher and higher-level features of the image, until the final layer essentially makes a decision on what the image shows. For example, the first layer maybe looks for edges or corners. Intermediate layers interpret the basic features to look for overall shapes or components, like a door or a leaf. The final few layers assemble those into complete interpretations—these neurons activate in response to very complex things such as entire buildings or trees.</p>
 
-<h3 id="producing-dreams">Producing dreams</h3>
+<h3 id="producing-dreams">Producing Dreams</h3>
 
 <p><img src="/assets/img/blog-cnn/intro0.jpg" alt="intro0.jpeg" />
 <img src="/assets/img/blog-cnn/intro1.jpg" alt="intro1.jpeg" /></p>
@@ -175,9 +154,18 @@ This technique gives us a qualitative sense of the level of abstraction that a p
 
 <p>The techniques presented here help us understand and visualize how neural networks are able to carry out difficult classification tasks, improve network architecture, and check what the network has learned during training. It also makes us wonder whether neural networks could become a tool for artists—a new way to remix visual concepts—or perhaps even shed a little light on the roots of the creative process in general.</p>
 </section>
-          <!-- {-% include tags_list.html tags=page.tags tag_count=page.tags.size %-} -->
-        </div>
-       </article>
+    <!-- {-% include tags_list.html tags=page.tags tag_count=page.tags.size %-} -->
+  </div>
+ </article>
+<div class="postnav1">
+    
+      
+        [ <a class="highlight" href="/2018/09/04/factor-models-and-risk-exposure.html"> Factor Models & Risk Exposure </a> &nbsp;] <&nbsp;&nbsp;<&nbsp;&nbsp;
+    
+    
+       &nbsp;&nbsp;>&nbsp;&nbsp;> [ <a href="/2019/06/06/recommender-systems.html">Recommender Systems</a> ]
+    
+ </div>
 
    <div class="comments">
       
