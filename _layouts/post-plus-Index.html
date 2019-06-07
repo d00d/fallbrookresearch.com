@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-    {% include head.html %}
-  <body>
-    <section id="post-nav">
-      {% include post-nav.html %}
-    </section>
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
+    <body>
+    {% include logo-head.html %}
+    {% include post-nav.html %}
+
     <section id="content">
       <div>
       {{ content }}
       </div>
     </section>
+
     <section id="projects">
       {% include projects.html %}
     </section>
+
       {% include footer.html %}
+
   </body>
 </html>
