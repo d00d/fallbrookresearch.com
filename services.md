@@ -6,6 +6,9 @@ Providing cloud expertise to consult, design, and deliver an optimal and cost-ef
 
 deliver and implement the project and provide 24/7 proactive support and monitoring.
 
+### AIOps & DataOps
+Accelerating the creation & operation of more effective, more predictive, more relevant analytic models.
+
 ### Amazon Web Services (AWS)
 As an AWS Premier Consulting Partner and Managed Services Provider, you can rest assured that you’ve come to the best place to design and implement your AWS cloud solution. Our extensive knowledge of the AWS technology suite, coupled with our tight partnership with AWS and our years of experience, means we can help you make the most of your AWS investment.
 
@@ -15,7 +18,6 @@ Operational transformation is achieved by adopting an efficient, scalable and se
 ### Cloud Managed DevOps
 Using DevOps to run Enterprise Production environments is a huge shift away from the traditional approach. The change requires a transformed platform and experienced DevOps capability to realise the full benefits.
 
-### AIOps
 
 ### Software & Data Integration
 Customer expectations are changing and, all the while, your data is growing in volume and complexity. The question is, how are you keeping up?
