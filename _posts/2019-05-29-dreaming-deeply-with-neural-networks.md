@@ -13,13 +13,12 @@ published: true
 ![input0.jpeg]({{site.baseurl}}/assets/img/blog-cnn/input_color1.jpeg)
 ![dd-in11.jpeg]({{site.baseurl}}/assets/img/blog-cnn/dd-in11.jpeg)
 
-[Deep Dream](https://en.wikipedia.org/wiki/DeepDream){:target="_blank"} is a computer vision program created by Google engineer Alex Mordvintsev which uses a convolutional neural network to find and enhance patterns in images.  The resulting algorithmic pareidolia produces facinating images having a dream-like hallucinogenic appearance.
+[Deep Dream](https://en.wikipedia.org/wiki/DeepDream){:target="_blank"} is a computer vision program created by Google engineer Alex Mordvintsev which uses a convolutional neural network to find and enhance patterns in images.  The resulting algorithmic pareidolia produces facinating images having a dream-like, kind of hallucinogenic appearance.
 
-This generative progression is a kind of [digital morphogenesis](https://en.wikipedia.org/wiki/Digital_morphogenesis){:target="_blank"} allowing us to synthesize visual textures and recognize patterns iteratively.  This technique relfects a kind of digital confirmation bias existing wthin the computational model where emergent patterns depend on the variety of subjects the model was trained with and the layers of the model we filter.
 
-Depending on how models are developed this can rely on every area of the natural sciences and has applications in architecture, digital fabrication, art, engineering, biomedicine, etc.
+Depending on how models are developed this can rely on every area of the natural sciences and has applications in architecture, digital fabrication, art, engineering, biomedicine, etc.  In general, convolutional neural networks (CNNs) reflect a connectivity pattern manifest among neurons.  This resembles how the visual cortex functions from biology.  Inspired by nature, CNNs exploit local correlations and have significantly progressed fields of speech and image classification.
 
-In general, convolutional neural networks (CNNs) reflect a connectivity pattern manifest among neurons.  This resembles how the visual cortex functions from biology.  Inspired by nature, CNNs exploit local correlations and have significantly progressed fields of speech and image classification.
+This generative progression is a kind of [digital morphogenesis](https://en.wikipedia.org/wiki/Digital_morphogenesis){:target="_blank"} allowing us to synthesize visual textures and recognize patterns.  This technique relfects a kind of digital confirmation bias existing wthin the computational model where emergent patterns depend on the variety of subjects the model was trained with and the layers of the model we filter.
 
 These very useful tools are built upon well-known mathematical methods, we actually understand surprisingly little of why certain models work and others don’t. So let’s take a look at some simple techniques for peeking inside these networks.  Computer Vision, Facial Recognition, and Speech Recognition, Self-driving cars are types of applications abound.
 

@@ -1,28 +1,47 @@
 ---
 layout: blog-layout
 ---
-    <article {% if page.feature-img %}class="feature-image"{% endif %}>
+ <div class="postnav1">
+    {% if page.previous.url %}
+      {{ site.theme_settings.str_previous_post }}
+        [ <a class="highlight" href="{{ site.baseurl }}{{ page.previous.url }}"> {{ page.previous.title }} </a> &nbsp;] <&nbsp;&nbsp;<&nbsp;&nbsp;
+    {% endif %}
+    {% if page.next.url %}
+      {{ site.theme_settings.str_next_post }} &nbsp;&nbsp;>&nbsp;&nbsp;> [ <a href="{{ site.baseurl }}{{ page.next.url }}">{{ page.next.title }}</a> ]
+    {% endif %}
+ </div>
+<article {% if page.feature-img %}class="feature-image"{% endif %}>
 
-    <header style="background-image: url('{{ site.baseurl }}/{{ page.feature-img }}')">
+<header style="background-image: url('{{ site.baseurl }}/{{ page.feature-img }}')">
 
-        <div class="user-projects">
+  <div>
 
-          <header style="background-image: url('{{ site.baseurl }}/assets/img/post-headers/{{page.feature-img}}')">
-             <h2 class="title">{{ page.title }}</h2>
+    <header style="background-image: url('{{ site.baseurl }}/assets/img/post-headers/{{page.feature-img}}')">
+       <h2 class="title">{{ page.title }}</h2>
 
-             {% if page.subtitle %}
-                <h3 class="subtitle">{{ page.subtitle }}</h2>
-             {% endif %}
+       {% if page.subtitle %}
+          <h3 class="subtitle">{{ page.subtitle }}</h2>
+       {% endif %}
 
-             <p class="meta">
-                {{ page.date | date: "%B %-d, %Y" }}
-                {% if page.author %} - {{ page.author }}{% endif %}
-             </p>
-          </header>
-          <section class="post-content">{{ content }}</section>
-          <!-- {-% include tags_list.html tags=page.tags tag_count=page.tags.size %-} -->
-        </div>
-       </article>
+       <p class="meta">
+          {{ page.date | date: "%B %-d, %Y" }}
+          {% if page.author %} - {{ page.author }}{% endif %}
+       </p>
+    </header>
+
+    <section class="post-content">{{ content }}</section>
+    <!-- {-% include tags_list.html tags=page.tags tag_count=page.tags.size %-} -->
+  </div>
+ </article>
+<div class="postnav1">
+    {% if page.previous.url %}
+      {{ site.theme_settings.str_previous_post }}
+        [ <a class="highlight" href="{{ site.baseurl }}{{ page.previous.url }}"> {{ page.previous.title }} </a> &nbsp;] <&nbsp;&nbsp;<&nbsp;&nbsp;
+    {% endif %}
+    {% if page.next.url %}
+      {{ site.theme_settings.str_next_post }} &nbsp;&nbsp;>&nbsp;&nbsp;> [ <a href="{{ site.baseurl }}{{ page.next.url }}">{{ page.next.title }}</a> ]
+    {% endif %}
+ </div>
 
    <div class="comments">
       {% if page.comments %}
