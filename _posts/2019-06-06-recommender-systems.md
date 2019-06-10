@@ -14,11 +14,13 @@ Recommender Systems are increasingly everywhere.  Like it or not, this omniprese
 
 These systems are generally used to, as accurately as possible, automate consumer preference selection and thereby accrue value to user and provider alike.
 
+<script src="https://gist.github.com/d00d/99f3ce3d9b6df1d7270b9a46923edce1.js"></script>
+
 ### Algorithms
 
 Machine learning algorithms in recommender systems are typically classified into two categories — content based and collaborative filtering methods although modern recommenders combine both approaches
 
 
-<script src="https://gist.github.com/d00d/99f3ce3d9b6df1d7270b9a46923edce1.js"></script>
+
 
 
