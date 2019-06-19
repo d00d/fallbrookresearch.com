@@ -1,7 +1,10 @@
 ---
 layout: blog-layout
 ---
- <div class="postnav1">
+<!-- header style="background-image: url('{{ site.baseurl }}/{{ page.feature-img }}')"-->
+
+  <article {% if page.feature-img %}class="feature-image"{% endif %}>
+<div class="postnav1">
     {% if page.previous.url %}
       {{ site.theme_settings.str_previous_post }}
         [ <a class="highlight" href="{{ site.baseurl }}{{ page.previous.url }}"> {{ page.previous.title }} </a> &nbsp;] <&nbsp;&nbsp;<&nbsp;&nbsp;
@@ -10,10 +13,6 @@ layout: blog-layout
       {{ site.theme_settings.str_next_post }} &nbsp;&nbsp;>&nbsp;&nbsp;> [ <a href="{{ site.baseurl }}{{ page.next.url }}">{{ page.next.title }}</a> ]
     {% endif %}
  </div>
-<article {% if page.feature-img %}class="feature-image"{% endif %}>
-
-<header style="background-image: url('{{ site.baseurl }}/{{ page.feature-img }}')">
-
   <div>
 
     <header style="background-image: url('{{ site.baseurl }}/assets/img/post-headers/{{page.feature-img}}')">

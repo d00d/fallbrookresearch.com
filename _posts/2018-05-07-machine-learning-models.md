@@ -24,3 +24,4 @@ Neural Networks have structures modeled after brains. deep learning algorithms w
 
 In computational networks an activation function produces the output for a node given a set of inputs.  effects results of the model.
 
+We train via statistics, in the future we'll also have more natural language instruction.
