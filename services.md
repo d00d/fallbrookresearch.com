@@ -7,7 +7,7 @@ Providing cloud expertise to consult, design, and deliver an optimal and cost-ef
 deliver and implement the project and provide 24/7 proactive support and monitoring.
 
 ### AIOps & DataOps
-Accelerating the creation & operation of more effective, more predictive, more relevant analytic models.
+Accelerate time-to-value while de-risking analytics projects with efficent data / AI operations.  One-off analytic solutions implemented to address a specific business need but not properly “operationalized” precludes wider re-use across organizations.  We'll help create & reuse effective, predictive, and relevant analytic models.
 
 ### Amazon Web Services (AWS)
 As an AWS Premier Consulting Partner and Managed Services Provider, you can rest assured that you’ve come to the best place to design and implement your AWS cloud solution. Our extensive knowledge of the AWS technology suite, coupled with our tight partnership with AWS and our years of experience, means we can help you make the most of your AWS investment.

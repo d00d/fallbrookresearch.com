@@ -3603,7 +3603,7 @@ sub,sup{
 .footer{
     background:#062346;
     padding:10px 0;
-    margin-top:2px;
+    margin-top:100px;
     text-align:center;
     color:#fff
 }
@@ -3611,16 +3611,4 @@ sub,sup{
     text-decoration:none;
     margin:0;
     color:#fff
-}
-.postnav1{
-    background:#fff;
-    padding:0px 0;
-    margin-top:0px;
-    text-align:center;
-    color:#062346
-}
-.postnav1 a{
-
-    margin:0;
-    color:#f97e1b
 }

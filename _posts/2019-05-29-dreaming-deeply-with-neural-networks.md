@@ -13,6 +13,8 @@ published: true
 ![input0.jpeg]({{site.baseurl}}/assets/img/blog-cnn/input_color1.jpeg)
 ![dd-in11.jpeg]({{site.baseurl}}/assets/img/blog-cnn/dd-in11.jpeg)
 
+Neural network models are not new, the first ones arrived in the 1950's.  These Neural Networks are a subfield of machine learning inspired by the structure and function of the brain.  Growth of rapid linear algebra hardware & software stacks, cloud resources, proliferation of repeatable and shared research have all helped accelerate the evolution of new neural network models.
+
 [Deep Dream](https://en.wikipedia.org/wiki/DeepDream){:target="_blank"} is a computer vision program created by Google engineer Alex Mordvintsev which uses a convolutional neural network to find and enhance patterns in images.  The resulting algorithmic pareidolia produces facinating images having a dream-like, kind of hallucinogenic appearance.
 
 
@@ -32,13 +34,7 @@ It remains a challenge to understand exactly what is going on at each layer. We 
 ![intro0.jpeg]({{site.baseurl}}/assets/img/blog-cnn/intro0.jpg)
 ![intro1.jpeg]({{site.baseurl}}/assets/img/blog-cnn/intro1.jpg)
 
-Looking at Deep Dream, we have a computer vision program created by Google engineer Alex Mordvintsev that takes advantage of convolutional neural networks to recgonize and augment patterns in images, creating some amazing Dream-like hallucinogenic appearances in the deliberately over-processed images.
-
-The concept of pareidolia is to interpret a vague stimulus as something known to the observer, such as seeing shapes in clouds, seeing faces in inanimate objects or abstract patterns, or hearing hidden messages in music.
-
-algorithmic
-
-Making the "dream" images is very simple. Essentially it is just a gradient ascent process that tries to maximize the L2 norm of activations of a particular DNN layer. Here are a few simple tricks that we found useful for getting good images:
+Looking at Deep Dream, we have a computer vision program created by Google engineer Alex Mordvintsev that takes advantage of convolutional neural networks to recgonize and augment patterns in images, creating some amazing Dream-like hallucinogenic appearances in the deliberately over-processed images.  The idea is to interpret a vague stimulus as something known to the observer, such as seeing shapes in clouds, seeing faces in inanimate objects or abstract patterns, or hearing hidden messages in music.  Making the "dream" images is a gradient ascent process which seeks maximize the L2 norm of activations of a particular DNN layer. Here are a few simple tricks that we found useful for getting good images:
 
 offset image by a random jitter
 normalize the magnitude of gradient ascent steps
