@@ -7,15 +7,17 @@ comments: true
 published: true
 ---
 
+### Ubiquity of algorithmic intuition
+We’re challenged by a world of increasing speed and complexity where the implication of our decisions is growing and the time afforded to make them is shrinking. The field of mathematics and computer science offer some useful models to help improve, expedite, and automate decision-making. Given their unique value we should expect to find the models offering these mathematical intuitions increasingly embedded into our world. As such it will be helpful to recognize them understand how they are being used.
 
-### Ubiqity of algorithmic intuition
-We're challeged by a world of increasing speed and complexity where the  implication of our decisions is growing and the time afforded to make them is shrinking.  The field of mathematics and computer science offer some useful models to help improve, expedite, and automate decision-making.  Given their unique value we should expect to find the models offering these mathematical intuitions increasingly embeded into our world.  As such it will be helpful to recognize them understand how they are being used.
+![ml-fwrk-01.jpg]({{site.baseurl}}/assets/img/ml/ml-fwrk-01.jpg)
+
+*optimized pattern recognition via probabilistic reasoning vs. explicit rules-based heuristics*
 
 ### Machine learning
+Machine learning leverages a kind of probabilistic reasoning which takes previously acquired knowledge in order to answer a new question. This aims at automatic discovery of regularities in data using algorithms and by generalizing to new but similar data. These are automations which rely on data analysis and inference to train models. Once models are trained, they are applied for common classification and prediction tasks. Machine learning is about improving what they are doing with some sort of experience. With more specification, machine learning is the study of algorithms that improve performance(P) at some task(T) with experience(E) from which the program can “train”.
 
-Machine learning aims at automatic discovery of regularities in data using algorithms and by generalizing to new but similar data.  These are automations which rely on data analysis and inference to train models.  Once models are trained, they are applied for common classification and prediction tasks.  Machine learning is about improving what they are doing with some sort of experience.  With more specification, machine learning is the study of algorithms that improve performance(P) at some task(T) with experience(E) from which the program can "train".
-
-ML models are trained, not explicitly programmed, to perform a kind of statistical pattern match.   Utility of these models is highly dependent on the data from which they are derrived, quality of the data can be highly correlated to accuracy of predictions. The key is in teaching the machine learn what function best describes the data.  These basically result in something familiar to a linear model form of y=mx+b. Further that the data reflecting the real-world is required to make these work effectively.  The more high-quality data they processes, the more accurate and valuable these models become. 
+ML models are trained, not explicitly programmed, to perform a kind of statistical pattern match. Utility of these models is highly dependent on the data from which they are derived, quality of the data can be highly correlated to accuracy of predictions. The key is in teaching the machine learn what function best describes the data. These basically result in something familiar to a linear model form of y = mx+b. Further that the data reflecting the real-world is required to make these work effectively. The more high-quality data they processes, the more accurate and valuable these models become.
 
 Machine learning uses algorithms to parse data, discover patterns, and and optimize for the best output making informed decisions based on what it has learned.  Music recommendations & email filtering are common applications of this type of statistical prediction.  Machine learning becoming increasingly ubiquitous and given it lends itself to all manner of automation.
 

@@ -4,7 +4,9 @@ title: Managed Cloud Services
 ---
 Consulting & Research services, designing, and deliver an optimal and cost-effective Cloud strategy for your requirements.  Experience building bespoke cloud native solutions leveraging the usage of AWS services.  Process support providing tools, templates, & financial models supporting strategic planning initiatives & process automation and re-engineering.
 
-deliver and implement the project and provide 24/7 proactive support and monitoring.
+
+### Data Operations and Analytics
+ Today's Digital organizations produces vast amounts of data for which analysis remains a challenge requiring innovative solutions to ensure data assets can be efficiently analyzed and better understand to receal customer preferences, market intelligence, operational & strategic insights.  Modern data management architectures have evolved from the traditional data warehousing model to more complex architectures that address more requirements, such as real-time & batch processing; structured and unstructured data;  high-velocity transactions; and operational intelligence.  Analyzing large data sets requires significant compute capacity that can vary in size based on the amount of input data and the type of analysis. This characteristic of big data workloads is ideally suited to modern cloud infrastructure, where applications can easily scale up and down based on demand.
 
 ### AIOps & DataOps
 Accelerate time-to-value while de-risking analytics projects with efficent data / AI operations.  One-off analytic solutions implemented to address a specific business need but not properly “operationalized” precludes wider re-use across organizations.  We'll help create & reuse effective, predictive, and relevant analytic models.
@@ -25,4 +27,8 @@ We use Agile methodologies and DevOps principles to deliver faster, more secure,
 
 The AWS scalability system allows you to increase resources without huge investment.  Move to automate processes in a simple and agile.  TCO benefit paying only for the infrastructure needed achiving continuous cost-optimization.
 
- • Designed & implementated forecasting tools for planning University enrollment, Equity portfolio valuation models, & digital media strategy for a local election • Designed & developed algorithmic trading & machine learning models for various investment strategies (long/short, hedge, sector/factor rotation) • Equity valuation models • Developed strategy back-tests with python/zipline to  • Migration of applications and services to Cloud • Design & implementation of application infrastructures & data pipelines on Hybrid, AWS, & Google Cloud •
+• Designed & implementated forecasting tools for planning University enrollment, Equity portfolio valuation models, & digital media strategy for a local election • Designed & developed algorithmic trading & machine learning models for various investment strategies (long/short, hedge, sector/factor rotation) • Equity valuation models • Developed strategy back-tests with python/zipline to  • Migration of applications and services to Cloud • Design & implementation of application infrastructures & data pipelines on Hybrid, AWS, & Google Cloud •
+
+
+
+
