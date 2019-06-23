@@ -13,12 +13,15 @@ published: true
 ![input0.jpeg]({{site.baseurl}}/assets/img/blog-cnn/input_color1.jpeg)
 ![dd-in11.jpeg]({{site.baseurl}}/assets/img/blog-cnn/dd-in11.jpeg)
 
-Neural network models are not new, the first ones arrived in the 1950's.  These Neural Networks are a subfield of machine learning inspired by the structure and function of the brain.  Growth of rapid linear algebra hardware & software stacks, cloud resources, proliferation of repeatable and shared research have all helped accelerate the evolution of new neural network models.
+Neural network models are not new, the first ones arrived in the 1950's.  These Neural Networks are a subfield of machine learning inspired by the structure and function of the brain.  A neural network makes classifications or predictions based on its ability to discover patterns in data.  We might only find simple patterns with one layer however with more than one more complex patterns of patterns could be recognized.
+
+Growth of rapid linear algebra hardware & software stacks, cloud resources, proliferation of repeatable and shared research have all helped accelerate the evolution of new neural network models.
+
 
 [Deep Dream](https://en.wikipedia.org/wiki/DeepDream){:target="_blank"} is a computer vision program created by Google engineer Alex Mordvintsev which uses a convolutional neural network to find and enhance patterns in images.  The resulting algorithmic pareidolia produces facinating images having a dream-like, kind of hallucinogenic appearance.
 
 
-Depending on how models are developed this can rely on every area of the natural sciences and has applications in architecture, digital fabrication, art, engineering, biomedicine, etc.  In general, convolutional neural networks (CNNs) reflect a connectivity pattern manifest among neurons.  This resembles how the visual cortex functions from biology.  Inspired by nature, CNNs exploit local correlations and have significantly progressed fields of speech and image classification.
+Depending on how models are developed this can rely on every area of the natural sciences and has applications in architecture, digital fabrication, art, engineering, biomedicine, etc.  In general, convolutional neural networks (CNNs) reflect a connectivity pattern manifest among neurons.  Multi-layer neural networks trained with a backpropagation algorithm is a gradient-based learning technique.  This approach resembles how the visual cortex functions in biology.  Inspired by nature, CNNs exploit local correlations and have significantly progressed fields of speech and image classification.
 
 This generative progression is a kind of [digital morphogenesis](https://en.wikipedia.org/wiki/Digital_morphogenesis){:target="_blank"} allowing us to synthesize visual textures and recognize patterns.  This technique relfects a kind of digital confirmation bias existing wthin the computational model where emergent patterns depend on the variety of subjects the model was trained with and the layers of the model we filter.
 
