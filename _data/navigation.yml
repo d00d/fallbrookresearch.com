@@ -1,12 +1,12 @@
-- name: Home
+- name: Home  |
   link: /#main
   new_window: false
   highlight: true
-- name: Services
+- name: Services  |
   link: /services
   new_window: false
   highlight: true
-- name: Blog
+- name: Blog  |
   link: /posts
   new_window: false
   highlight: false
