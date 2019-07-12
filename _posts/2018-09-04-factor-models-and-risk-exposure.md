@@ -106,7 +106,7 @@ Principal components analysis is a statistical methodology useful for extracting
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({tex2jax: {inlineMath:[['$','$']]}});
 </script>
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/
 MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 [^1]:	Measured by a market index like the S&P 500.
