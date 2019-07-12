@@ -103,8 +103,6 @@ investors to replace optimal  asset allocation with optimal  risk factor allocat
 
 Principal components analysis is a statistical methodology useful for extracting the key driv - ers of a set of variables being studied. It reduces a collection of  N variables (e.g., changes in  riskless yields of N different maturities) to K factors (with K much smaller than  N), where  these factors (or principal components) capture most of the variation in the data. In par - ticular, the ﬁrst principal component (PC1) is a (normalized) linear combination of the  N  variables that has the maximum variance. The second principal component (PC2) is the (n - malized) linear combination of the underlying data that has the maximum variance among  all combinations that are uncorrelated with PC1, and so on. For a formal description, see  Campbell, Lo, and McKinley (1996, ch. 6).
 
-[^3]
-
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({tex2jax: {inlineMath:[['$','$']]}});
 </script>
