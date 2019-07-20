@@ -43,6 +43,8 @@ First we implement a basic gradient ascent step function, applying the first two
 Running the next code cell starts the detail generation process. You may see how new patterns start to form, iteration by iteration, octave by octave.
 The complexity of the details generated depends on which layer's activations we try to maximize. Higher layers produce complex features, while lower ones enhance edges and textures, giving the image an impressionist feeling.
 
+Neural networks trained to discriminate between different kinds of images have quite a bit of the information required to actually generate images. This is important since we train networks by training them on many examples of what we want them to learn, hoping they extract the essence of the subject matter, and then learn to ignore what doesn’t matter. However in order to know that the network has correctly learned the right features it can help to have it render the network’s visual representation.   This may reveal that the neural net isn’t exactly looking what we thought.  Instead of specifically prescribing the feature we want the network to amplify, we can also allow the network make that decision. In doing so, we would "feed" the network an arbitrary image or photo and allow the network analyze the picture. Then we'll choose a netowrk layer and instruct the network to make enhancements on whatever it has detected.  Each of the network layers has some features with a different level of abstraction, the complexity of features we generate depends on which layer we choose to enhance. We can see for example lower layers tend to produce strokes or simple ornament-like patterns, because those layers are sensitive to basic features such as edges and their orientations.
+
 ![input0.jpeg]({{site.baseurl}}/assets/img/blog-cnn/input.jpg)
 ![input0.jpeg]({{site.baseurl}}/assets/img/blog-cnn/input0.jpeg)
 ![input0.jpeg]({{site.baseurl}}/assets/img/blog-cnn/input_color1.jpeg)
@@ -55,21 +57,7 @@ We will start the process from the site logo image as above, but after some iter
 ![input0.jpeg]({{site.baseurl}}/assets/img/blog-cnn/input6a.jpeg)
 ![input0.jpeg]({{site.baseurl}}/assets/img/blog-cnn/input16xxx.jpeg)
 
-So here’s one surprise: neural networks that were trained to discriminate between different kinds of images have quite a bit of the information needed to
-generate
-images too. Check out some more examples across different classes:
 
-Why is this important? Well, we train networks by simply showing them many examples of what we want them to learn, hoping they extract the essence of the matter at hand (e.g., a fork needs a handle and 2-4 tines), and learn to ignore what doesn’t matter (a fork can be any shape, size, color or orientation). But how do you check that the network has correctly learned the right features? It can help to visualize the network’s representation of a fork.
-
-Indeed, in some cases, this reveals that the neural net isn’t quite looking for the thing we thought it was. For example, here’s what one neural net we designed thought dumbbells looked like:
-
-There are dumbbells in there alright, but it seems no picture of a dumbbell is complete without a muscular weightlifter there to lift them. In this case, the network failed to completely distill the essence of a dumbbell. Maybe it’s never been shown a dumbbell without an arm holding it. Visualization can help us correct these kinds of training mishaps.
-
-Instead of exactly prescribing which feature we want the network to amplify, we can also let the network make that decision. In this case we simply feed the network an arbitrary image or photo and let the network analyze the picture. We then pick a layer and ask the network to enhance whatever it detected. Each layer of the network deals with features at a different level of abstraction, so the complexity of features we generate depends on which layer we choose to enhance. For example, lower layers tend to produce strokes or simple ornament-like patterns, because those layers are sensitive to basic features such as edges and their orientations.
-
-Left: Original photo by Zachi Evenor. Right: processed by Günther Noack, Software Engineer
-
-Left: Original painting by Georges Seurat. Right: processed images by Matthew McNaughton, Software Engineer
 If we choose higher-level layers, which identify more sophisticated features in images, complex features or even whole objects tend to emerge. Again, we just start with an existing image and give it to our neural net. We ask the network: “Whatever you see there, I want more of it!” This creates a feedback loop: if a cloud looks a little bit like a bird, the network will make it look more like a bird. This in turn will make the network recognize the bird even more strongly on the next pass and so forth, until a highly detailed bird appears, seemingly out of nowhere.
 
 The results are intriguing—even a relatively simple neural network can be used to over-interpret an image, just like as children we enjoyed watching clouds and interpreting the random shapes. This network was trained mostly on images of animals, so naturally it tends to interpret shapes as animals. But because the data is stored at such a high abstraction, the results are an interesting remix of these learned features.
@@ -79,10 +67,6 @@ Of course, we can do more than cloud watching with this technique. We can apply 
 The original image influences what kind of objects form in the processed image.
 This technique gives us a qualitative sense of the level of abstraction that a particular layer has achieved in its understanding of images. We call this technique “Inceptionism” in reference to the neural net architecture used. See our Inceptionism gallery for more pairs of images and their processed results, plus some cool video animations.
 
-We must go deeper: Iterations
+### Going Deeper with Iterations
 
-If we apply the algorithm iteratively on its own outputs and apply some zooming after each iteration, we get an endless stream of new impressions, exploring the set of things the network knows about. We can even start this process from a random-noise image, so that the result becomes purely the result of the neural network, as seen in the following images:
-
-Neural net “dreams”— generated purely from random noise, using a network trained on places by MIT Computer Science and AI Laboratory. See our Inceptionism gallery for hi-res versions of the images above and more (Images marked “Places205-GoogLeNet” were made using this network).
-
-The techniques presented here help us understand and visualize how neural networks are able to carry out difficult classification tasks, improve network architecture, and check what the network has learned during training. It also makes us wonder whether neural networks could become a tool for artists—a new way to remix visual concepts—or perhaps even shed a little light on the roots of the creative process in general.
+If we apply the algorithm iteratively on its own outputs and apply some zooming after each iteration, we get an endless stream of new impressions, exploring the set of things the network knows about. We can even start this process from a random-noise image, so that the result becomes purely the result of the neural network.  The techniques presented here help us understand and visualize how neural networks are able to do challenging classification tasks, improve network architecture, and check what the network has learned during training. It also makes us wonder whether neural networks could become a tool for artists—a new way to remix visual concepts—or perhaps even shed a little light on the roots of the creative process in general.
