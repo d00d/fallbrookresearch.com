@@ -1,13 +1,14 @@
 ---
 layout: post
-title: AWS Data Pipelines
+title: Data Pipelines
 date: 2019-07-07 11:57 -0700
 feature-img: white1.jpg
 author: R. Dubnick
 comments: false
 published: true
 ---
-Companies are realizing that managing data is a lot more complicated and time consuming than in the past, despite the fact that the cost of the underlying storage continues to decline. There is a need to move, sort, filter, reformat, analyze, and report on this data in order to make use of it. To make matters more challenging, you need to do this quickly (so that you can respond in real time) and you need to do it repetitively (you might need fresh reports every hour, day, or week).
+
+It has become clear that managing data is a lot more complicated and time consuming than in the past, despite the fact that underlying storage costs continue to decline. There is a need to move, sort, filter, reformat, analyze, and report on this data in order to make use of it. To make matters more challenging, you need to do this quickly (so that you can respond in real time) and you need to do it repetitively (you might need fresh reports every hour, day, or week).
 
 Wheter it be a lift-and-shift migration from one relational database, decouple legacy databases via microservices, or more complext multi-source transformations AWS data pipeline can be helpful.
 
