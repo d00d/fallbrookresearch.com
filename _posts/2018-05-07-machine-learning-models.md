@@ -9,7 +9,7 @@ published: true
 
 
 ### Ubiqity of algorithmic intuition
-We're challeged by a world of increasing speed and complexity where the  implication of our decisions is growing and the time afforded to make them is shrinking.  The field of mathematics and computer science offer some useful models to help improve, expedite, and automate decision-making.  Given their unique value we should expect to find the models offering these mathematical intuitions increasingly embeded into our world.  As such it will be helpful to recognize them understand how they are being used.
+We're challenged by a world of increasing speed and complexity where the  implication of our decisions is growing and the time afforded to make them is shrinking.  The field of mathematics and computer science offer some useful models to help improve, expedite, and automate decision-making.  Given their unique value we should expect to find the models offering these mathematical intuitions increasingly embedded into our world.  As such it will be helpful to recognize them understand how they are being used.
 
 ### Machine learning
 
