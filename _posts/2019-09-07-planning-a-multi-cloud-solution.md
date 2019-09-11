@@ -8,7 +8,7 @@ comments: true
 published: true
 ---
 ### Hybrid Architecture Potential
-Planning a multi-cloud architecture is about leveraging more than a single public cloud.  As typical of hybrid architectures, a multi-cloud can offer a choice of services, enable workload portability, and an opportunity to achive a *best of breed* solutions.  This potential adds complexity, cost, risk but has the potential to add higher value.   If well-executed you can achieve a unified view of health, performance, and capacity management.
+Planning a multi-cloud architecture is about leveraging more than a single public cloud.  As typical of hybrid architectures, a multi-cloud can offer a choice of services, enable workload portability, and an opportunity to achive a *best of breed* solution.  This potential adds complexity, cost, risk but has the potential to add higher value.   If well-executed you can achieve a unified view of health, performance, and capacity management.
 
 ### Consider the trade-offs
 Realize that multi-cloud may provide value in certain problem domains, certain scenarios with certain businesses but there are no guarantees and plenth of risks.  The additional complexity is risk and may be a cost your solution doesn't need.  Its important to realize that a multi-cloud architecture requires special management and monitoring.
