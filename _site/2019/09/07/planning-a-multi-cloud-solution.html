@@ -71,17 +71,15 @@ src="/assets/img/logo.jpg"/>
 
     <section class="post-content"><h3 id="hybrid-architecture-potential">Hybrid Architecture Potential</h3>
 
-<p>Planning a multi-cloud architecture is about leveraging more than a single public cloud. With a hybrid cloud, common or interconnected workloads are deployed across multiple computing environments and with multi-clouds setups will combine at least two public cloud providers and may include a private compute environment.</p>
+<p>Planning a multi-cloud architecture is about leveraging more than a single public cloud. With a hybrid cloud, common or interconnected workloads are deployed across multiple compute environments and with multi-clouds setups will combine at least two public cloud providers and may include a private environment.</p>
 
-<p>As typical of hybrid architectures, a multi-cloud can offer a choice of services, enable workload portability, and an opportunity to achive a <em>best of breed</em> solution. This potential adds complexity, cost, risk but has the potential to add higher value. If well-executed you can achieve a unified view of health, performance, and capacity management.</p>
+<p>As typical of hybrid architectures, a multi-cloud can offer a choice of services, enable workload portability, and may provide the opportunity for a <em>best of breed</em> solution. This potential adds complexity, cost, risk but if well-executed has the potential to achieve a unified view of health, performance, and net higher value.</p>
 
-<p>Because workloads, infrastructure, and processes are unique to each enterprise, your hybrid strategy has to be adapted to your specific needs.  The decision about which workloads to run on which compute environments has a material impact on the effectiveness of a multi-cloud strategy.</p>
+<p>It is common when leveraging different public multi-clouds, to encapsulate and abstract them behind management layers like cloud management platforms, cloud service brokers, and monitoring systems. This approach can shield your team from binding directly to vendor-specific core API’s that are native to the particular cloud providers and allow for management via the proverbial <em>‘single pane of glass’.</em></p>
 
 <h3 id="consider-the-trade-offs">Consider the trade-offs</h3>
 
-<p>Realize that multi-cloud may provide value in certain problem domains, certain scenarios with certain businesses but there are no guarantees and plenth of risks. The additional complexity is risk and may be a cost your solution doesn’t need. Its important to realize that a multi-cloud architecture requires special management and monitoring.</p>
-
-<p>It is common when leveraging different public multi-clouds, to encapsulate and abstract them behind management layers like cloud management platforms, cloud service brokers, and monitoring systems. This approach could shield your team from binding directly to vendor-specific core API’s that are native to the particular cloud providers and allow for management via the proverbial <em>‘single pane of glass’.</em></p>
+<p>Because workloads, infrastructure, and processes are unique to each enterprise, your hybrid strategy has to be adapted to your specifics.  The decision about which workloads to run on which compute environments will have a material impact on the effectiveness of a multi-cloud strategy. Running the wrong workload on the cloud can complicate your deployment while offer little benefit.    The additional complexity is risk and may be a cost your solution doesn’t need. It’s important to realize that multi-cloud architectures require special management and monitoring.</p>
 
 <h3 id="cost--strategic-advantage">Cost &amp; Strategic Advantage</h3>
 
@@ -94,6 +92,14 @@ src="/assets/img/logo.jpg"/>
 <h3 id="implications-for-your-operating-model">Implications for your Operating Model</h3>
 
 <p>Changing the operating model is probably the most difficult part of a multi-cloud transformation. The upside is well-articulated, if well-managed you may reduce IT operational costs. Thes operational savings are not just from the improved hardware and software efficiency but also from more effective use of staff,  leveraging automation, and having the tools needed to manage technology more efficiently. The key thing to remember is that it means working more closely with the business. It means an IT operating model that is services and software product-oriented, not technology- or project-oriented.</p>
+
+<h3 id="portability">Portability</h3>
+
+<p>Often shifting a workload to the cloud is a one-time, irreversible effort. But in the case of a hybrid and especially for multi-cloud scenarios, you might want to be able to shift workloads between clouds later. To facilitate this ability, you must ensure that your workloads are portable. Make sure you can shift a workload from one computing environment to another without significant modification.  Ensure that application deployment and management are consistent across compute environments.</p>
+
+<p>At the infrastructure level, you should use tools such as <a href="https://www.terraform.io/">Terraform</a> to automate and unify creation of infrastructure resources such as VMs and load balancers in heterogeneous environments. Additionally, you can use configuration management tools such as Puppet, Chef, or Ansible to establish a common deployment and configuration management process.   Consider using an image-baking tool like <a href="https://www.packer.io/">Packer</a> to create <a href="https://cloud.google.com/solutions/automated-build-images-with-jenkins-kubernetes">VM images for different platforms</a> by using a single, shared configuration file.  Use solutions such as Prometheus and Grafana to help ensure consistent monitoring across environments.</p>
+
+<p>Based on these tools, you can assemble a toolchain that abstracts away the differences between computing environments, and it enables you to unify provisioning, deployment, management, and monitoring.  Accept that the trade-off for portability may be that you might not be able to make use of certain features that a cloud environment offers natively.</p>
 
 <h3 id="governance--adoption">Governance &amp; Adoption</h3>
 
