@@ -13,6 +13,8 @@ Planning a multi-cloud architecture is about leveraging more than a single publi
 
 As typical of hybrid architectures, a multi-cloud can offer a choice of services, enable workload portability, and may provide the opportunity for a *best of breed* solution. This potential adds complexity, cost, risk but if well-executed has the potential to achieve a unified view of health, performance, and net higher value.
 
+![mcloud-diag.jpg]({{site.baseurl}}/assets/img/blog-cnn/mcloud-diag.jpg)
+
 It is common when leveraging different public multi-clouds, to encapsulate and abstract them behind management layers like cloud management platforms, cloud service brokers, and monitoring systems. This approach can shield your team from binding directly to vendor-specific core API's that are native to the particular cloud providers and allow for management via the proverbial *'single pane of glass'.*
 
 ### Consider the trade-offs
