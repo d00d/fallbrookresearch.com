@@ -1,2 +1,2 @@
 [build]
-  command = "rvm install \"ruby-3.0.0\" --verify-downloads 2 && rvm get stable --auto-dotfiles 3 && jekyll build"
+  command = "rvm install \"ruby-3.0.0\" --verify-downloads 2 && rvm get stable --auto-dotfiles"
