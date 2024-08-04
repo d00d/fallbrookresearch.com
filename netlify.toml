@@ -1,2 +1,2 @@
 [build]
-  command = "jekyll build"
+  command = "rvm install \"ruby-3.0.0\" --verify-downloads 2 && jekyll build"
