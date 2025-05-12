@@ -31,3 +31,7 @@ gem "jekyll", "~> 3.8.5"
 
 gem 'jekyll-compose', group: [:jekyll_plugins]
 
+gem "rexml"
+gem "csv"
+gem "base64"
+gem "bigdecimal"
