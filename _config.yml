@@ -1,7 +1,17 @@
 # Site settings
 title: Fallbrook Research
 description: Equity Anatlytics
-disqus: fallbrookr
+# Comments system using Giscus (GitHub Discussions)
+giscus:
+  repo: "d00d/fallbrookresearch.com"
+  repo_id: "MDEwOlJlcG9zaXRvcnkxMjkwMjIwODc="
+  category: "Announcements"
+  category_id: "DIC_kwDOB7C4h84CtGOO"
+  mapping: "pathname"
+  reactions_enabled: 1
+  emit_metadata: 0
+  theme: "preferred_color_scheme"
+  lang: "en"
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
 # url: "localhost:3000" # the base hostname & protocol for your site
 

@@ -4168,3 +4168,52 @@ sub,sup{
         font-size: 1rem;
     }
 }
+
+/* Comments Section Styles */
+.comments {
+    margin-top: 3rem;
+    padding: 2rem 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.giscus-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.comments noscript {
+    text-align: center;
+    color: var(--text-color-light);
+    font-style: italic;
+}
+
+.comments noscript a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.comments noscript a:hover {
+    text-decoration: underline;
+}
+
+/* Giscus theme integration */
+.giscus {
+    max-width: 100%;
+}
+
+/* Dark mode support for Giscus */
+:root[data-theme="dark"] .giscus {
+    color-scheme: dark;
+}
+
+@media (max-width: 768px) {
+    .comments {
+        margin-top: 2rem;
+        padding: 1.5rem 0;
+    }
+    
+    .giscus-container {
+        padding: 0 0.5rem;
+    }
+}
