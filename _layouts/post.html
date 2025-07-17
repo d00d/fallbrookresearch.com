@@ -25,6 +25,7 @@ layout: blog-layout
        <p class="meta">
           {{ page.date | date: "%B %-d, %Y" }}
           {% if page.author %} - {{ page.author }}{% endif %}
+          • {% include reading-time.html %}
        </p>
     </header>
 

@@ -10,7 +10,7 @@ A modern, responsive Jekyll website for Fallbrook Research & Analytics, LLC - a 
 
 ### Prerequisites
 
-- Ruby 3.0+ 
+- Ruby 3.0+
 - Bundler
 - Git
 
@@ -234,7 +234,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Support
 
 - **Website**: [fallbrookresearch.com](https://fallbrookresearch.com)
-- **Email**: rob@fallbrook.com
+- **Email**: rob@fallbrookresearch.com
 - **Twitter**: [@Fallbrook_RA](https://twitter.com/Fallbrook_RA)
 
 ---

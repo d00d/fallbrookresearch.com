@@ -1,0 +1,24 @@
+{% comment %}
+Reading Time Estimate Calculator
+Calculates reading time based on average reading speed of 200 words per minute
+{% endcomment %}
+
+{% assign words = content | number_of_words %}
+{% assign reading_time = words | divided_by: 200 %}
+{% assign reading_time_minutes = reading_time | round %}
+
+{% comment %}
+Ensure minimum 1 minute reading time
+{% endcomment %}
+{% if reading_time_minutes == 0 %}
+  {% assign reading_time_minutes = 1 %}
+{% endif %}
+
+<span class="reading-time">
+  <i class="fa fa-clock-o" aria-hidden="true"></i>
+  {% if reading_time_minutes == 1 %}
+    {{ reading_time_minutes }} min read
+  {% else %}
+    {{ reading_time_minutes }} min read
+  {% endif %}
+</span>
