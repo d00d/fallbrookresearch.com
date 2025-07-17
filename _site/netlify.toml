@@ -1,0 +1,3 @@
+[build]
+  command = "export PATH=\"$HOME/.rvm/gems/ruby-3.0.0/bin:$PATH\" && rvm install \"ruby-3.0.0\" --verify-downloads 2 && rvm get stable --auto-dotfiles"
+

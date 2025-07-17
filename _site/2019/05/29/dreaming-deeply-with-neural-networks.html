@@ -1,7 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <body>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Dreaming Deeply with Neural Networks</title>
+  <meta name="description" content="Equity Anatlytics">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  
+  <!-- Prevent flash of unstyled content in dark mode -->
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('theme') || 'light';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+  </script>
+</head>
+
+<body>
+    <!-- Dark Mode Toggle Button -->
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+        <span class="theme-toggle-icon">🌙</span>
+    </button>
 
     <img alt="fallbrook"
 src="/assets/img/logo.jpg"/>
@@ -185,7 +208,7 @@ This technique gives us a qualitative sense of the level of abstraction that a p
 <footer class="footer">
 	<i class="icon-normal fa fa-envelope accent-color"></i>
 	<a href="mailto:info@fallbrookresearch.com" target="_blank" rel="noopener">info@fallbrookresearch.com </a>
-	<p>&copy; Fallbrook Research & Analytics, LLC 2019 </p>
+	<p>&copy; Fallbrook Research & Analytics, LLC 2025 </p>
     <!-- <p>via Jekyll <a href="https://github.com/d00d">RRD</a></p> -->
 </footer>
 
@@ -207,7 +230,7 @@ ga('send', 'pageview');
 
 
 
-
-
+    
+    <script src="/assets/js/main.js"></script>
   </body>
 </html>

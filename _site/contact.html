@@ -1,12 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-      <link rel="stylesheet" href="/assets/css/main.css">
-      <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
-    </head>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>contact</title>
+  <meta name="description" content="Equity Anatlytics">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  
+  <!-- Prevent flash of unstyled content in dark mode -->
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('theme') || 'light';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+  </script>
+</head>
+
 
     <body>
+    <!-- Dark Mode Toggle Button -->
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+        <span class="theme-toggle-icon">🌙</span>
+    </button>
 
     <img alt="fallbrook"
 src="/assets/img/logo.jpg"/>
@@ -164,6 +182,7 @@ ga('send', 'pageview');
 
 
 
-
+    
+    <script src="/assets/js/main.js"></script>
   </body>
 </html>

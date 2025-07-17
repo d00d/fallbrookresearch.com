@@ -1,7 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <body>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>posts</title>
+  <meta name="description" content="Equity Anatlytics">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  
+  <!-- Prevent flash of unstyled content in dark mode -->
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('theme') || 'light';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+  </script>
+</head>
+
+<body>
+    <!-- Dark Mode Toggle Button -->
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+        <span class="theme-toggle-icon">🌙</span>
+    </button>
     <img alt="fallbrook"
 src="/assets/img/logo.jpg"/>
 
@@ -232,9 +255,9 @@ This technique gives us a qualitative sense of the level of abstraction that a p
 
 <p>As with many models, CAPM  is a bit of a Faustian bargain in terms of explaining individual stock returns in terms of idiosyncratic / company-specific forces which tend to cancel each other within well-diversified portfolios.   However, CAPM holds that even these diversified portfolios are not ‘risk-free’ given their exposure to a <em>single</em> type of systemic risk known as <a href="https://www.investopedia.com/terms/m/marketrisk.asp" title="market risk">market risk</a>.</p>
 
-<p>This market risk cannot be diversified away due to the pervasive influence of wider common economic forces.  Further it is the very degree of this exposure that is considered to be the source of expected return.  This market risk explains the variability of an asset’s rate of return relative to that of the overall market <sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>.</p>
+<p>This market risk cannot be diversified away due to the pervasive influence of wider common economic forces.  Further it is the very degree of this exposure that is considered to be the source of expected return.  This market risk explains the variability of an asset’s rate of return relative to that of the overall market <sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>.</p>
 
-<p>This single-factor market risk is measured by its <strong>beta $ \beta $</strong> <sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup> which reflects a <a href="https://www.investopedia.com/terms/l/linearrelationship.asp" title="Linear Relationship">linear relationship</a> between an investment’s rate return relative to the market’s rate of return.</p>
+<p>This single-factor market risk is measured by its <strong>beta $ \beta $</strong> <sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup> which reflects a <a href="https://www.investopedia.com/terms/l/linearrelationship.asp" title="Linear Relationship">linear relationship</a> between an investment’s rate return relative to the market’s rate of return.</p>
 
 <p>CAPM assumes a positive <a href="https://en.m.wikipedia.org/wiki/Correlation_and_dependence" title="Correlation">correlation</a> between the amount of market exposure and the degree to which  for return.  In the “efficient” marketplace,  an investor could expect to ramp up the rate of return, by exposing a well-diversified portfolio to higher market risk.   In this scenario the variability of an asset’s rate of return is relative to that of the overall market and its “beta” provides a relative measure of systematic (market) risk.</p>
 
@@ -318,18 +341,18 @@ MathJax.Hub.Config({tex2jax: {inlineMath:[['$','$']]}});
 <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/
 MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
-<div class="footnotes">
+<div class="footnotes" role="doc-endnotes">
   <ol>
-    <li id="fn:1">
-      <p>Measured by a market index like the S&amp;P 500. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    <li id="fn:1" role="doc-endnote">
+      <p>Measured by a market index like the S&amp;P 500. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
-    <li id="fn:2">
+    <li id="fn:2" role="doc-endnote">
       <p>beta $ beta $ is the <a href="https://en.m.wikipedia.org/wiki/Covariance" title="Covariance">covariance</a> of the return of an asset with the return of the benchmark, divided by the variance of the return of the benchmark over a certain period.
  $ \bf \beta = \frac{Covariance (r_i , r_m)}{ Variance (r_m)} $</p>
 
       <p>It is the coefficient of the independent variable ( $\bf r_m$ - market’s rate of return) in a least squares regression which explains the dependent variable ($\bf r_i$ - a security’s rate of return).</p>
 
-      <p>This $ \bf \beta $ measures an asset’s systematic (market - $\bf r_m$ ) risk.   A $\beta $  equal = 1.0 is <em>on par</em> with the overall market, a $ \beta $  &lt; 1.0 has lower-than-market risk and a $ \beta $  &gt; 1.0 indicates a greater- than-market risk. <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+      <p>This $ \bf \beta $ measures an asset’s systematic (market - $\bf r_m$ ) risk.   A $\beta $  equal = 1.0 is <em>on par</em> with the overall market, a $ \beta $  &lt; 1.0 has lower-than-market risk and a $ \beta $  &gt; 1.0 indicates a greater- than-market risk. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
 </div>
@@ -438,7 +461,7 @@ ga('send', 'pageview');
 
 
 
-
-
+    
+    <script src="/assets/js/main.js"></script>
   </body>
 </html>

@@ -1,5 +1,36 @@
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
- @import url(https://fonts.googleapis.com/css?family=Montserrat);
+ @import url(https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Code+Pro:wght@300;400;500;600&display=swap);
+
+/* Dark Mode Variables */
+:root {
+    /* Light theme colors */
+    --bg-color: #ffffff;
+    --text-color: #555555;
+    --text-color-light: #777777;
+    --text-color-dark: #333333;
+    --accent-color: #062346;
+    --border-color: #eeeeee;
+    --card-bg: #ffffff;
+    --shadow: rgba(0, 0, 0, 0.1);
+    --code-bg: #f8f9fa;
+    --link-color: #136ba2;
+    --link-hover: #0f5a8a;
+}
+
+:root[data-theme="dark"] {
+    /* Dark theme colors */
+    --bg-color: #1a1a1a;
+    --text-color: #e0e0e0;
+    --text-color-light: #b0b0b0;
+    --text-color-dark: #ffffff;
+    --accent-color: #4a9eff;
+    --border-color: #333333;
+    --card-bg: #2d2d2d;
+    --shadow: rgba(0, 0, 0, 0.3);
+    --code-bg: #2d2d2d;
+    --link-color: #4a9eff;
+    --link-hover: #66b3ff;
+}
 html{
     line-height:1.15;
     -ms-text-size-adjust:100%;
@@ -24,7 +55,7 @@ hr{
     overflow:visible
 }
 code,kbd,pre,samp{
-    font-family:monospace,monospace;
+    font-family:'Source Code Pro',monospace;
     font-size:1em
 }
 a{
@@ -3298,8 +3329,75 @@ body{
     padding:0;
     font-size:100%;
     line-height:1.5;
-    color:#555;
-    font-family:'Montserrat',sans-serif
+    color:var(--text-color);
+    background-color:var(--bg-color);
+    font-family:'Inter',sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode Toggle Button */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    background: var(--card-bg);
+    border: 2px solid var(--border-color);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 20px;
+    box-shadow: 0 2px 8px var(--shadow);
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 16px var(--shadow);
+}
+
+/* Dark mode specific styles */
+:root[data-theme="dark"] a {
+    color: var(--link-color);
+}
+
+:root[data-theme="dark"] a:hover {
+    color: var(--link-hover);
+}
+
+:root[data-theme="dark"] code,
+:root[data-theme="dark"] pre {
+    background-color: var(--code-bg);
+    color: var(--text-color);
+}
+
+:root[data-theme="dark"] #particles-js {
+    background: #0a0a0a;
+}
+
+/* Debug: Test if dark mode is working */
+:root[data-theme="dark"] .theme-toggle {
+    background: #ff0000 !important;
+    border-color: #ff0000 !important;
+}
+
+:root[data-theme="dark"] h1,
+:root[data-theme="dark"] h2,
+:root[data-theme="dark"] h3,
+:root[data-theme="dark"] h4,
+:root[data-theme="dark"] h5,
+:root[data-theme="dark"] h6 {
+    color: var(--text-color-dark) !important;
+}
+
+:root[data-theme="dark"] p,
+:root[data-theme="dark"] div,
+:root[data-theme="dark"] span {
+    color: var(--text-color) !important;
 }
 article,aside,figcaption,figure,footer,header,nav,section{
     display:block
