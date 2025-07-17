@@ -3579,7 +3579,123 @@ sub,sup{
 #about{
     width:90%;
     margin:0 auto;
-    max-width:960px
+    max-width:960px;
+    color:var(--text-color);
+}
+
+#about h1{
+    color:var(--text-color-dark);
+    font-size:2.5rem;
+    margin-bottom:1.5rem;
+    text-align:center;
+}
+
+#about h2{
+    color:var(--text-color-dark);
+    font-size:1.8rem;
+    margin-top:2rem;
+    margin-bottom:1rem;
+    border-bottom:2px solid var(--accent-color);
+    padding-bottom:0.5rem;
+}
+
+#about p{
+    color:var(--text-color);
+    font-size:1.1rem;
+    line-height:1.6;
+    margin-bottom:1.2rem;
+}
+
+#about ul{
+    margin-bottom:1.5rem;
+}
+
+#about li{
+    color:var(--text-color-dark);
+    font-size:1.1rem;
+    margin-bottom:0.8rem;
+    line-height:1.5;
+}
+
+#about li strong{
+    color:var(--accent-color);
+}
+
+#about ul ul{
+    margin-top:0.5rem;
+    margin-bottom:0.5rem;
+    margin-left:1.5rem;
+}
+
+#about ul ul li{
+    font-size:1rem;
+    margin-bottom:0.4rem;
+}
+
+#about em{
+    color:var(--text-color-light);
+    font-style:italic;
+}
+
+.about-image{
+    text-align:center;
+    margin:2rem 0;
+    padding:1rem;
+    background:var(--card-bg);
+    border-radius:15px;
+    box-shadow:0 8px 32px var(--shadow);
+    transition:transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-image:hover{
+    transform:translateY(-5px);
+    box-shadow:0 12px 48px var(--shadow);
+}
+
+.about-image img{
+    max-width:100%;
+    height:auto;
+    border-radius:10px;
+    filter:grayscale(20%);
+    transition:filter 0.3s ease;
+}
+
+.about-image img:hover{
+    filter:grayscale(0%);
+}
+
+#about ul li{
+    padding:0.5rem 0;
+    border-left:3px solid transparent;
+    padding-left:1rem;
+    transition:border-color 0.3s ease, background-color 0.3s ease;
+    border-radius:4px;
+}
+
+#about ul li:hover{
+    border-left-color:var(--accent-color);
+    background-color:var(--card-bg);
+    padding-left:1rem;
+}
+
+#about p strong{
+    color:var(--accent-color);
+    font-weight:600;
+}
+
+@media only screen and (min-width:768px){
+    #about{
+        padding:2rem;
+    }
+    
+    .about-image{
+        width:60%;
+        margin:2rem auto;
+    }
+    
+    .about-image img{
+        width:100%;
+    }
 }
 @media only screen and (min-width:550px){
     #about{
