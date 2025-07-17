@@ -3379,25 +3379,20 @@ body{
     background: #0a0a0a;
 }
 
-/* Debug: Test if dark mode is working */
-:root[data-theme="dark"] .theme-toggle {
-    background: #ff0000 !important;
-    border-color: #ff0000 !important;
-}
-
+/* Dark Mode Enhancements */
 :root[data-theme="dark"] h1,
 :root[data-theme="dark"] h2,
 :root[data-theme="dark"] h3,
 :root[data-theme="dark"] h4,
 :root[data-theme="dark"] h5,
 :root[data-theme="dark"] h6 {
-    color: var(--text-color-dark) !important;
+    color: var(--text-color-dark);
 }
 
 :root[data-theme="dark"] p,
 :root[data-theme="dark"] div,
 :root[data-theme="dark"] span {
-    color: var(--text-color) !important;
+    color: var(--text-color);
 }
 article,aside,figcaption,figure,footer,header,nav,section{
     display:block
@@ -3613,7 +3608,12 @@ sub,sup{
 }
 .user-details{
     text-align:center;
-    margin:5px auto
+    margin:5px auto;
+    color:var(--text-color);
+}
+
+.user-details h2{
+    color:var(--text-color-dark);
 }
 #post-nav{
     display:flex;
@@ -3637,7 +3637,8 @@ sub,sup{
     }
 }
 .user-projects{
-    margin:20px auto
+    margin:20px auto;
+    color:var(--text-color);
 }
 .user-projects img{
     max-width:100%;
@@ -3648,11 +3649,12 @@ sub,sup{
     margin:0
 }
 .user-projects li{
-    color:#1a222c;
+    color:var(--text-color-dark);
     font-size:1.1rem
 }
 .user-projects p{
-    margin-right:5px
+    margin-right:5px;
+    color:var(--text-color);
 }
 @media only screen and (min-width:550px){
     .contents{
