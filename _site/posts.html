@@ -85,345 +85,549 @@ src="/assets/img/logo.jpg"/>
 <a class="twitter-timeline" href="https://twitter.com/Fallbrook_RA?ref_src=twsrc%5Etfw">Tweets by Fallbrook_RA</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
 -->
-<div class="user-projects" id="posts">
-  <h2> Recent Posts </h2>
-    <ul>
 
-      
-
-        <li> September 07, 2019 - <a href="/2019/09/07/planning-a-multi-cloud-solution.html"> Planning a Multi-Cloud Solution </a></li>
-
-        <!-- <p><h3 id="hybrid-architecture-potential">Hybrid Architecture Potential</h3>
-
-<p>Planning a multi-cloud architecture is about leveraging more than a single public cloud. With a hybrid cloud, common or interconnected workloads are deployed across multiple compute environments and with multi-clouds setups will combine at least two public cloud providers and may include a private environment.</p>
-
-<p>As typical of hybrid architectures, a multi-cloud can offer a choice of services, enable workload portability, and may provide the opportunity for a <em>best of breed</em> solution. This potential adds complexity, cost, risk but if well-executed has the potential to achieve a unified view of health, performance, and net higher value.</p>
-
-<p><img src="/assets/img/blog-cnn/mcloud-diag.jpg" alt="mcloud-diag.jpg" /></p>
-
-<p>It is common when leveraging different public multi-clouds, to encapsulate and abstract them behind management layers like cloud management platforms, cloud service brokers, and monitoring systems. This approach can shield your team from binding directly to vendor-specific core API’s that are native to the particular cloud providers and allow for management via the proverbial <em>‘single pane of glass’.</em></p>
-
-<h3 id="consider-the-trade-offs">Consider the trade-offs</h3>
-
-<p>Because workloads, infrastructure, and processes are unique to each enterprise, your hybrid strategy has to be adapted to your specifics.  The decision about which workloads to run on which compute environments will have a material impact on the effectiveness of a multi-cloud strategy. Running the wrong workload on the cloud can complicate your deployment while offer little benefit.    The additional complexity is risk and may be a cost your solution doesn’t need. It’s important to realize that multi-cloud architectures require special management and monitoring.</p>
-
-<h3 id="cost--strategic-advantage">Cost &amp; Strategic Advantage</h3>
-
-<p>It is very important to understand multi-cloud cost drivers. Multi-clouds will tend to be more expensive than a hybrid, public, or private-only cloud given the increased complexity and need for tools to manage it. That said, can enable best of breed options and increase the agility of your business to respond better to changing market demands</p>
-
-<p>The most cost-effective option for a given solution may be possible among like cloud services. This is where potential lies to gain a strategic advantage by not being dependent or locked into a particular cloud brand.</p>
-
-<p>When assessing this potential its important to understand and accurately model the relative costs and options.   Keeping your business case in focus to quantify costs, as well as the value, back to the business is important to define your terms of success.</p>
-
-<h3 id="implications-for-your-operating-model">Implications for your Operating Model</h3>
-
-<p>Changing the operating model is probably the most difficult part of a multi-cloud transformation. The upside is well-articulated, if well-managed you may reduce IT operational costs. Thes operational savings are not just from the improved hardware and software efficiency but also from more effective use of staff,  leveraging automation, and having the tools needed to manage technology more efficiently. The key thing to remember is that it means working more closely with the business. It means an IT operating model that is services and software product-oriented, not technology- or project-oriented.</p>
-
-<h3 id="portability">Portability</h3>
-
-<p>Often shifting a workload to the cloud is a one-time, irreversible effort. But in the case of a hybrid and especially for multi-cloud scenarios, you might want to be able to shift workloads between clouds later. To facilitate this ability, you must ensure that your workloads are portable. Make sure you can shift a workload from one computing environment to another without significant modification.  Ensure that application deployment and management are consistent across compute environments.</p>
-
-<p>At the infrastructure level, you should use tools such as <a href="https://www.terraform.io/">Terraform</a> to automate and unify creation of infrastructure resources such as VMs and load balancers in heterogeneous environments. Additionally, you can use configuration management tools such as Puppet, Chef, or Ansible to establish a common deployment and configuration management process.   Consider using an image-baking tool like <a href="https://www.packer.io/">Packer</a> to create VM images for different platforms by using a single, shared configuration file.  Use solutions such as <a href="https://prometheus.io/">Prometheus</a> and <a href="https://grafana.com/">Grafana</a> to help ensure consistent monitoring across environments.</p>
-
-<p>You would assemble a toolchain that abstracts away the differences between compute environments, and it enables you to standardize provisioning, deployment, management, and monitoring.  On the other hand, we shoudl expect there may be some trade-offs for portability where certain features that a cloud environment offers natively are not generalized.</p>
-
-<h3 id="governance--adoption">Governance &amp; Adoption</h3>
-
-<p>You should establish your multi-cloud future-state vision and draw a program roadmap to get there in terms of people, process and technology.   Hybrid and multi-cloud setups might be temporary, maintained only for a limited time to facilitate migration. However, these setups may also represent a strategic future state of your organization and adoption may a part of a larger modernization and digital transformation IT strategy.  Alignment your portfolio management process is an effective tactic to help identify candidate projects for cloud adoption and enforcing opt-outs on exception basis will help starve the data center may be looking to exit.</p>
-</p> -->
-      
-
-        <li> July 07, 2019 - <a href="/2019/07/07/aws-data-pipelines.html"> Data Pipelines </a></li>
-
-        <!-- <p><p>It has become clear that managing data is a lot more complicated and time consuming than in the past, despite the fact that underlying storage costs continue to decline. There is a need to move, sort, filter, reformat, analyze, and report on this data in order to make use of it. To make matters more challenging, you need to do this quickly (so that you can respond in real time) and you need to do it repetitively (you might need fresh reports every hour, day, or week).</p>
-
-<p>Wheter it be a lift-and-shift migration from one relational database, decouple legacy databases via microservices, or more complext multi-source transformations AWS data pipeline can be helpful.</p>
-
-<h3 id="data-issues-and-challenges">Data Issues and Challenges</h3>
-<p>Some data processing challenges common to customers:</p>
-
-<p><em>Variety of Formats</em> –  Many ways to store data: CSV files, server logs, flat files, DB rows, tuples in NoSQL DB, JSON, XML, etc.</p>
-
-<p><em>Increasing Size</em> – There’s simply volumes of raw and processed data: log files, data collected from sensors, transaction histories, public data sets, etc.</p>
-
-<p><em>Disparate Sources</em> – Various systems from Amazon S3, data warehouses (or Amazon Redshift), various flavors of Relational DB, DynamoDB, etc.</p>
-
-<p><em>Distributed Processing</em> – There are many ways to process data: EC2 instances, an Elastic MapReduce cluster, physical hardware, or a combination</p>
-
-<h3 id="aws-data-pipeline">AWS’ Data Pipeline</h3>
-<p>AWS Data Pipeline is a foundational tool to deal with automating loading and processing data via workflows &amp; dependency checks.  AWS Data Pipeline provides the capability to automate and access from command line, the APIs, or the AWS Management Console.  AWS Data Pipeline can help to process and move data between compute and storage services on-premises or on-AWS.  Pipelines are composed of a set of data sources, preconditions, destinations, processing steps, and an operational schedule, all defined and managed from a Pipeline Definition. We specify data source locations, what to do with it, and where to put it.  A Pipeline Definition can be created in the AWS Management Console or externally, in JSON form.</p>
-
-<p>Once we’ve defined and activated a pipeline, it runs on a schedule. We can arrange to copy on-prem log files or files from a cluster of Amazon EC2 instances to an S3 bucket daily, then launch data analysis job on an Elastic MapReduce cluster weekly.  To alleviate processing or sequencing errors, pipeline Definitions can include precondition, assertions that must be true in order for processing to start. If preconditions are satisfied and AWS pipelines can then schedule and manage the tasks per the Pipeline Definition.</p>
-
-<p>Processing tasks can run on EC2 instances, Elastic MapReduce clusters, or physical hardware. AWS  Data Pipeline can launch and manage EC2 instances and EMR clusters as needed. To take advantage of long-running EC2 instances and physical hardware, we also provide an open source tool called the Task Runner. Each running instance of a Task Runner polls the AWS Data Pipeline in pursuit of jobs of a specific type and executes them as they become available. When a pipeline completes, a message will be sent to the Amazon SNS topic of your choice. You can also arrange to send messages when a processing step fails to complete after a specified number of retries or if it takes longer than a configurable amount of time to complete.</p>
-
-<h3 id="parameterized-templates">Parameterized Templates</h3>
-<p>Parameterized templates, along with a library of templates for common use cases provide values for the specially marked parameters within the template, and launch the customized pipeline.  These parameters are very useful for late binding of actual values. Best practices can be identified and encapsulated in Data Pipeline templates for widespread re-use.  These templates and parameters can be accessed from command line and Data Pipeline API.</p>
-
-<h3 id="building-data-pipelines-with-kinesis-data-firehose-and-lambda">Building data pipelines with Kinesis Data Firehose and Lambda</h3>
-<p>If your site already runs on AWS, using an AWS SDK to send data to Kinesis Data Firehose is an easy sell to developers provided capabilities to direct PUT ingestion for Kinesis Data Firehose.  This is straight forward to implement, works in many languages used across common services, and provides the ability to deliver data to Amazon S3.  Understnading that using S3 for data storage allows you to have corresponding high availability, scalability, and durability.  Given S3 is a global resource, this enables lakes and warehouses to be managed under separate AWS accounts, to avoid the unnecessary complication of managing and navigating multiple VPCs.   Kinesis Data Firehose solutions, combined with DynamoDB Streams and Lambda also provide a powerful capability.  By enabling DynamoDB Streams can manage transformations by triggering serverless Lambda functions to clean and transform your data.</p>
-
-</p> -->
-      
-
-        <li> May 29, 2019 - <a href="/2019/05/29/dreaming-deeply-with-neural-networks.html"> Dreaming Deeply with Neural Networks </a></li>
-
-        <!-- <p><h3 id="deep-dream-algorithm-and-image-over-processing">Deep Dream algorithm and image over-processing</h3>
-
-<p><img src="/assets/img/blog-cnn/input.jpg" alt="input.jpg" />
-<img src="/assets/img/blog-cnn/input_color1.jpeg" alt="input0.jpeg" />
-<img src="/assets/img/blog-cnn/dd-in11.jpeg" alt="dd-in11.jpeg" /></p>
-
-<p>Increasingly we see more applications for Computer Vision, Facial Recognition, and Speech Recognition.  Growth of rapid linear algebra hardware &amp; software stacks, cloud resources, proliferation of repeatable and shared research have all helped accelerate the evolution of new neural network models.</p>
-
-<p>Neural network models are not new, the first ones arrived in the 1950’s.  These Neural Networks are a subfield of machine learning inspired by the structure and function of the brain.  A neural network makes classifications or predictions based on its ability to discover patterns in data.  We might only find simple patterns with one layer however with more than one more complex patterns of patterns could be recognized.  These very useful tools are built upon well-known mathematical methods, we actually understand surprisingly little of why certain models work and others don’t. So let’s take a look at some simple techniques for peeking inside these networks.  Multi-layer neural networks exploit local correlations and they are trained with backpropagation via gradient-based learning algorithm.</p>
-
-<p>Depending on how models are developed this can rely on every area of the natural sciences and has applications in architecture, digital fabrication, art, engineering, biomedicine, etc.  Convolutional neural networks (CNNs)  and have significantly progressed the fields of speech and image classification.  Inspired by nature, this technique resembles how the visual cortex functions in biology and these CNN’s reflect a connectivity pattern similar to what is manifest among neurons in our brains.  This generative progression is a kind of <a href="https://en.wikipedia.org/wiki/Digital_morphogenesis" target="_blank">digital morphogenesis</a> allowing us to synthesize visual textures and recognize patterns.  This technique relfects a kind of digital confirmation bias existing wthin the computational model where emergent patterns depend on the variety of subjects the model was trained with and the layers of the model we filter.</p>
-
-<p><a href="https://en.wikipedia.org/wiki/DeepDream" target="_blank">Deep Dream</a> is a computer vision program created by Google engineer Alex Mordvintsev which uses a convolutional neural network to find and enhance patterns in images.  The resulting “algorithmic pareidolia” produces fascinating images having a dream-like, kind of hallucinogenic appearance.</p>
-
-<p>Artificial neural networks are trained via millions of training examples and gradually adjusting the network parameters until it gives the desired classification.  A network typically consists of 10-30 stacked layers of artificial neurons. Any given image is fed into the input layer, which then talks to the next layer, until eventually the “output” layer is reached. The network’s “answer” comes from its final output layer.</p>
-
-<p>It remains a challenge to understand exactly what is going on at each layer. We know that after training, each layer progressively extracts higher and higher-level features of the image, until the final layer essentially makes a decision on what the image shows. For example, the first layer maybe looks for edges or corners. Intermediate layers interpret the basic features to look for overall shapes or components, like a door or a leaf. The final few layers assemble those into complete interpretations—these neurons activate in response to very complex things such as entire buildings or trees.</p>
-
-<h3 id="producing-dreams">Producing Dreams</h3>
-
-<p><img src="/assets/img/blog-cnn/intro0.jpg" alt="intro0.jpeg" />
-<img src="/assets/img/blog-cnn/intro1.jpg" alt="intro1.jpeg" /></p>
-
-<p>Looking at Deep Dream, we have a computer vision program created by Google engineer Alex Mordvintsev that takes advantage of convolutional neural networks to recgonize and augment patterns in images, creating some amazing Dream-like hallucinogenic appearances in the deliberately over-processed images.  The idea is to interpret a vague stimulus as something known to the observer, such as seeing shapes in clouds, seeing faces in inanimate objects or abstract patterns, or hearing hidden messages in music.  Making the “dream” images is a gradient ascent process which seeks maximize the L2 norm of activations of a particular DNN layer. Here are a few simple tricks that we found useful for getting good images:</p>
-
-<p>offset image by a random jitter
-normalize the magnitude of gradient ascent steps
-apply ascent across multiple scales (octaves)
-First we implement a basic gradient ascent step function, applying the first two tricks. Next we implement an ascent through different scales. We call these scales “octaves”.  Now we are ready to let the neural network to reveal its dreams! Let’s take a our site logo image as a starting point:</p>
-
-<p>Running the next code cell starts the detail generation process. You may see how new patterns start to form, iteration by iteration, octave by octave.
-The complexity of the details generated depends on which layer’s activations we try to maximize. Higher layers produce complex features, while lower ones enhance edges and textures, giving the image an impressionist feeling.</p>
-
-<p>Neural networks trained to discriminate between different kinds of images have quite a bit of the information required to actually generate images. This is important since we train networks by training them on many examples of what we want them to learn, hoping they extract the essence of the subject matter, and then learn to ignore what doesn’t matter. However in order to know that the network has correctly learned the right features it can help to have it render the network’s visual representation.   This may reveal that the neural net isn’t exactly looking what we thought.  Instead of specifically prescribing the feature we want the network to amplify, we can also allow the network make that decision. In doing so, we would “feed” the network an arbitrary image or photo and allow the network analyze the picture. Then we’ll choose a netowrk layer and instruct the network to make enhancements on whatever it has detected.  Each of the network layers has some features with a different level of abstraction, the complexity of features we generate depends on which layer we choose to enhance. We can see for example lower layers tend to produce strokes or simple ornament-like patterns, because those layers are sensitive to basic features such as edges and their orientations.</p>
-
-<p><img src="/assets/img/blog-cnn/input.jpg" alt="input0.jpeg" />
-<img src="/assets/img/blog-cnn/input0.jpeg" alt="input0.jpeg" />
-<img src="/assets/img/blog-cnn/input_color1.jpeg" alt="input0.jpeg" /></p>
-
-<p>What if we feed the deepdream function its own output, after applying a little zoom to it? It turns out that this leads to an endless stream of impressions of the things that the network saw during training. Some patterns fire more often than others, suggestive of basins of attraction.</p>
-
-<p>We will start the process from the site logo image as above, but after some iteration the original image becomes irrelevant; even random noise can be used as the starting point.</p>
-
-<p><img src="/assets/img/blog-cnn/input1.jpeg" alt="input0.jpeg" />
-<img src="/assets/img/blog-cnn/input6a.jpeg" alt="input0.jpeg" />
-<img src="/assets/img/blog-cnn/input16xxx.jpeg" alt="input0.jpeg" /></p>
-
-<p>If we choose higher-level layers, which identify more sophisticated features in images, complex features or even whole objects tend to emerge. Again, we just start with an existing image and give it to our neural net. We ask the network: “Whatever you see there, I want more of it!” This creates a feedback loop: if a cloud looks a little bit like a bird, the network will make it look more like a bird. This in turn will make the network recognize the bird even more strongly on the next pass and so forth, until a highly detailed bird appears, seemingly out of nowhere.</p>
-
-<p>The results are intriguing—even a relatively simple neural network can be used to over-interpret an image, just like as children we enjoyed watching clouds and interpreting the random shapes. This network was trained mostly on images of animals, so naturally it tends to interpret shapes as animals. But because the data is stored at such a high abstraction, the results are an interesting remix of these learned features.</p>
-
-<p>Of course, we can do more than cloud watching with this technique. We can apply it to any kind of image. The results vary quite a bit with the kind of image, because the features that are entered bias the network towards certain interpretations. For example, horizon lines tend to get filled with towers and pagodas. Rocks and trees turn into buildings. Birds and insects appear in images of leaves.</p>
-
-<p>The original image influences what kind of objects form in the processed image.
-This technique gives us a qualitative sense of the level of abstraction that a particular layer has achieved in its understanding of images. We call this technique “Inceptionism” in reference to the neural net architecture used. See our Inceptionism gallery for more pairs of images and their processed results, plus some cool video animations.</p>
-
-<h3 id="going-deeper-with-iterations">Going Deeper with Iterations</h3>
-
-<p>If we apply the algorithm iteratively on its own outputs and apply some zooming after each iteration, we get an endless stream of new impressions, exploring the set of things the network knows about. We can even start this process from a random-noise image, so that the result becomes purely the result of the neural network.  The techniques presented here help us understand and visualize how neural networks are able to do challenging classification tasks, improve network architecture, and check what the network has learned during training. It also makes us wonder whether neural networks could become a tool for artists—a new way to remix visual concepts—or perhaps even shed a little light on the roots of the creative process in general.</p>
-</p> -->
-      
-
-        <li> September 04, 2018 - <a href="/2018/09/04/factor-models-and-risk-exposure.html"> Factor Models & Risk Exposure </a></li>
-
-        <!-- <p><h2 id="factor-models--risk-exposure">Factor Models &amp; Risk Exposure</h2>
-<p>One of the <a href="https://en.wikipedia.org/wiki/First_principle" title="first principles">first principles</a> underlying Financial market dynamics concerns the relationship between Risk &amp; Return.</p>
-
-<p>As investment managers reach for ways to price assets, quantify investment risks, explain performance, and construct portfolios to achieve premiums above market returns, the use of quantitative models have become en vogue.</p>
-
-<p>Factors and <a href="https://www.investopedia.com/terms/m/multifactor-model.asp" title="Multi-Factor Models">factor-based models</a> provide some utility in explaining market equilibrium asset prices, decomposing risk and then re-recombine assets with these factors within a portfolio to specifically targeted risk profiles.  Having a scheme to isolate characteristics influenced by economic catalysts has a variety of applications including: risk-management, investment product development, strategic asset allocation, and portfolio construction.</p>
-
-<h3 id="what-are-factors">What are Factors?</h3>
-
-<p>Factors can be viewed as the underlying characteristics within stocks and other securities, which to varying degrees,  explain and determine their <a href="https://www.investopedia.com/terms/r/riskpremium.asp" title="risk premium">risk premium</a>.</p>
-
-<p>There are a wide variety of factors which associate with an asset’s expected returns.   There are <em>macroeconomic factors</em> which capture broad risks across asset classes such as credit, inflation, and liquidity.   There are <em>style factors</em> which look to explain returns and risks within asset classes such as value, quality, and momentum.  Literally hundreds of such factors have been identified and published since researchers <a href="https://www.chicagobooth.edu/faculty/directory/f/eugene-f-fama" title="Eugene Fama">Eugene Fama </a>and <a href="http://mba.tuck.dartmouth.edu/pages/faculty/ken.french/biography.html" title="Kenneth French">Kenneth French</a> introduced their classic <a href="https://www.investopedia.com/terms/f/famaandfrenchthreefactormodel.asp" title="3-factor model">three-factor model</a>, consisting of market risk, size, and value, in 1993. </p>
-
-<p>Factors have become a factor in the investment business where industry-aligned benchmark providers like FTSE Russell, MSCI, and S&amp;P Dow Jones have generated volumes of research and indexes supporting an expanding collection of newly-minted factors.  Over the last few years the use of factors has enabled development of smart beta products generating significant new fund flows.  <em><a href="https://www.investopedia.com/terms/s/smart-beta.asp" title="Smart Beta">smart beta</a></em>  and factor investing are just fashionable marketing labels for a wide range of risk-based approaches that sit somewhere beyond active and passive investment management but possess attributes of both.  Applications for factors is common in quantitative finance where quants may rank stocks by using a combination of fundamental factors and price-based factors for use in cross-sectional equity models or various methods of performance attribution.</p>
-
-<p>The evolution of risk measurement and factor-based models can be understood in historical context through the evolution of prior asset models like <a href="https://www.investopedia.com/terms/c/capm.asp" title="CAPM">CAPM</a> and the <a href="https://www.investopedia.com/terms/a/apt.asp" title="APT">APT</a>.</p>
-
-<h3 id="capms-uber-factor">CAPM’s Uber-Factor</h3>
-
-<p>In 1990, Bill Sharpe shared the Nobel Prize in Economics for his contributions on a theory of price formation for financial assets, this is the so-called Capital Asset Pricing Model (CAPM).   This was the first theory to measure systematic risk which, according to the CAPM, depends only upon exposure to the market.</p>
-
-<p>As with many models, CAPM  is a bit of a Faustian bargain in terms of explaining individual stock returns in terms of idiosyncratic / company-specific forces which tend to cancel each other within well-diversified portfolios.   However, CAPM holds that even these diversified portfolios are not ‘risk-free’ given their exposure to a <em>single</em> type of systemic risk known as <a href="https://www.investopedia.com/terms/m/marketrisk.asp" title="market risk">market risk</a>.</p>
-
-<p>This market risk cannot be diversified away due to the pervasive influence of wider common economic forces.  Further it is the very degree of this exposure that is considered to be the source of expected return.  This market risk explains the variability of an asset’s rate of return relative to that of the overall market <sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>.</p>
-
-<p>This single-factor market risk is measured by its <strong>beta $ \beta $</strong> <sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup> which reflects a <a href="https://www.investopedia.com/terms/l/linearrelationship.asp" title="Linear Relationship">linear relationship</a> between an investment’s rate return relative to the market’s rate of return.</p>
-
-<p>CAPM assumes a positive <a href="https://en.m.wikipedia.org/wiki/Correlation_and_dependence" title="Correlation">correlation</a> between the amount of market exposure and the degree to which  for return.  In the “efficient” marketplace,  an investor could expect to ramp up the rate of return, by exposing a well-diversified portfolio to higher market risk.   In this scenario the variability of an asset’s rate of return is relative to that of the overall market and its “beta” provides a relative measure of systematic (market) risk.</p>
-
-<p>Drinking the CAPM Kool-Aid has meant accepting that price movements are attributed to a single, relatively-simple statistical measure (systemic risk).   This model has been favored by many in academia, perhaps given the tempting simplicity and teach-ability.  However, for all its ivory tower appeal it seems this one trick pony doesn’t fully explain the cross section of stock returns.</p>
-
-<p>Needing a scheme to deal with various relationships looking beyond this single-factor market beta brings us to a <em>multivariate</em> approach as introduced by the <a href="https://www.investopedia.com/terms/a/apt.asp" title="APT">Arbitrage Pricing Theory (APT)</a>.</p>
-
-<h3 id="multi-factor-arbitrage-pricing-theory-apt">Multi-Factor Arbitrage Pricing Theory (APT)</h3>
-
-<p><a href="https://en.wikipedia.org/wiki/Stephen_Ross_(economist)" title="Stephen A. Ross">Stephen A. Ross</a> was one of the first to look beyond “the market factor” while still focusing on systemic risk.  APT is more general than the CAPM, it accepts a variety of different risk sources as it recognizes the interaction of many factors (e.g. inflation, interest rates, business activity, etc.) as contributing to rates of return.  Assets have risk exposures (betas) with respect to each of these systematic risks.  These risk exposures are rewarded in the market with additional expected return, and thus the aggregate risk exposure profile explains volatility and performance of the well-diversified portfolio</p>
-
-<p>Multi-factor model math is slightly more complex but still in a common linear model with an underlying concept more intuitively satisfying.   APT facilitates multi-factor analysis of many broad risk factors and to estimate individual securities’ degree of exposure to these factors to explain the so-called “cross-section” of returns at a given point in time.</p>
-
-<p>Models with APT a security effectively has a sensitivity to each systematic risk factor. A series of beta coefficients are estimated to measure the sensitivity to the respective factor risks for a particular security.   Unlike the CAPM, however, the individual factors, although precisely quantified, are not specifically associated with readily identifiable variables.</p>
-
-<p>Factor models offer a useful extension of the CAPM &amp; APT since they help us understand how key factors influence portfolio risk &amp; return.   This affords us an opportunity predict and control investment risk</p>
-
-<p>Factor models extend the framework of existing asset pricing models and allow us to decompose portfolios by constituent factor sensitivities and help us understand attributes that influence portfolio returns.   The mathematical representation of factor models are extensible, linear, and offer a high degree of transparent interpretability which lend them some intuitive appeal.</p>
-
-<h3 id="factors--arbitrage-pricing-theory-apt-relationship">Factors &amp; Arbitrage Pricing Theory (APT) relationship</h3>
-<p>For any given time period ($\bf t$), the difference between realized return $\bf r_i(t)$ and the expected return $\bf Er_i(t)$ for any asset is equal to the sum of all risk factor exposures (e.g. betas  $\bf \beta$) multiplied by the realization (the actual end-of-period value) for that risk factor $\bf \sum\nolimits_{i=1}^k \beta_{i} [P_i+f_i(t)] $ , plus an asset-specific idiosyncratic) error term $\bf \epsilon_i(t)$ .</p>
-
-<p>$\bf  E[r_i(t)] = P_0 + \sum\nolimits_{i=1}^k \beta_{i}P_i $
-$\bf P_i$ is the price of risk, or the risk premium for the  $\bf j^{th} $ risk factor.</p>
-
-<p><strong>Where:</strong></p>
-<ul>
-  <li>$\bf r_i(t)$ = the total return on asset i (cap gains + dividends) realized at the end of period  $\bf t$</li>
-  <li>$\bf E[r_i(t)]$ = expected return, at the beginning of period t</li>
-  <li>$\bf P_0$ = risk free risk premium</li>
-  <li>$\bf P_i$ = price of risk -or- risk premium for the $\bf i^{th}$ risk factor</li>
-  <li>$f_i(t)$ = $\bf i^{th}$ risk factor at time $\bf t$.</li>
-  <li>$ \beta_{i}P_i+ f_i $</li>
-</ul>
-
-<p>$\bf r_i(t) - P_0 = \beta_{i1} [P_1+ f_1(t)] + … + \beta_{iK} [P_K+f_K(t)] + \epsilon_i(t)$</p>
-
-<p>Beta exposures within a portfolio provide control over associated risk premiums  providing a scheme to manage inherent risk-return trade-offs.   Control the risk exposures and control the risk-return relationship.</p>
-
-<h3 id="estimating-an-apt-model">Estimating an APT model:</h3>
-<ol>
-  <li>The risk factors f,(t), f,(t), …,fK(t) can be computed using statistical techniques such as factor analysis or principal components.</li>
-  <li>K different well-diversified portfolios can substitute for the factors (see Appendix B).</li>
-  <li>Economic theory and knowledge of financial markets can be used to specify K risk factors that can be measured from available macroeconomic and financial data.</li>
-</ol>
-
-<h3 id="factor-rotation---a-nod-to-mean-reversion">Factor Rotation - a nod to mean reversion</h3>
-
-<p>The CAPM is clear about the source of risk (the market) but suffers because no practical measure of the market exists. The APT causes difficulties because it does not identify the number of important factors or define them.   The statistical process of factor analysis is employed to quantify the broad risk factors and to estimate individual securities’ degree of exposure to these factors.</p>
-
-<p>Financial researchers and investment managers undoubtedly agree that only a few important factors explain an overwhelming degree of investment risk and return. Therefore, the appeal of factor models that define these factors becomes apparent.</p>
-
-<p>Factors can be used to  to avoid large chunks of the market and then build more differentiated portfolios of stocks with only the best overall factor profiles.   While not as scaleable as smart beta, this alpha-oriented approach has led to much better results for investors.</p>
-
-<p>According to a factor model, the return-generating process for a security is driven by the presence of the various common factors and the security’s unique sensitivities to each factor (factor loadings). The common factors may be readily identifiable fundamental factors such as price-earnings ratio, size, yield, and growth.</p>
-
-<p>A security effectively has a sensitivity to each systematic risk factor. A series of beta coefficients are estimated to measure the sensitivity to the respective factor risks for a particular security. Unlike the CAPM, however, the individual factors, although precisely quantified, are not specifically associated with readily identifiable variables.</p>
-
-<p>Although considerable discussion continues about the number and the identification of these broad factors, the APT nevertheless provides investment managers with a valuable risk-management tool.</p>
-
-<p>A good portfolio manager, whether explicitly or implicitly, evaluates the impact of a series of broad factors on the performances of various securities. In this sense, a reliable factor model provides a valuable tool to assist portfolio managers with the identification of pervasive factors that affect large members of securities.</p>
-
-<p>Factor models can be used to decompose
-portfolio risk according to common factor exposure and to evaluate how much of a portfolio’s return was attributable to each common factor exposure. Consequently, factor models offer a useful extension of the CAPM and the APT because they advance our understanding about how key factors influence portfolio risk and return.</p>
-
-<p>Sharpe (1984) effectively summarizes why investment professionals should pay heed to factor models:</p>
-<blockquote>
-  <p>While the relative importance of various actors changes over time, as do the preferences of investors, we need not completely abandon a valuable framework within which we can approach investment decisions methodically. We have developed a useful set of tools and should certainly continue to develop them. Meanwhile, we can use the tools we have, as long as we use them intelligently, cautiously, and humbly.</p>
-</blockquote>
-
-<p>The objective being select exposures to key factors that represents the best trade-off between risk taken and risk prem expected to be earned. To arrive at this result, we need to answer several questions, such as how to deﬁne the key risk factors driving returns; how to measure and estimate risk and risk premia; how to use these estimates to construct an optimal portfolio of risk exposures.  risk factor decomposition of asset returns, determinants o risk and risk premia, and optimal portfolio choice.</p>
-
-<p>investors to replace optimal  asset allocation with optimal  risk factor allocation— a much more tractable exercise. We can then focus on the optimal allocation of a risk budget to key risk factors rather than directly on a large menu assets in ﬁnancial markets.</p>
-
-<p>Principal components analysis is a statistical methodology useful for extracting the key drivers of a set of variables being studied. It reduces a collection of  N variables (e.g., changes in  riskless yields of N different maturities) to K factors (with K much smaller than  N), where  these factors (or principal components) capture most of the variation in the data. In par - ticular, the ﬁrst principal component (PC1) is a (normalized) linear combination of the  N  variables that has the maximum variance. The second principal component (PC2) is the (n - malized) linear combination of the underlying data that has the maximum variance among  all combinations that are uncorrelated with PC1, and so on. For a formal description, see  Campbell, Lo, and McKinley (1996, ch. 6).</p>
-
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({tex2jax: {inlineMath:[['$','$']]}});
+<!-- SEO and Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "Fallbrook Research Blog",
+  "description": "Technical insights on AI, cloud computing, and data analytics",
+  "url": "http://localhost:4000/posts",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Fallbrook Research & Analytics",
+    "url": "http://localhost:4000"
+  },
+  "blogPost": [
+    
+      {
+        "@type": "BlogPosting",
+        "headline": "BERT in Production: Natural Language Understanding at Scale",
+        "datePublished": "2019-12-15T08:00:00-08:00",
+        "url": "http://localhost:4000/2019/12/15/bert-in-production-natural-language-understanding-at-scale.html",
+        "author": {
+          "@type": "Person",
+          "name": "R. Dubnick"
+        }
+      },
+    
+      {
+        "@type": "BlogPosting",
+        "headline": "Hybrid Cloud Strategy: Balancing Flexibility, Control, and Cost",
+        "datePublished": "2019-11-20T08:00:00-08:00",
+        "url": "http://localhost:4000/2019/11/20/hybrid-cloud-strategy-balancing-flexibility-control-and-cost.html",
+        "author": {
+          "@type": "Person",
+          "name": "R. Dubnick"
+        }
+      },
+    
+      {
+        "@type": "BlogPosting",
+        "headline": "AI Model Transparency: Preparing for Explainability in Regulated Industries",
+        "datePublished": "2019-10-15T09:00:00-07:00",
+        "url": "http://localhost:4000/2019/10/15/ai-model-transparency-preparing-for-explainability-in-regulated-industries.html",
+        "author": {
+          "@type": "Person",
+          "name": "R. Dubnick"
+        }
+      },
+    
+      {
+        "@type": "BlogPosting",
+        "headline": "Planning a Multi-Cloud Solution",
+        "datePublished": "2019-09-07T17:30:00-07:00",
+        "url": "http://localhost:4000/2019/09/07/planning-a-multi-cloud-solution.html",
+        "author": {
+          "@type": "Person",
+          "name": "R. Dubnick"
+        }
+      },
+    
+      {
+        "@type": "BlogPosting",
+        "headline": "Data Pipelines",
+        "datePublished": "2019-07-07T11:57:00-07:00",
+        "url": "http://localhost:4000/2019/07/07/aws-data-pipelines.html",
+        "author": {
+          "@type": "Person",
+          "name": "R. Dubnick"
+        }
+      },
+    
+      {
+        "@type": "BlogPosting",
+        "headline": "Dreaming Deeply with Neural Networks",
+        "datePublished": "2019-05-29T13:40:00-07:00",
+        "url": "http://localhost:4000/2019/05/29/dreaming-deeply-with-neural-networks.html",
+        "author": {
+          "@type": "Person",
+          "name": "R. Dubnick"
+        }
+      },
+    
+      {
+        "@type": "BlogPosting",
+        "headline": "Factor Models &amp; Risk Exposure",
+        "datePublished": "2018-09-04T00:00:00-07:00",
+        "url": "http://localhost:4000/2018/09/04/factor-models-and-risk-exposure.html",
+        "author": {
+          "@type": "Person",
+          "name": "R Dubnick"
+        }
+      },
+    
+      {
+        "@type": "BlogPosting",
+        "headline": "Machine Learning Models",
+        "datePublished": "2018-05-07T00:00:00-07:00",
+        "url": "http://localhost:4000/2018/05/07/machine-learning-models.html",
+        "author": {
+          "@type": "Person",
+          "name": "R. Dubnick"
+        }
+      },
+    
+      {
+        "@type": "BlogPosting",
+        "headline": "Attribution &amp; Aggregation",
+        "datePublished": "2018-05-06T00:00:00-07:00",
+        "url": "http://localhost:4000/2018/05/06/alpha-attribution-and-aggregation.html",
+        "author": {
+          "@type": "Person",
+          "name": "R. Dubnick"
+        }
+      }
+    
+  ]
+}
 </script>
 
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/
-MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-<div class="footnotes" role="doc-endnotes">
-  <ol>
-    <li id="fn:1" role="doc-endnote">
-      <p>Measured by a market index like the S&amp;P 500. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-    <li id="fn:2" role="doc-endnote">
-      <p>beta $ beta $ is the <a href="https://en.m.wikipedia.org/wiki/Covariance" title="Covariance">covariance</a> of the return of an asset with the return of the benchmark, divided by the variance of the return of the benchmark over a certain period.
- $ \bf \beta = \frac{Covariance (r_i , r_m)}{ Variance (r_m)} $</p>
-
-      <p>It is the coefficient of the independent variable ( $\bf r_m$ - market’s rate of return) in a least squares regression which explains the dependent variable ($\bf r_i$ - a security’s rate of return).</p>
-
-      <p>This $ \bf \beta $ measures an asset’s systematic (market - $\bf r_m$ ) risk.   A $\beta $  equal = 1.0 is <em>on par</em> with the overall market, a $ \beta $  &lt; 1.0 has lower-than-market risk and a $ \beta $  &gt; 1.0 indicates a greater- than-market risk. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
-</p> -->
+<div class="blog-timeline" id="posts">
+  <div class="timeline-container">
+    
+    
       
-
-        <li> May 07, 2018 - <a href="/2018/05/07/machine-learning-models.html"> Machine Learning Models </a></li>
-
-        <!-- <p><h3 id="ubiqity-of-algorithmic-intuition">Ubiqity of algorithmic intuition</h3>
-<p>We’re challenged by a world of increasing speed and complexity where the  implication of our decisions is growing and the time afforded to make them is shrinking.  The field of mathematics and computer science offer some useful models to help improve, expedite, and automate decision-making.  Given their unique value we should expect to find the models offering these mathematical intuitions increasingly embedded into our world.  As such it will be helpful to recognize them understand how they are being used.</p>
-
-<h3 id="machine-learning">Machine learning</h3>
-
-<p>Machine learning aims at automatic discovery of regularities in data using algorithms and by generalizing to new but similar data.  These are automations which rely on data analysis and inference to train models.  Once models are trained, they are applied for common classification and prediction tasks.  Machine learning is about improving what they are doing with some sort of experience.  With more specification, machine learning is the study of algorithms that improve performance(P) at some task(T) with experience(E) from which the program can “train”.</p>
-
-<p>ML models are trained, not explicitly programmed, to perform a kind of statistical pattern match.   Utility of these models is highly dependent on the data from which they are derrived, quality of the data can be highly correlated to accuracy of predictions. The key is in teaching the machine learn what function best describes the data.  These basically result in something familiar to a linear model form of y=mx+b. Further that the data reflecting the real-world is required to make these work effectively.  The more high-quality data they processes, the more accurate and valuable these models become. </p>
-
-<p>Machine learning uses algorithms to parse data, discover patterns, and and optimize for the best output making informed decisions based on what it has learned.  Music recommendations &amp; email filtering are common applications of this type of statistical prediction.  Machine learning becoming increasingly ubiquitous and given it lends itself to all manner of automation.</p>
-
-<h3 id="neural-networks">Neural Networks</h3>
-<p>Neural Networks have structures modeled after brains. deep learning algorithms which exist in layers, “artificial neural network”.  These neural networks have brought significant progress in areas such as speech recognition and image classification.</p>
-
-<p>In computational networks an activation function produces the output for a node given a set of inputs.  effects results of the model.</p>
-
-<p>We train via statistics, in the future we’ll also have more natural language instruction.</p>
-</p> -->
+        
+        
+        
+          
+          <div class="year-marker">
+            <h2 class="year-heading">2019</h2>
+          </div>
+        
+        
+        <article class="timeline-item" itemscope itemtype="https://schema.org/BlogPosting">
+          <div class="timeline-marker"></div>
+          
+          <div class="timeline-content">
+            <div class="post-header">
+              <h3 class="post-title" itemprop="headline">
+                <a href="/2019/12/15/bert-in-production-natural-language-understanding-at-scale.html" itemprop="url">BERT in Production: Natural Language Understanding at Scale</a>
+              </h3>
+              
+              <div class="post-meta">
+                <time datetime="2019-12-15T08:00:00-08:00" itemprop="datePublished">
+                  December 15, 2019
+                </time>
+                
+                  <span class="author" itemprop="author">R. Dubnick</span>
+                
+                <span class="reading-time">
+                  
+                  
+                    3 min read
+                  
+                </span>
+              </div>
+            </div>
+            
+            
+              <div class="post-excerpt" itemprop="description">
+                It has been just over a year since Google released BERT (Bidirectional Encoder Representations from...
+              </div>
+            
+            
+            
+              <div class="post-tags">
+                
+              </div>
+            
+          </div>
+        </article>
       
-
-        <li> May 06, 2018 - <a href="/2018/05/06/alpha-attribution-and-aggregation.html"> Attribution & Aggregation </a></li>
-
-        <!-- <p><h3 id="quantative-trade-strategies">Quantative Trade Strategies</h3>
-<p>Algorithmic Trading is a technique of deploying algorithms that automatically buy and sell stocks in response to market data.</p>
-
-<h3 id="the-alpha-idea">The alpha idea</h3>
-<p>At fallbrook we work the full lifecycle srom the first step in developing a trading algorithm is coming up with an “alpha idea” to iterating its implementation.</p>
-
-<p><strong><em>What is alpha?</em></strong></p>
-
-<p>Basically, the return of a portfolio can be written as:</p>
-
-<blockquote>
-  <p><em>r = beta * rm + alpha</em></p>
-</blockquote>
-
-<p>Where beta measures the correlation of the portfolio return to the overall market return (r_ _m), and alpha is the excess return.</p>
-
-<ol>
-  <li>For instance, an index fund has alpha=0, beta=1. But, what I am really after is a positive non-zero alpha, which would indicate that my algorithm is doing better than the market, and at the same time beta=0, i.e. I want my algorithm to be independent form the market, “market-neutral”.</li>
-</ol>
-
-<p>To get started, I want to try the following alpha idea: Companies with a high revenue growth are doing well, and I want to invest in them. Companies with low revenue growth are doing poorly, and I want to short them.</p>
-
-<blockquote>
-  <p>•   Backtest on a larger timeframe.
-	• Try adding more alpha factors.
-	• Analyze alpha factor correlations.
-	• Weight distribution: how to optimally weigh the factors? (this is currently one of the fields of active research, and a field where Machine Learning could help.)
-	• Optimize trading behavior, e.g. the trading quantiles.
-	• Analyze sector exposure.
-	• etc.</p>
-</blockquote>
-
-<h2 id="summary">Summary</h2>
-<p>To summarize, the algorithmic trading workflow is this:
-	1.  come up with an “alpha idea”
-	2.  estimate alpha using alphalens
-	3.  run full backtest on past market data
-	4.  analyze the backtest using pyfolio</p>
-</p> -->
+    
       
-  </ul>
+        
+        
+        
+        
+        <article class="timeline-item" itemscope itemtype="https://schema.org/BlogPosting">
+          <div class="timeline-marker"></div>
+          
+          <div class="timeline-content">
+            <div class="post-header">
+              <h3 class="post-title" itemprop="headline">
+                <a href="/2019/11/20/hybrid-cloud-strategy-balancing-flexibility-control-and-cost.html" itemprop="url">Hybrid Cloud Strategy: Balancing Flexibility, Control, and Cost</a>
+              </h3>
+              
+              <div class="post-meta">
+                <time datetime="2019-11-20T08:00:00-08:00" itemprop="datePublished">
+                  November 20, 2019
+                </time>
+                
+                  <span class="author" itemprop="author">R. Dubnick</span>
+                
+                <span class="reading-time">
+                  
+                  
+                    3 min read
+                  
+                </span>
+              </div>
+            </div>
+            
+            
+              <div class="post-excerpt" itemprop="description">
+                Cloud computing is now a cornerstone of enterprise IT strategy. Yet many organizations are torn...
+              </div>
+            
+            
+            
+              <div class="post-tags">
+                
+              </div>
+            
+          </div>
+        </article>
+      
+    
+      
+        
+        
+        
+        
+        <article class="timeline-item" itemscope itemtype="https://schema.org/BlogPosting">
+          <div class="timeline-marker"></div>
+          
+          <div class="timeline-content">
+            <div class="post-header">
+              <h3 class="post-title" itemprop="headline">
+                <a href="/2019/10/15/ai-model-transparency-preparing-for-explainability-in-regulated-industries.html" itemprop="url">AI Model Transparency: Preparing for Explainability in Regulated Industries</a>
+              </h3>
+              
+              <div class="post-meta">
+                <time datetime="2019-10-15T09:00:00-07:00" itemprop="datePublished">
+                  October 15, 2019
+                </time>
+                
+                  <span class="author" itemprop="author">R. Dubnick</span>
+                
+                <span class="reading-time">
+                  
+                  
+                    4 min read
+                  
+                </span>
+              </div>
+            </div>
+            
+            
+              <div class="post-excerpt" itemprop="description">
+                As artificial intelligence (AI) systems become more deeply embedded in industries such as finance, healthcare,...
+              </div>
+            
+            
+            
+              <div class="post-tags">
+                
+              </div>
+            
+          </div>
+        </article>
+      
+    
+      
+        
+        
+        
+        
+        <article class="timeline-item" itemscope itemtype="https://schema.org/BlogPosting">
+          <div class="timeline-marker"></div>
+          
+          <div class="timeline-content">
+            <div class="post-header">
+              <h3 class="post-title" itemprop="headline">
+                <a href="/2019/09/07/planning-a-multi-cloud-solution.html" itemprop="url">Planning a Multi-Cloud Solution</a>
+              </h3>
+              
+              <div class="post-meta">
+                <time datetime="2019-09-07T17:30:00-07:00" itemprop="datePublished">
+                  September 07, 2019
+                </time>
+                
+                  <span class="author" itemprop="author">R. Dubnick</span>
+                
+                <span class="reading-time">
+                  
+                  
+                    4 min read
+                  
+                </span>
+              </div>
+            </div>
+            
+            
+              <div class="post-excerpt" itemprop="description">
+                Hybrid Architecture Potential
+
+              </div>
+            
+            
+            
+              <div class="post-tags">
+                
+              </div>
+            
+          </div>
+        </article>
+      
+    
+      
+        
+        
+        
+        
+        <article class="timeline-item" itemscope itemtype="https://schema.org/BlogPosting">
+          <div class="timeline-marker"></div>
+          
+          <div class="timeline-content">
+            <div class="post-header">
+              <h3 class="post-title" itemprop="headline">
+                <a href="/2019/07/07/aws-data-pipelines.html" itemprop="url">Data Pipelines</a>
+              </h3>
+              
+              <div class="post-meta">
+                <time datetime="2019-07-07T11:57:00-07:00" itemprop="datePublished">
+                  July 07, 2019
+                </time>
+                
+                  <span class="author" itemprop="author">R. Dubnick</span>
+                
+                <span class="reading-time">
+                  
+                  
+                    4 min read
+                  
+                </span>
+              </div>
+            </div>
+            
+            
+              <div class="post-excerpt" itemprop="description">
+                It has become clear that managing data is a lot more complicated and time consuming...
+              </div>
+            
+            
+            
+              <div class="post-tags">
+                
+              </div>
+            
+          </div>
+        </article>
+      
+    
+      
+        
+        
+        
+        
+        <article class="timeline-item" itemscope itemtype="https://schema.org/BlogPosting">
+          <div class="timeline-marker"></div>
+          
+          <div class="timeline-content">
+            <div class="post-header">
+              <h3 class="post-title" itemprop="headline">
+                <a href="/2019/05/29/dreaming-deeply-with-neural-networks.html" itemprop="url">Dreaming Deeply with Neural Networks</a>
+              </h3>
+              
+              <div class="post-meta">
+                <time datetime="2019-05-29T13:40:00-07:00" itemprop="datePublished">
+                  May 29, 2019
+                </time>
+                
+                  <span class="author" itemprop="author">R. Dubnick</span>
+                
+                <span class="reading-time">
+                  
+                  
+                    8 min read
+                  
+                </span>
+              </div>
+            </div>
+            
+            
+              <div class="post-excerpt" itemprop="description">
+                Deep Dream algorithm and image over-processing
+
+              </div>
+            
+            
+            
+              <div class="post-tags">
+                
+              </div>
+            
+          </div>
+        </article>
+      
+    
+      
+        
+        
+        
+          
+          <div class="year-marker">
+            <h2 class="year-heading">2018</h2>
+          </div>
+        
+        
+        <article class="timeline-item" itemscope itemtype="https://schema.org/BlogPosting">
+          <div class="timeline-marker"></div>
+          
+          <div class="timeline-content">
+            <div class="post-header">
+              <h3 class="post-title" itemprop="headline">
+                <a href="/2018/09/04/factor-models-and-risk-exposure.html" itemprop="url">Factor Models & Risk Exposure</a>
+              </h3>
+              
+              <div class="post-meta">
+                <time datetime="2018-09-04T00:00:00-07:00" itemprop="datePublished">
+                  September 04, 2018
+                </time>
+                
+                  <span class="author" itemprop="author">R Dubnick</span>
+                
+                <span class="reading-time">
+                  
+                  
+                    12 min read
+                  
+                </span>
+              </div>
+            </div>
+            
+            
+              <div class="post-excerpt" itemprop="description">
+                Factor Models &amp; Risk Exposure One of the first principles underlying Financial market dynamics concerns...
+              </div>
+            
+            
+            
+              <div class="post-tags">
+                
+              </div>
+            
+          </div>
+        </article>
+      
+    
+      
+        
+        
+        
+        
+        <article class="timeline-item" itemscope itemtype="https://schema.org/BlogPosting">
+          <div class="timeline-marker"></div>
+          
+          <div class="timeline-content">
+            <div class="post-header">
+              <h3 class="post-title" itemprop="headline">
+                <a href="/2018/05/07/machine-learning-models.html" itemprop="url">Machine Learning Models</a>
+              </h3>
+              
+              <div class="post-meta">
+                <time datetime="2018-05-07T00:00:00-07:00" itemprop="datePublished">
+                  May 07, 2018
+                </time>
+                
+                  <span class="author" itemprop="author">R. Dubnick</span>
+                
+                <span class="reading-time">
+                  
+                  
+                    2 min read
+                  
+                </span>
+              </div>
+            </div>
+            
+            
+              <div class="post-excerpt" itemprop="description">
+                Ubiqity of algorithmic intuition We’re challenged by a world of increasing speed and complexity where...
+              </div>
+            
+            
+            
+              <div class="post-tags">
+                
+              </div>
+            
+          </div>
+        </article>
+      
+    
+      
+        
+        
+        
+        
+        <article class="timeline-item" itemscope itemtype="https://schema.org/BlogPosting">
+          <div class="timeline-marker"></div>
+          
+          <div class="timeline-content">
+            <div class="post-header">
+              <h3 class="post-title" itemprop="headline">
+                <a href="/2018/05/06/alpha-attribution-and-aggregation.html" itemprop="url">Attribution & Aggregation</a>
+              </h3>
+              
+              <div class="post-meta">
+                <time datetime="2018-05-06T00:00:00-07:00" itemprop="datePublished">
+                  May 06, 2018
+                </time>
+                
+                  <span class="author" itemprop="author">R. Dubnick</span>
+                
+                <span class="reading-time">
+                  
+                  
+                    1 min read
+                  
+                </span>
+              </div>
+            </div>
+            
+            
+              <div class="post-excerpt" itemprop="description">
+                Quantative Trade Strategies Algorithmic Trading is a technique of deploying algorithms that automatically buy and sell...
+              </div>
+            
+            
+            
+              <div class="post-tags">
+                
+              </div>
+            
+          </div>
+        </article>
+      
+    
+  </div>
+  
+  
 </div>
 
     </section>

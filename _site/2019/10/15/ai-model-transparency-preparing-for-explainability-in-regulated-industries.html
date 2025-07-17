@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>AI Model Transparency: Preparing for Explainability in Regulated Industries</title>
+  <meta name="description" content="Equity Anatlytics">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  
+  <!-- Prevent flash of unstyled content in dark mode -->
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('theme') || 'light';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+  </script>
+</head>
+
+<body>
+    <!-- Dark Mode Toggle Button -->
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+        <span class="theme-toggle-icon">🌙</span>
+    </button>
+
+    <img alt="fallbrook"
+src="/assets/img/logo.jpg"/>
+
+    <nav class="footer">
+  <a class="nav-toggle" id="open-nav" href="#">&#9776;</a>
+  <!-- <a class="editor-link btn" href="cloudcannon:collections/_data/navigation.yml" class="btn"><strong>&#9998;</strong> Edit navigation</a> -->
+  
+    
+    
+
+    
+
+    <a href="/#main
+" class=" highlight" >Home  |</a>
+  
+    
+    
+
+    
+
+    <a href="/services
+" class=" highlight" >Services  |</a>
+  
+    
+    
+
+    
+
+    <a href="/posts
+" class="" >Blog  |</a>
+  
+    
+    
+
+    
+
+    <a href="/contact
+" class="" >Contact</a>
+  
+</nav>
+
+
+      <section id="about">
+        <!-- header style="background-image: url('/')"-->
+
+  <article >
+<nav class="post-navigation-top">
+  <div class="nav-links">
+    
+      <a href="/2019/09/07/planning-a-multi-cloud-solution.html" class="nav-previous">
+        <span class="nav-arrow">←</span>
+        <span class="nav-text">Previous Post</span>
+      </a>
+    
+    
+    <a href="/posts" class="nav-home">
+      <span class="nav-text">All Posts</span>
+    </a>
+    
+    
+      <a href="/2019/11/20/hybrid-cloud-strategy-balancing-flexibility-control-and-cost.html" class="nav-next">
+        <span class="nav-text">Next Post</span>
+        <span class="nav-arrow">→</span>
+      </a>
+    
+  </div>
+</nav>
+  <div>
+
+    <header style="background-image: url('/assets/img/post-headers/')">
+       <h2 class="title">AI Model Transparency: Preparing for Explainability in Regulated Industries</h2>
+
+       
+
+       <p class="meta">
+          October 15, 2019
+           - R. Dubnick
+          • 
+
+
+
+
+
+
+
+
+<span class="reading-time">
+  <i class="fa fa-clock-o" aria-hidden="true"></i>
+  
+    3 min read
+  
+</span>
+       </p>
+    </header>
+
+    <section class="post-content"><p>As artificial intelligence (AI) systems become more deeply embedded in industries such as finance, healthcare, insurance, and criminal justice, the call for explainability is growing louder. These regulated sectors are not only risk-averse—they are legally obligated to understand and justify decisions, especially when those decisions have a direct impact on people’s lives. October 2019 marks a pivotal moment in this dialogue, as industry leaders, regulators, and developers begin grappling with a critical question: How do we build AI systems that are both powerful and explainable?</p>
+
+<h2 id="the-imperative-for-explainability">The Imperative for Explainability</h2>
+
+<p>At the core of regulated industries lies a principle of accountability. If a bank denies a loan, a hospital recommends a treatment, or a government flags a citizen for review, someone must be able to explain why. Traditional software systems followed predictable logic trees, but modern AI models—particularly deep learning systems—often operate as “black boxes” whose internal reasoning is inscrutable even to their creators.</p>
+
+<p>The stakes are high. Consider the 2018 incident where a healthcare algorithm demonstrated racial bias in predicting which patients needed extra care. Or the growing concern over AI used in pretrial risk assessments, where lack of transparency has led to legal challenges. Explainability isn’t just a best practice—it’s a regulatory and ethical necessity.</p>
+
+<h2 id="the-regulatory-landscape">The Regulatory Landscape</h2>
+
+<p>In 2019, regulators began sharpening their focus on AI transparency:</p>
+
+<p><strong>European Union</strong>: The General Data Protection Regulation (GDPR) includes a so-called “right to explanation,” compelling organizations to offer insight into algorithmic decisions.</p>
+
+<p><strong>United States</strong>: The Federal Trade Commission (FTC) and sector-specific regulators such as the FDA and OCC have issued guidance on fairness and accountability in automated systems.</p>
+
+<p><strong>Industry Frameworks</strong>: Groups like IEEE and ISO are working on global standards for algorithmic transparency and risk management.</p>
+
+<p>These developments signaled to enterprises that proactive investment in explainable AI (XAI) wasn’t optional—it was imminent.</p>
+
+<h2 id="approaches-to-explainability">Approaches to Explainability</h2>
+
+<p>While the term “explainable AI” covers a broad set of techniques, they generally fall into two camps:</p>
+
+<p><strong>Intrinsic Interpretability</strong>: Some models are inherently easier to understand. Linear regressions, decision trees, and rule-based systems offer transparency by design. The tradeoff? They often underperform compared to more complex models.</p>
+
+<p><strong>Post-Hoc Explainability</strong>: For complex models like neural networks, tools like LIME (Local Interpretable Model-Agnostic Explanations) and SHAP (SHapley Additive exPlanations) offer insights into predictions. These techniques generate approximations of a model’s behavior that humans can interpret.</p>
+
+<p>Other promising methods emerging in 2019 included counterfactual explanations, attention mechanisms in NLP, and model visualization tools. While none offer perfect transparency, they represent crucial steps forward.</p>
+
+<h2 id="challenges-in-implementation">Challenges in Implementation</h2>
+
+<p>Despite growing interest, many enterprises faced practical barriers to XAI:</p>
+
+<p><strong>Technical Limitations</strong>: High-performing models (e.g., ensemble models, deep neural networks) are often too complex to render transparent without losing predictive power.</p>
+
+<p><strong>Lack of Standards</strong>: In 2019, organizations were still grappling with fragmented definitions and inconsistent metrics for explainability.</p>
+
+<p><strong>Organizational Silos</strong>: Data scientists, legal teams, compliance officers, and business units often spoke different languages, making it hard to implement cohesive AI governance.</p>
+
+<p><strong>Tool Immaturity</strong>: Open-source libraries for XAI were just beginning to mature, and most were designed with data scientists in mind—not auditors or executives.</p>
+
+<h2 id="best-practices-for-building-explainable-ai">Best Practices for Building Explainable AI</h2>
+
+<p>To meet regulatory expectations and build trust with users, organizations in 2019 began embracing several best practices:</p>
+
+<p><strong>Model Choice Matters</strong>: Start with interpretable models when possible, especially in high-stakes use cases.</p>
+
+<p><strong>Document Everything</strong>: Maintain thorough model documentation including assumptions, training data provenance, and known biases.</p>
+
+<p><strong>Build with the End User in Mind</strong>: Consider who needs to understand the model (e.g., customers, regulators, internal reviewers) and tailor explanations accordingly.</p>
+
+<p><strong>Audit Early and Often</strong>: Regularly assess models for fairness, bias, and performance drift.</p>
+
+<p><strong>Cross-Functional Collaboration</strong>: Create governance teams that bridge technical, legal, and ethical perspectives.</p>
+
+<h2 id="looking-ahead">Looking Ahead</h2>
+
+<p>By late 2019, the writing was on the wall: AI explainability would be a foundational requirement for enterprise adoption. The trend lines pointed toward increased regulation, growing consumer awareness, and new technical innovations. While full transparency remained elusive—particularly for deep learning models—the urgency to build trustworthy AI was clearly gaining momentum.</p>
+
+<p>Organizations that began laying the groundwork in 2019 were setting themselves up not just for compliance, but for leadership in an AI-powered future.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Explainability is not a technical checkbox—it is a business necessity. Especially in regulated industries, transparency is the linchpin of accountability, trust, and long-term viability. As we reflect on October 2019, it’s clear this was a turning point in how we think about responsible AI. The challenge now is to turn that thinking into action.</p>
+
+<p><strong>Next in the Series</strong><br />
+November 2019: Hybrid Cloud Strategy: Balancing Flexibility, Control, and Cost</p>
+</section>
+    <!-- {-% include tags_list.html tags=page.tags tag_count=page.tags.size %-} -->
+  </div>
+ </article>
+
+<nav class="post-navigation-bottom">
+  <div class="nav-links-detailed">
+    
+      <a href="/2019/09/07/planning-a-multi-cloud-solution.html" class="nav-previous-detailed">
+        <span class="nav-direction">← Previous</span>
+        <span class="nav-title">Planning a Multi-Cloud Solution</span>
+        <span class="nav-date">September 07, 2019</span>
+      </a>
+    
+    
+    
+      <a href="/2019/11/20/hybrid-cloud-strategy-balancing-flexibility-control-and-cost.html" class="nav-next-detailed">
+        <span class="nav-direction">Next →</span>
+        <span class="nav-title">Hybrid Cloud Strategy: Balancing Flexibility, Control, and Cost</span>
+        <span class="nav-date">November 20, 2019</span>
+      </a>
+    
+  </div>
+</nav>
+
+   <div class="comments">
+      
+        <div class="comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'fallbrookr';
+        /* ensure that pages with query string get the same discussion */
+            var url_parts = window.location.href.split("?");
+            var disqus_url = url_parts[0];
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+      
+   </div>
+
+   <!-- Post navigation if site.theme_settings.post_navigation -->
+
+   <!--  endif -->
+
+<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath:[['$','$']]}});</script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+      </section>
+
+    
+<div id="text-14" class="widget widget_text">
+<!--
+	<h4>Let&#8217;s Talk!</h4>
+	<div style="float: left; padding: 0 10px 0 0;"><i class="icon-normal fa fa-phone accent-color"></i></div>
+	<p>+1 (800) 395-9349</p>
+	</div>
+-->
+<footer class="footer">
+	<i class="icon-normal fa fa-envelope accent-color"></i>
+	<a href="mailto:info@fallbrookresearch.com" target="_blank" rel="noopener">info@fallbrookresearch.com </a>
+	<p>&copy; Fallbrook Research & Analytics, LLC 2025 </p>
+    <!-- <p>via Jekyll <a href="https://github.com/d00d">RRD</a></p> -->
+</footer>
+
+<script src="particles.js"></script>
+<script src="js/app.js"></script>
+<script src="/assets/js/sweet-scroll.min.js"></script>
+<script src="/assets/js/main.js"></script>
+
+<!-- Google Analytics Include -->
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-117521095-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+
+    
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

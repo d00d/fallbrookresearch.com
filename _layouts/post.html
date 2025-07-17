@@ -4,15 +4,27 @@ layout: blog-layout
 <!-- header style="background-image: url('{{ site.baseurl }}/{{ page.feature-img }}')"-->
 
   <article {% if page.feature-img %}class="feature-image"{% endif %}>
-<div class="postnav1">
+<nav class="post-navigation-top">
+  <div class="nav-links">
     {% if page.previous.url %}
-      {{ site.theme_settings.str_previous_post }}
-        [ <a class="highlight" href="{{ site.baseurl }}{{ page.previous.url }}"> {{ page.previous.title }} </a> &nbsp;] <&nbsp;&nbsp;<&nbsp;&nbsp;
+      <a href="{{ site.baseurl }}{{ page.previous.url }}" class="nav-previous">
+        <span class="nav-arrow">←</span>
+        <span class="nav-text">Previous Post</span>
+      </a>
     {% endif %}
+    
+    <a href="{{ site.baseurl }}/posts" class="nav-home">
+      <span class="nav-text">All Posts</span>
+    </a>
+    
     {% if page.next.url %}
-      {{ site.theme_settings.str_next_post }} &nbsp;&nbsp;>&nbsp;&nbsp;> [ <a href="{{ site.baseurl }}{{ page.next.url }}">{{ page.next.title }}</a> ]
+      <a href="{{ site.baseurl }}{{ page.next.url }}" class="nav-next">
+        <span class="nav-text">Next Post</span>
+        <span class="nav-arrow">→</span>
+      </a>
     {% endif %}
- </div>
+  </div>
+</nav>
   <div>
 
     <header style="background-image: url('{{ site.baseurl }}/assets/img/post-headers/{{page.feature-img}}')">
@@ -33,15 +45,26 @@ layout: blog-layout
     <!-- {-% include tags_list.html tags=page.tags tag_count=page.tags.size %-} -->
   </div>
  </article>
-<div class="postnav1">
+
+<nav class="post-navigation-bottom">
+  <div class="nav-links-detailed">
     {% if page.previous.url %}
-      {{ site.theme_settings.str_previous_post }}
-        [ <a class="highlight" href="{{ site.baseurl }}{{ page.previous.url }}"> {{ page.previous.title }} </a> &nbsp;] <&nbsp;&nbsp;<&nbsp;&nbsp;
+      <a href="{{ site.baseurl }}{{ page.previous.url }}" class="nav-previous-detailed">
+        <span class="nav-direction">← Previous</span>
+        <span class="nav-title">{{ page.previous.title }}</span>
+        <span class="nav-date">{{ page.previous.date | date: "%B %d, %Y" }}</span>
+      </a>
     {% endif %}
+    
     {% if page.next.url %}
-      {{ site.theme_settings.str_next_post }} &nbsp;&nbsp;>&nbsp;&nbsp;> [ <a href="{{ site.baseurl }}{{ page.next.url }}">{{ page.next.title }}</a> ]
+      <a href="{{ site.baseurl }}{{ page.next.url }}" class="nav-next-detailed">
+        <span class="nav-direction">Next →</span>
+        <span class="nav-title">{{ page.next.title }}</span>
+        <span class="nav-date">{{ page.next.date | date: "%B %d, %Y" }}</span>
+      </a>
     {% endif %}
- </div>
+  </div>
+</nav>
 
    <div class="comments">
       {% if page.comments %}
