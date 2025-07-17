@@ -4217,3 +4217,184 @@ sub,sup{
         padding: 0 0.5rem;
     }
 }
+
+/* Social Share Buttons */
+.social-share {
+    margin: 3rem 0;
+    padding: 2rem;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.social-share-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.social-share-header h3 {
+    color: var(--text-color-dark);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.social-share-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    text-decoration: none;
+    color: var(--text-color);
+    background: var(--bg-color);
+    transition: all 0.2s ease;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.social-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px var(--shadow);
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+/* Platform-specific colors */
+.social-btn.twitter {
+    border-color: #1da1f2;
+}
+
+.social-btn.twitter:hover {
+    background: #1da1f2;
+    color: white;
+    border-color: #1da1f2;
+}
+
+.social-btn.linkedin {
+    border-color: #0077b5;
+}
+
+.social-btn.linkedin:hover {
+    background: #0077b5;
+    color: white;
+    border-color: #0077b5;
+}
+
+.social-btn.facebook {
+    border-color: #1877f2;
+}
+
+.social-btn.facebook:hover {
+    background: #1877f2;
+    color: white;
+    border-color: #1877f2;
+}
+
+.social-btn.reddit {
+    border-color: #ff4500;
+}
+
+.social-btn.reddit:hover {
+    background: #ff4500;
+    color: white;
+    border-color: #ff4500;
+}
+
+.social-btn.email {
+    border-color: #34495e;
+}
+
+.social-btn.email:hover {
+    background: #34495e;
+    color: white;
+    border-color: #34495e;
+}
+
+.social-btn.copy-link {
+    border-color: var(--accent-color);
+}
+
+.social-btn.copy-link:hover {
+    background: var(--accent-color);
+    color: white;
+    border-color: var(--accent-color);
+}
+
+/* Copy notification */
+.copy-notification {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: var(--accent-color);
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px var(--shadow);
+    z-index: 1000;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .social-share {
+        margin: 2rem 0;
+        padding: 1.5rem;
+        border-radius: 6px;
+    }
+    
+    .social-share-buttons {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+    }
+    
+    .social-btn {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.85rem;
+    }
+    
+    .social-icon {
+        width: 18px;
+        height: 18px;
+    }
+    
+    .copy-notification {
+        top: 10px;
+        right: 10px;
+        left: 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-share-buttons {
+        grid-template-columns: 1fr;
+    }
+    
+    .social-btn span {
+        display: none;
+    }
+    
+    .social-btn {
+        justify-content: center;
+        padding: 0.75rem;
+    }
+}
