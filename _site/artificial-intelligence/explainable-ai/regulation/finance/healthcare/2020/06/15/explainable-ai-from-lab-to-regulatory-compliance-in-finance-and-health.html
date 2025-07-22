@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Serverless AI: Running Models Without Managing Infrastructure</title>
+  <title>Explainable AI: From Lab to Regulatory Compliance in Finance & Health</title>
   <meta name="description" content="Equity Anatlytics">
 
   <link rel="stylesheet" href="/assets/css/main.css">
@@ -75,7 +75,7 @@ src="/assets/img/logo.jpg"/>
 <nav class="post-navigation-top">
   <div class="nav-links">
     
-      <a href="/cloud-computing/infrastructure/pandemic/scalability/2020/04/15/covid-19-and-the-cloud-surge-stress-testing-scalability.html" class="nav-previous">
+      <a href="/artificial-intelligence/serverless/cloud-computing/machine-learning/2020/05/15/serverless-ai-running-models-without-managing-infrastructure.html" class="nav-previous">
         <span class="nav-arrow">←</span>
         <span class="nav-text">Previous Post</span>
       </a>
@@ -86,22 +86,17 @@ src="/assets/img/logo.jpg"/>
     </a>
     
     
-      <a href="/artificial-intelligence/explainable-ai/regulation/finance/healthcare/2020/06/15/explainable-ai-from-lab-to-regulatory-compliance-in-finance-and-health.html" class="nav-next">
-        <span class="nav-text">Next Post</span>
-        <span class="nav-arrow">→</span>
-      </a>
-    
   </div>
 </nav>
   <div>
 
     <header style="background-image: url('/assets/img/post-headers/')">
-       <h2 class="title">Serverless AI: Running Models Without Managing Infrastructure</h2>
+       <h2 class="title">Explainable AI: From Lab to Regulatory Compliance in Finance & Health</h2>
 
        
 
        <p class="meta">
-          May 15, 2020
+          June 15, 2020
           
           • 
 
@@ -121,79 +116,50 @@ src="/assets/img/logo.jpg"/>
        </p>
     </header>
 
-    <section class="post-content"><p>As businesses adapt to rapidly evolving digital landscapes and unpredictable workloads, the need for scalable, flexible, and low-maintenance AI infrastructure has become increasingly critical. Serverless computing—a model where developers focus solely on code without managing servers—has gained momentum as a way to deploy AI models at scale. With interest in serverless technology accelerating in 2020, the AI community is beginning to explore its potential for hosting and running machine learning (ML) workloads.</p>
+    <section class="post-content"><p>Explainable AI (XAI) has evolved rapidly from a research-focused endeavor to a critical requirement for deploying machine learning (ML) in regulated industries. As financial institutions and healthcare providers increasingly rely on ML models to drive decisions, questions around fairness, accountability, and transparency have reached new urgency. In 2020, with mounting regulatory scrutiny and a growing awareness of algorithmic bias, organizations are now compelled to move explainability from an academic curiosity to a production-grade necessity.</p>
 
-<p>Serverless AI combines the dynamic scaling of Function-as-a-Service (FaaS) platforms with the modular architecture of microservices. For data scientists and ML engineers, this means deploying models that scale automatically based on usage, reduce idle costs, and abstract away the complexity of provisioning resources.</p>
+<h2 id="the-growing-importance-of-xai-in-regulated-sectors">The Growing Importance of XAI in Regulated Sectors</h2>
 
-<h2 id="why-serverless-for-ai">Why Serverless for AI?</h2>
+<p>Recent high-profile regulatory proposals such as the EU’s draft AI regulations (released for consultation in early 2020) and guidance from U.S. agencies including the FDA and CFPB, emphasize the importance of explainability for AI systems that affect human wellbeing or financial access. Organizations must ensure that model decisions can be interpreted not only by data scientists but also by regulators, auditors, and impacted stakeholders.</p>
 
-<p><strong>Elastic Scalability</strong>: Serverless platforms like AWS Lambda, Google Cloud Functions, and Azure Functions scale on demand. When an inference request is received, the service automatically provisions compute resources, handles execution, and scales down when idle.</p>
+<p>In the finance sector, XAI supports compliance with laws such as the Equal Credit Opportunity Act (ECOA) and Fair Lending Act. For example, when an AI model denies a loan, financial institutions are often required to provide an explanation of that decision. Similarly, in healthcare, black-box models must often be translated into actionable, understandable outputs for medical professionals and patients alike.</p>
 
-<p><strong>Reduced Operational Overhead</strong>: Serverless architecture eliminates the need to manage virtual machines or containers. Developers can focus on model logic, while cloud providers handle provisioning, monitoring, and scaling.</p>
+<h2 id="from-research-labs-to-real-world-pipelines">From Research Labs to Real-World Pipelines</h2>
 
-<p><strong>Cost Efficiency</strong>: Since billing is tied to execution time and request volume, serverless architectures are cost-effective for unpredictable or sporadic workloads—ideal for AI services triggered by user interactions or IoT events.</p>
+<p>Much of the early work in XAI emerged from academic settings and focused on explaining deep learning models through surrogate techniques like LIME (Local Interpretable Model-agnostic Explanations) and SHAP (SHapley Additive exPlanations). In June 2020, these tools are becoming standard components in enterprise ML pipelines.</p>
 
-<h2 id="serverless-use-cases-in-ai">Serverless Use Cases in AI</h2>
+<p>A growing ecosystem of open-source libraries—including IBM’s AI Explainability 360 Toolkit, Microsoft’s InterpretML, and Google’s What-If Tool—are designed to bring explainability into real-world production systems. These tools help practitioners understand how inputs influence outputs, identify features driving predictions, and assess fairness across demographic groups.</p>
 
-<ul>
-  <li>
-    <p><strong>Real-Time Inference</strong>: Deploying pre-trained models for real-time language translation, sentiment analysis, or fraud detection using FaaS.</p>
-  </li>
-  <li>
-    <p><strong>Event-Driven AI Pipelines</strong>: Triggering model training, data preprocessing, or feature engineering steps in response to storage events, API calls, or streaming data.</p>
-  </li>
-  <li>
-    <p><strong>Microservices for AI</strong>: Wrapping models as independent microservices that integrate into larger business applications without requiring a full-scale Kubernetes or container orchestration platform.</p>
-  </li>
-</ul>
+<h2 id="challenges-to-operationalizing-explainability">Challenges to Operationalizing Explainability</h2>
 
-<h2 id="challenges-and-considerations">Challenges and Considerations</h2>
+<p>Despite the momentum, several challenges remain in operationalizing XAI:</p>
 
-<p><strong>Cold Start Latency</strong>: One of the primary concerns in serverless AI is cold start—the time taken to spin up functions after a period of inactivity. For latency-sensitive applications, this can be problematic.</p>
+<p><strong>Trade-off with Model Performance</strong>: Simpler, more interpretable models like decision trees often underperform compared to deep learning. Balancing accuracy with transparency requires careful engineering and stakeholder collaboration.</p>
 
-<p><strong>Resource Limitations</strong>: Many FaaS platforms impose constraints on memory, CPU, and execution duration. Complex models (e.g., large transformers) may exceed these limits.</p>
+<p><strong>Audience-Appropriate Explanations</strong>: Different audiences—regulators, developers, end-users—require different levels of detail. Building adaptive explanations that cater to these personas is an open challenge.</p>
 
-<p><strong>Model Size and Deployment</strong>: Packaging and loading large ML models within the constraints of a serverless runtime can require creative optimization techniques, such as model quantization or edge offloading.</p>
+<p><strong>Standardization and Benchmarks</strong>: There’s a lack of industry-wide benchmarks or standards for evaluating the quality of explanations. This impedes consistent regulatory interpretation and comparison.</p>
 
-<h2 id="industry-movement-and-research">Industry Movement and Research</h2>
+<h2 id="case-studies-from-mid-2020">Case Studies from Mid-2020</h2>
 
-<p>In May 2020, Google Cloud launched AI Platform Pipelines with built-in support for Kubeflow Pipelines, enabling serverless orchestration of machine learning workflows.</p>
+<p><strong>Credit Risk Modeling</strong>: Capital One and JPMorgan Chase are among the financial institutions investing in explainable ML frameworks. At the time, JPMorgan had begun using SHAP values in production credit risk models to meet internal compliance audits and provide traceability.</p>
 
-<p>AWS continued to expand SageMaker capabilities with support for multi-model endpoints, allowing multiple models to be hosted cost-efficiently using shared compute infrastructure.</p>
+<p><strong>COVID-19 Triage Tools</strong>: Hospitals experimenting with AI triage tools during the pandemic faced immediate pressure to ensure model outputs could be explained to physicians. Research from Mount Sinai Hospital (NYC) and others highlighted the need for transparency in AI-assisted diagnostics.</p>
 
-<p>Researchers from UC Berkeley released a paper titled “Serverless Functions for Machine Learning Inference: Prospects and Challenges,” highlighting trade-offs between latency and scalability in serverless deployments.</p>
+<p><strong>AI Regulation Initiatives</strong>: The U.S. Department of Health and Human Services’ Office for Civil Rights began evaluating AI transparency in clinical decision support tools, signaling a shift in expectations around explainability in patient-facing technologies.</p>
 
-<h2 id="getting-started-with-serverless-ai">Getting Started with Serverless AI</h2>
+<h2 id="looking-ahead">Looking Ahead</h2>
 
-<p>For organizations exploring serverless for AI, consider the following steps:</p>
+<p>To navigate evolving regulatory expectations and build public trust, XAI will need to be integrated not just at the model level, but throughout the ML lifecycle—from dataset curation to post-deployment monitoring. This integration demands new tooling, training, and cross-functional collaboration between compliance, engineering, and executive leadership.</p>
 
-<ul>
-  <li>
-    <p><strong>Start Small</strong>: Begin with simple inference functions such as classification or text summarization.</p>
-  </li>
-  <li>
-    <p><strong>Leverage Lightweight Frameworks</strong>: Use frameworks like FastAPI or Flask to create slim REST endpoints, and package them with serverless wrappers.</p>
-  </li>
-  <li>
-    <p><strong>Monitor Performance</strong>: Use observability tools to measure latency, invocation counts, and function health.</p>
-  </li>
-  <li>
-    <p><strong>Plan for Hybrid Deployment</strong>: Where limits are too restrictive, combine serverless inference with container-based serving for larger workloads.</p>
-  </li>
-</ul>
-
-<h2 id="conclusion">Conclusion</h2>
-
-<p>Serverless AI is emerging as a powerful paradigm that aligns with the need for agile, scalable, and cost-effective deployment of machine learning models. As cloud providers continue to innovate, and as the ecosystem around lightweight ML frameworks matures, serverless will likely play a critical role in democratizing AI deployment—especially for startups and teams operating under infrastructure constraints.</p>
-
-<p>This month’s developments reflect a growing convergence between AI and modern cloud-native architectures. The coming months may well define the foundational patterns for AI deployment in a post-COVID, digital-first world.</p>
+<p>For organizations in finance and health, the mandate is clear: if AI is to be a decision-maker, it must also be an explainer.</p>
 
 <h2 id="next-in-the-series">Next in the Series</h2>
-<p>June 2020: Transfer Learning in Practice: Fine-Tuning AI Models for Domain-Specific Use Cases</p>
+<p>July 2020: AutoML Matures: Democratizing Model Development Without Sacrificing Control</p>
 
 <h2 id="references">References</h2>
 
-<p>[1] Jonas Mueller, Vishnu Radhakrishnan, Joseph Gonzalez, and Ion Stoica. “Serverless Functions for Machine Learning Inference: Prospects and Challenges.” UC Berkeley RISE Lab. Preprint available on arXiv:2005.00065.</p>
+<p>[1] Gianfrancesco, M.A., Tamang, S., Yazdany, J., &amp; Schmajuk, G. (2020). Potential Biases in Machine Learning Algorithms Using Electronic Health Record Data. JAMA Internal Medicine, 180(11), 1546–1551. https://doi.org/10.1001/jamainternmed.2020.2730</p>
 </section>
     <!-- {-% include tags_list.html tags=page.tags tag_count=page.tags.size %-} -->
   </div>
@@ -212,7 +178,7 @@ src="/assets/img/logo.jpg"/>
   
   <div class="social-share-buttons">
     <!-- Twitter -->
-    <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Flocalhost%3A4000%2Fartificial-intelligence%2Fserverless%2Fcloud-computing%2Fmachine-learning%2F2020%2F05%2F15%2Fserverless-ai-running-models-without-managing-infrastructure.html&text=Serverless+AI%3A+Running+Models+Without+Managing+Infrastructure&via=Fallbrook_RA" 
+    <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Flocalhost%3A4000%2Fartificial-intelligence%2Fexplainable-ai%2Fregulation%2Ffinance%2Fhealthcare%2F2020%2F06%2F15%2Fexplainable-ai-from-lab-to-regulatory-compliance-in-finance-and-health.html&text=Explainable+AI%3A+From+Lab+to+Regulatory+Compliance+in+Finance+%26amp%3B+Health&via=Fallbrook_RA" 
        class="social-btn twitter" 
        target="_blank" 
        rel="noopener noreferrer"
@@ -224,7 +190,7 @@ src="/assets/img/logo.jpg"/>
     </a>
     
     <!-- LinkedIn -->
-    <a href="https://www.linkedin.com/sharing/share-offsite/?url=http%3A%2F%2Flocalhost%3A4000%2Fartificial-intelligence%2Fserverless%2Fcloud-computing%2Fmachine-learning%2F2020%2F05%2F15%2Fserverless-ai-running-models-without-managing-infrastructure.html" 
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url=http%3A%2F%2Flocalhost%3A4000%2Fartificial-intelligence%2Fexplainable-ai%2Fregulation%2Ffinance%2Fhealthcare%2F2020%2F06%2F15%2Fexplainable-ai-from-lab-to-regulatory-compliance-in-finance-and-health.html" 
        class="social-btn linkedin" 
        target="_blank" 
        rel="noopener noreferrer"
@@ -236,7 +202,7 @@ src="/assets/img/logo.jpg"/>
     </a>
     
     <!-- Facebook -->
-    <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fartificial-intelligence%2Fserverless%2Fcloud-computing%2Fmachine-learning%2F2020%2F05%2F15%2Fserverless-ai-running-models-without-managing-infrastructure.html" 
+    <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fartificial-intelligence%2Fexplainable-ai%2Fregulation%2Ffinance%2Fhealthcare%2F2020%2F06%2F15%2Fexplainable-ai-from-lab-to-regulatory-compliance-in-finance-and-health.html" 
        class="social-btn facebook" 
        target="_blank" 
        rel="noopener noreferrer"
@@ -248,7 +214,7 @@ src="/assets/img/logo.jpg"/>
     </a>
     
     <!-- Reddit -->
-    <a href="https://www.reddit.com/submit?url=http%3A%2F%2Flocalhost%3A4000%2Fartificial-intelligence%2Fserverless%2Fcloud-computing%2Fmachine-learning%2F2020%2F05%2F15%2Fserverless-ai-running-models-without-managing-infrastructure.html&title=Serverless+AI%3A+Running+Models+Without+Managing+Infrastructure" 
+    <a href="https://www.reddit.com/submit?url=http%3A%2F%2Flocalhost%3A4000%2Fartificial-intelligence%2Fexplainable-ai%2Fregulation%2Ffinance%2Fhealthcare%2F2020%2F06%2F15%2Fexplainable-ai-from-lab-to-regulatory-compliance-in-finance-and-health.html&title=Explainable+AI%3A+From+Lab+to+Regulatory+Compliance+in+Finance+%26amp%3B+Health" 
        class="social-btn reddit" 
        target="_blank" 
        rel="noopener noreferrer"
@@ -260,7 +226,7 @@ src="/assets/img/logo.jpg"/>
     </a>
     
     <!-- Email -->
-    <a href="mailto:?subject=Serverless+AI%3A+Running+Models+Without+Managing+Infrastructure&body=I thought you might be interested in this article: http%3A%2F%2Flocalhost%3A4000%2Fartificial-intelligence%2Fserverless%2Fcloud-computing%2Fmachine-learning%2F2020%2F05%2F15%2Fserverless-ai-running-models-without-managing-infrastructure.html" 
+    <a href="mailto:?subject=Explainable+AI%3A+From+Lab+to+Regulatory+Compliance+in+Finance+%26amp%3B+Health&body=I thought you might be interested in this article: http%3A%2F%2Flocalhost%3A4000%2Fartificial-intelligence%2Fexplainable-ai%2Fregulation%2Ffinance%2Fhealthcare%2F2020%2F06%2F15%2Fexplainable-ai-from-lab-to-regulatory-compliance-in-finance-and-health.html" 
        class="social-btn email" 
        aria-label="Share via Email">
       <svg viewBox="0 0 24 24" class="social-icon">
@@ -271,7 +237,7 @@ src="/assets/img/logo.jpg"/>
     
     <!-- Copy Link -->
     <button class="social-btn copy-link" 
-            onclick="copyToClipboard('http://localhost:4000/artificial-intelligence/serverless/cloud-computing/machine-learning/2020/05/15/serverless-ai-running-models-without-managing-infrastructure.html')" 
+            onclick="copyToClipboard('http://localhost:4000/artificial-intelligence/explainable-ai/regulation/finance/healthcare/2020/06/15/explainable-ai-from-lab-to-regulatory-compliance-in-finance-and-health.html')" 
             aria-label="Copy link to clipboard">
       <svg viewBox="0 0 24 24" class="social-icon">
         <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
@@ -315,19 +281,13 @@ function showCopyNotification() {
 <nav class="post-navigation-bottom">
   <div class="nav-links-detailed">
     
-      <a href="/cloud-computing/infrastructure/pandemic/scalability/2020/04/15/covid-19-and-the-cloud-surge-stress-testing-scalability.html" class="nav-previous-detailed">
+      <a href="/artificial-intelligence/serverless/cloud-computing/machine-learning/2020/05/15/serverless-ai-running-models-without-managing-infrastructure.html" class="nav-previous-detailed">
         <span class="nav-direction">← Previous</span>
-        <span class="nav-title">COVID-19 and the Cloud Surge: Stress Testing Scalability</span>
-        <span class="nav-date">April 15, 2020</span>
+        <span class="nav-title">Serverless AI: Running Models Without Managing Infrastructure</span>
+        <span class="nav-date">May 15, 2020</span>
       </a>
     
     
-    
-      <a href="/artificial-intelligence/explainable-ai/regulation/finance/healthcare/2020/06/15/explainable-ai-from-lab-to-regulatory-compliance-in-finance-and-health.html" class="nav-next-detailed">
-        <span class="nav-direction">Next →</span>
-        <span class="nav-title">Explainable AI: From Lab to Regulatory Compliance in Finance & Health</span>
-        <span class="nav-date">June 15, 2020</span>
-      </a>
     
   </div>
 </nav>
