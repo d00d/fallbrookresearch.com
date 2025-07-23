@@ -56,7 +56,7 @@ Together, these tools lower the barrier for domain experts—such as clinicians,
 Transfer learning is enabling organizations to go farther, faster. By building on the shoulders of massive pre-trained models, teams can focus their limited data and energy on what matters most: tailoring AI to their specific use cases. As we head into the second half of 2020, transfer learning stands out as a defining trend in operational AI.
 
 ## Next in the Series
-September 2020: Synthetic Data: Unlocking AI Potential While Protecting Privacy
+September 2020: MLOps vs. DevOps: Creating a CI/CD Pipeline for AI Models
 
 ## References
 
