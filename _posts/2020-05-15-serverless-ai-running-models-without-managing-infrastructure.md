@@ -66,4 +66,4 @@ June 2020: Transfer Learning in Practice: Fine-Tuning AI Models for Domain-Speci
 
 ## References
 
-[1] Jonas Mueller, Vishnu Radhakrishnan, Joseph Gonzalez, and Ion Stoica. "Serverless Functions for Machine Learning Inference: Prospects and Challenges." UC Berkeley RISE Lab. Preprint available on arXiv:2005.00065.
+[1] Jonas Mueller, Vishnu Radhakrishnan, Joseph Gonzalez, and Ion Stoica. "Serverless Functions for Machine Learning Inference: Prospects and Challenges." UC Berkeley RISE Lab. Preprint available on [arXiv:2005.00065](https://arxiv.org/abs/2005.00065).

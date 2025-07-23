@@ -50,4 +50,4 @@ July 2020: AutoML Matures: Democratizing Model Development Without Sacrificing C
 
 ## References
 
-[1] Gianfrancesco, M.A., Tamang, S., Yazdany, J., & Schmajuk, G. (2020). Potential Biases in Machine Learning Algorithms Using Electronic Health Record Data. JAMA Internal Medicine, 180(11), 1546–1551. https://doi.org/10.1001/jamainternmed.2020.2730
+[1] Gianfrancesco, M.A., Tamang, S., Yazdany, J., & Schmajuk, G. (2020). Potential Biases in Machine Learning Algorithms Using Electronic Health Record Data. JAMA Internal Medicine, 180(11), 1546–1551. [https://doi.org/10.1001/jamainternmed.2020.2730](https://doi.org/10.1001/jamainternmed.2020.2730)

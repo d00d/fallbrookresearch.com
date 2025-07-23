@@ -60,6 +60,6 @@ August 2020: Transfer Learning in Practice: Fine-Tuning AI Models for Domain-Spe
 
 ## References
 
-[1] Selbst, A. D., & Barocas, S. (2018). The intuitive appeal of explainable machines. Fordham L. Rev., 87, 1085. https://ir.lawnet.fordham.edu/flr/vol87/iss3/5/
+[1] Selbst, A. D., & Barocas, S. (2018). The intuitive appeal of explainable machines. Fordham L. Rev., 87, 1085. [https://ir.lawnet.fordham.edu/flr/vol87/iss3/5/](https://ir.lawnet.fordham.edu/flr/vol87/iss3/5/)
 
-[2] Elsken, T., Metzen, J. H., & Hutter, F. (2019). Neural Architecture Search: A Survey. Journal of Machine Learning Research, 20(55), 1–21. http://jmlr.org/papers/v20/18-598.html
+[2] Elsken, T., Metzen, J. H., & Hutter, F. (2019). Neural Architecture Search: A Survey. Journal of Machine Learning Research, 20(55), 1–21. [http://jmlr.org/papers/v20/18-598.html](http://jmlr.org/papers/v20/18-598.html)
