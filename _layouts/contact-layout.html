@@ -12,84 +12,104 @@
     {% include logo-head.html %}
     {% include post-nav.html %}
 <section id="contact">
-
-<!-- Contact Us Form -->
-
-<div class="container">
-  <!-- replace with your endoint URL -->
-  <form action="https://app.99inbound.com/api/e/zzliWMRn" method="POST" target="_blank">
-    <h3 style="text-align: center;">Contact Us</h3>
-
-    <div class="form-group">
-      <div class="input-group">
-        <div class="input-group-prepend">
-          <span class="input-group-text bg-white"><i class="fa fa-user"></i>&nbsp</span>
-        </div>
-        <input name="name" type="text" placeholder="Name" class="form-control border-left-0" required>
+  <div class="contact-container">
+    <div class="contact-form-wrapper">
+      <div class="contact-header">
+        <h2>Get in Touch</h2>
+        <p>Ready to discuss your project? Let's start a conversation.</p>
       </div>
-    </div>
 
-    <div class="row">
-      <div class="col">
-        <div class="form-group">
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text bg-white"><i class="fa fa-envelope"></i></span>
+      <form action="https://app.99inbound.com/api/e/zzliWMRn" method="POST" target="_blank" class="modern-contact-form">
+        
+        <div class="form-row">
+          <div class="form-group full-width">
+            <label for="name">Full Name</label>
+            <div class="input-wrapper">
+              <i class="fa fa-user input-icon"></i>
+              <input name="name" type="text" id="name" placeholder="Your full name" required>
             </div>
-            <input name="email" type="email" placeholder="Email" class="form-control border-left-0" required>
           </div>
         </div>
-      </div>
-      <div class="col">
-        <div class="form-group">
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text bg-white"><i class="fa fa-phone"></i></span>
+
+        <div class="form-row">
+          <div class="form-group half-width">
+            <label for="email">Email Address</label>
+            <div class="input-wrapper">
+              <i class="fa fa-envelope input-icon"></i>
+              <input name="email" type="email" id="email" placeholder="your@email.com" required>
             </div>
-            <input name="phone" type="tel" placeholder="Phone" class="form-control border-left-0" required>
+          </div>
+          <div class="form-group half-width">
+            <label for="phone">Phone Number</label>
+            <div class="input-wrapper">
+              <i class="fa fa-phone input-icon"></i>
+              <input name="phone" type="tel" id="phone" placeholder="(555) 123-4567" required>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="form-group">
-        <textarea class="form-control" name="message" type="text" id="message" rows="5" placeholder="Enter message" ></textarea>
-    </div>
 
-    <div class="form-group">
-      <fieldset>
-        <div class='row'>
-            <div class="col">
-              <legend><h5>Contact me via</h5></legend>
+        <div class="form-row">
+          <div class="form-group full-width">
+            <label for="message">Message</label>
+            <div class="input-wrapper">
+              <i class="fa fa-comment input-icon message-icon"></i>
+              <textarea name="message" id="message" rows="5" placeholder="Tell us about your project or question..." required></textarea>
             </div>
-
-            <div class="col">
-              <div class="form-check form-check">
-                <input class="form-check-input" type="radio" name="byemail" id="byemail" value="email" checked>
-                <label class="form-check-label" for="byemail">Email</label>
-              </div>
-              <div class="form-check form-check">
-                <input class="form-check-input" type="radio" name="byphone" id="byphone" value="phone">
-                <label class="form-check-label" for="phone">Phone</label>
-              </div>
-              <div class="form-check form-check">
-                <input class="form-check-input" type="radio" name="dont" id="dont" value="dont">
-                <label class="form-check-label" for="dont">Don't contact me</label>
-              </div>
-            </div>
+          </div>
         </div>
-      </fieldset>
-    </div>
 
-    <div class="form-group">
-      <div class="g-recaptcha" data-sitekey="6LddCJErAAAAAIENl5cnIm52CscS0ss_AStXSYye"></div>
-    </div>
+        <div class="form-row">
+          <div class="form-group full-width">
+            <fieldset class="contact-preferences">
+              <legend>Preferred Contact Method</legend>
+              <div class="radio-group">
+                <div class="radio-option">
+                  <input type="radio" name="contact_method" id="contact_email" value="email" checked>
+                  <label for="contact_email">
+                    <i class="fa fa-envelope"></i>
+                    Email
+                  </label>
+                </div>
+                <div class="radio-option">
+                  <input type="radio" name="contact_method" id="contact_phone" value="phone">
+                  <label for="contact_phone">
+                    <i class="fa fa-phone"></i>
+                    Phone
+                  </label>
+                </div>
+                <div class="radio-option">
+                  <input type="radio" name="contact_method" id="contact_none" value="none">
+                  <label for="contact_none">
+                    <i class="fa fa-times"></i>
+                    No follow-up needed
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+        </div>
 
-    <button type="submit" class="btn btn-primary float-right">
-      <i class="fa fa-paper-plane"></i>
-      Send
-    </button>
-  </form>
-</div>
+        <div class="form-row">
+          <div class="form-group full-width">
+            <div class="captcha-wrapper">
+              <div class="g-recaptcha" data-sitekey="6LddCJErAAAAAIENl5cnIm52CscS0ss_AStXSYye"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group full-width">
+            <button type="submit" class="submit-btn">
+              <i class="fa fa-paper-plane"></i>
+              <span>Send Message</span>
+            </button>
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</section>
 
 <div style="position: absolute; left: -5000px;">
   <input type="checkbox" name="sweet_ultraviolet_cracked_chimpanzee" value="1" tabindex="-1" autocomplete="no">
@@ -100,5 +120,318 @@
     {% include footer.html %}
     
     <script src="{{ "/assets/js/main.js" | prepend: site.baseurl }}"></script>
+    
+    <style>
+      /* Modern Contact Form Styles */
+      #contact {
+        padding: 4rem 0;
+        background: linear-gradient(135deg, var(--bg-color) 0%, #f8f9fa 100%);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+      }
+
+      .contact-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 2rem;
+        width: 100%;
+      }
+
+      .contact-form-wrapper {
+        background: var(--card-bg);
+        border-radius: 20px;
+        padding: 3rem;
+        box-shadow: 0 20px 40px var(--shadow);
+        border: 1px solid var(--border-color);
+        transition: all 0.3s ease;
+      }
+
+      .contact-header {
+        text-align: center;
+        margin-bottom: 2.5rem;
+      }
+
+      .contact-header h2 {
+        color: var(--text-color-dark);
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        font-family: 'Inter', sans-serif;
+      }
+
+      .contact-header p {
+        color: var(--text-color-light);
+        font-size: 1.1rem;
+        margin: 0;
+        font-weight: 400;
+      }
+
+      .modern-contact-form {
+        max-width: 100%;
+      }
+
+      .form-row {
+        display: flex;
+        gap: 1.5rem;
+        margin-bottom: 1.5rem;
+        flex-wrap: wrap;
+      }
+
+      .form-group {
+        position: relative;
+        flex: 1;
+        min-width: 0;
+      }
+
+      .form-group.full-width {
+        flex: 1 1 100%;
+      }
+
+      .form-group.half-width {
+        flex: 1 1 calc(50% - 0.75rem);
+        min-width: 250px;
+      }
+
+      .form-group label {
+        display: block;
+        color: var(--text-color-dark);
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        font-size: 0.95rem;
+        font-family: 'Inter', sans-serif;
+      }
+
+      .input-wrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+      }
+
+      .input-icon {
+        position: absolute;
+        left: 1rem;
+        color: var(--text-color-light);
+        z-index: 2;
+        font-size: 1rem;
+        transition: color 0.3s ease;
+      }
+
+      .input-icon.message-icon {
+        top: 1rem;
+      }
+
+      .form-group input,
+      .form-group textarea {
+        width: 100%;
+        padding: 1rem 1rem 1rem 3rem;
+        border: 2px solid var(--border-color);
+        border-radius: 12px;
+        background: var(--bg-color);
+        color: var(--text-color);
+        font-size: 1rem;
+        font-family: 'Inter', sans-serif;
+        transition: all 0.3s ease;
+        box-sizing: border-box;
+      }
+
+      .form-group input:focus,
+      .form-group textarea:focus {
+        outline: none;
+        border-color: var(--accent-color);
+        box-shadow: 0 0 0 3px rgba(6, 35, 70, 0.1);
+        transform: translateY(-1px);
+      }
+
+      .form-group input:focus + .input-icon,
+      .form-group textarea:focus + .input-icon {
+        color: var(--accent-color);
+      }
+
+      .form-group textarea {
+        resize: vertical;
+        min-height: 120px;
+        line-height: 1.6;
+      }
+
+      .contact-preferences {
+        border: 2px solid var(--border-color);
+        border-radius: 12px;
+        padding: 1.5rem;
+        background: var(--bg-color);
+        transition: border-color 0.3s ease;
+      }
+
+      .contact-preferences legend {
+        color: var(--text-color-dark);
+        font-weight: 600;
+        font-size: 1rem;
+        padding: 0 1rem;
+        font-family: 'Inter', sans-serif;
+      }
+
+      .radio-group {
+        display: flex;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        margin-top: 1rem;
+      }
+
+      .radio-option {
+        position: relative;
+      }
+
+      .radio-option input[type="radio"] {
+        position: absolute;
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+
+      .radio-option label {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.75rem 1.25rem;
+        border: 2px solid var(--border-color);
+        border-radius: 8px;
+        background: var(--bg-color);
+        color: var(--text-color);
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-weight: 500;
+        white-space: nowrap;
+      }
+
+      .radio-option input[type="radio"]:checked + label {
+        background: var(--accent-color);
+        color: white;
+        border-color: var(--accent-color);
+        box-shadow: 0 4px 12px rgba(6, 35, 70, 0.2);
+      }
+
+      .radio-option label:hover {
+        border-color: var(--accent-color);
+        transform: translateY(-1px);
+      }
+
+      .captcha-wrapper {
+        display: flex;
+        justify-content: center;
+        margin: 1rem 0;
+      }
+
+      .submit-btn {
+        width: 100%;
+        background: linear-gradient(135deg, var(--accent-color) 0%, #0a4d7a 100%);
+        color: white;
+        border: none;
+        padding: 1.25rem 2rem;
+        border-radius: 12px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        font-family: 'Inter', sans-serif;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.75rem;
+        box-shadow: 0 8px 20px rgba(6, 35, 70, 0.2);
+      }
+
+      .submit-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 30px rgba(6, 35, 70, 0.3);
+        background: linear-gradient(135deg, #0a4d7a 0%, var(--accent-color) 100%);
+      }
+
+      .submit-btn:active {
+        transform: translateY(0);
+      }
+
+      .submit-btn i {
+        font-size: 1rem;
+      }
+
+      /* Dark mode adjustments */
+      :root[data-theme="dark"] #contact {
+        background: linear-gradient(135deg, var(--bg-color) 0%, #2d2d2d 100%);
+      }
+
+      :root[data-theme="dark"] .form-group input:focus,
+      :root[data-theme="dark"] .form-group textarea:focus {
+        box-shadow: 0 0 0 3px rgba(74, 158, 255, 0.2);
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        #contact {
+          padding: 2rem 0;
+        }
+
+        .contact-container {
+          padding: 0 1rem;
+        }
+
+        .contact-form-wrapper {
+          padding: 2rem 1.5rem;
+          border-radius: 16px;
+        }
+
+        .contact-header h2 {
+          font-size: 2rem;
+        }
+
+        .form-row {
+          gap: 1rem;
+        }
+
+        .form-group.half-width {
+          flex: 1 1 100%;
+          min-width: unset;
+        }
+
+        .radio-group {
+          flex-direction: column;
+          gap: 0.75rem;
+        }
+
+        .radio-option label {
+          justify-content: center;
+          text-align: center;
+        }
+
+        .submit-btn {
+          padding: 1rem 1.5rem;
+          font-size: 1rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .contact-form-wrapper {
+          padding: 1.5rem 1rem;
+        }
+
+        .contact-header h2 {
+          font-size: 1.75rem;
+        }
+
+        .contact-header p {
+          font-size: 1rem;
+        }
+
+        .form-group input,
+        .form-group textarea {
+          padding: 0.875rem 0.875rem 0.875rem 2.5rem;
+          font-size: 0.95rem;
+        }
+
+        .input-icon {
+          left: 0.75rem;
+          font-size: 0.9rem;
+        }
+      }
+    </style>
   </body>
 </html>
