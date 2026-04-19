@@ -1,6 +1,6 @@
 # Site settings
 title: Fallbrook Research
-description: Equity Anatlytics
+description: Technology and financial consulting services — cloud, data, and analytics for enterprises
 # Comments system using Giscus (GitHub Discussions)
 giscus:
   repo: "d00d/fallbrookresearch.com"
