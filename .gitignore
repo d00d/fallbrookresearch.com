@@ -1,5 +1,15 @@
+# macOS
 .DS_Store
-fallbrook-public-site.sublime-project*
-_site/Gemfile.lock
-# Gemfile
-Gemfile.lock
+
+# Editor / IDE
+*.sublime-project
+*.sublime-workspace
+
+# Jekyll build output
+_site/
+.jekyll-cache/
+.jekyll-metadata
+
+# Bundler (local gem paths)
+vendor/
+.bundle/
