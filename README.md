@@ -1,7 +1,7 @@
 # Fallbrook Research & Analytics
 
 [![Jekyll](https://img.shields.io/badge/Jekyll-4.3-red.svg)](https://jekyllrb.com/)
-[![Ruby](https://img.shields.io/badge/Ruby-3.0+-red.svg)](https://www.ruby-lang.org/en/)
+[![Ruby](https://img.shields.io/badge/Ruby-3.2+-red.svg)](https://www.ruby-lang.org/en/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 A modern, responsive Jekyll website for Fallbrook Research & Analytics, LLC - a technology and financial consulting services company specializing in cloud solutions, data analytics, and digital transformation.
@@ -10,8 +10,8 @@ A modern, responsive Jekyll website for Fallbrook Research & Analytics, LLC - a 
 
 ### Prerequisites
 
-- Ruby 3.0+
-- Bundler
+- Ruby 3.2+ (pinned to 3.2.2 in `.ruby-version`; install via `rbenv install 3.2.2`)
+- Bundler 2.5+
 - Git
 
 ### Installation
@@ -150,23 +150,20 @@ The site includes a fully functional dark mode toggle:
 
 ## 🚀 Deployment
 
-### Netlify (Recommended)
-1. Connect your repository to Netlify
-2. Build command: `bundle exec jekyll build`
-3. Publish directory: `_site`
-4. Ruby version: 3.0.0 (configured in `netlify.toml`)
+The live site is deployed by **Netlify** from the `master` branch. No
+manual steps are required — a push to `master` triggers an automatic
+build.
 
-### Vercel
-1. Import project to Vercel
-2. Framework preset: Jekyll
-3. Build command: `bundle exec jekyll build`
-4. Output directory: `_site`
-
-### GitHub Pages
-1. Push to GitHub repository
-2. Enable GitHub Pages in repository settings
-3. Choose source: GitHub Actions or branch
-4. Site will be available at `https://yourusername.github.io/repository-name`
+### Netlify configuration
+- Build settings live in `netlify.toml`
+  - `command = "bundle install && bundle exec jekyll build"`
+  - `publish = "_site"`
+  - `JEKYLL_ENV = "production"`
+- Ruby version is read from `.ruby-version` (3.2.2); Netlify's build
+  image installs it automatically via mise — no manual Ruby config
+  needed in `netlify.toml`.
+- DNS: the primary domain `www.fallbrookresearch.com` is a CNAME to
+  `fallbrookresearch.netlify.com`.
 
 ## 📝 Content Guidelines
 

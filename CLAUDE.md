@@ -61,14 +61,14 @@ bundle exec jekyll publish _drafts/draft-name.md
 
 ## Deployment
 
-### Netlify (Primary)
+### Netlify (sole deploy target)
 - Configured in `netlify.toml`
-- Uses Ruby 3.0.0 via RVM
-- Automatic builds on push
-
-### Vercel (Alternative)
-- Configured in `vercel.json`
-- URL rewriting for clean URLs (removes .html extension)
+- Ruby version is read from `.ruby-version` (currently 3.2.2); Netlify's build image installs it automatically via mise
+- Build command: `bundle install && bundle exec jekyll build`
+- Publish directory: `_site`
+- `JEKYLL_ENV=production` is set via `[build.environment]`
+- Automatic builds on push to `master`
+- Serves the primary domain `www.fallbrookresearch.com` (DNS CNAME → `fallbrookresearch.netlify.com`)
 
 ## Site Configuration
 
