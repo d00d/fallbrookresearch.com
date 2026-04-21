@@ -29,4 +29,4 @@ gplus_username:  rdubnick
 google-analytics:
   id: "UA-117521095-1"
 
-exclude: ['package.json', 'src' , 'node_modules']
+exclude: ['src', 'node_modules', 'netlify.toml']
