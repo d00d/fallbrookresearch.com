@@ -4536,14 +4536,18 @@ sub,sup{
     justify-content: center;
     align-items: center;
     gap: 5px;
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
     background: transparent;
     border: 0;
     border-radius: 8px;
     cursor: pointer;
     padding: 0;
     transition: background-color 0.2s ease;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
 }
 
 .site-nav__toggle:hover {
@@ -4557,6 +4561,7 @@ sub,sup{
     background: var(--nav-text);
     border-radius: 2px;
     transition: transform 0.25s ease, opacity 0.2s ease;
+    pointer-events: none;
 }
 
 .site-nav__toggle[aria-expanded="true"] .site-nav__toggle-bar:nth-child(1) {
