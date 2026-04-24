@@ -1,8 +1,12 @@
 document.addEventListener("DOMContentLoaded",function(){
     new SweetScroll({});
-    
+
     // Initialize theme toggle
     initThemeToggle();
+
+    // Initialize 2026 redesign features
+    initSiteNav();
+    initTagFilter();
     
     particlesJS("particles-js", {
   "particles": {
@@ -176,4 +180,94 @@ function initThemeToggle() {
             console.log('Icon element not found');
         }
     }
+}
+
+/* ------------------------------------------------------------------
+ * Site navigation: mobile hamburger + splash-page scroll transition
+ * ------------------------------------------------------------------ */
+function initSiteNav() {
+    const nav = document.getElementById('site-nav');
+    if (!nav) return;
+
+    const toggle = document.getElementById('site-nav-toggle');
+    const menu = document.getElementById('site-nav-menu');
+
+    // Hamburger toggle (mobile)
+    if (toggle && menu) {
+        toggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            const isOpen = menu.classList.toggle('is-open');
+            toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+
+        // Close menu when a link is clicked (mobile)
+        menu.querySelectorAll('.site-nav__link').forEach(function(link) {
+            link.addEventListener('click', function() {
+                menu.classList.remove('is-open');
+                toggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+    }
+
+    // Scroll transition (splash page only)
+    if (nav.classList.contains('site-nav--splash')) {
+        const threshold = 80;
+        const onScroll = function() {
+            if (window.scrollY > threshold) {
+                nav.classList.add('is-scrolled');
+            } else {
+                nav.classList.remove('is-scrolled');
+            }
+        };
+        onScroll();
+        window.addEventListener('scroll', onScroll, { passive: true });
+    }
+}
+
+/* ------------------------------------------------------------------
+ * Blog index: tag filter (client-side show/hide)
+ * ------------------------------------------------------------------ */
+function initTagFilter() {
+    const chips = document.querySelectorAll('.tag-chip');
+    if (chips.length === 0) return;
+
+    const hero = document.querySelector('.blog-hero');
+    const cards = document.querySelectorAll('.post-card');
+    const emptyState = document.getElementById('blog-index-empty');
+
+    function applyFilter(tag) {
+        let visibleCount = 0;
+
+        // Hero visibility
+        if (hero) {
+            const heroTags = (hero.getAttribute('data-tags') || '').split(/\s+/).filter(Boolean);
+            const matchHero = tag === 'all' || heroTags.indexOf(tag) !== -1;
+            hero.style.display = matchHero ? '' : 'none';
+            if (matchHero) visibleCount++;
+        }
+
+        // Card visibility
+        cards.forEach(function(card) {
+            const cardTags = (card.getAttribute('data-tags') || '').split(/\s+/).filter(Boolean);
+            const match = tag === 'all' || cardTags.indexOf(tag) !== -1;
+            card.style.display = match ? '' : 'none';
+            if (match) visibleCount++;
+        });
+
+        if (emptyState) {
+            emptyState.hidden = visibleCount > 0;
+        }
+    }
+
+    chips.forEach(function(chip) {
+        chip.addEventListener('click', function() {
+            chips.forEach(function(c) {
+                c.classList.remove('is-active');
+                c.setAttribute('aria-selected', 'false');
+            });
+            chip.classList.add('is-active');
+            chip.setAttribute('aria-selected', 'true');
+            applyFilter(chip.getAttribute('data-tag'));
+        });
+    });
 }

@@ -2,25 +2,22 @@
 <html lang="en">
 
 {% include head.html %}
-  <body>
+  <body class="has-splash">
+    {% include site-nav.html %}
     {% include header.html %}
-    {% include logo-head.html %}
-    {% include post-nav.html %}
-    <section id="main">
-    </section>
+
+    <section id="main"></section>
+
     <section id="about">
       {% include about.html %}
     </section>
 
-    <section>
+    <section class="page-content">
       {{ content }}
     </section>
 
-    <section>
-      {% include footer.html %}
-    </section>
-    
-    <script src="{{ "/assets/js/main.js" | prepend: site.baseurl }}"></script>
-    </body>
-</html>
+    {% include footer.html %}
 
+    <script src="{{ "/assets/js/main.js" | prepend: site.baseurl }}"></script>
+  </body>
+</html>
