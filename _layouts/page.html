@@ -1,24 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  {% include head.html %}
+{% include head.html %}
+<body>
+  {% include site-nav.html %}
 
-  <body>
-    <!-- Dark Mode Toggle Button -->
-    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
-        <span class="theme-toggle-icon">🌙</span>
-    </button>
+  <main class="page-content">
+    {{ content }}
+  </main>
 
-        {{ content }}
+  {% include footer.html %}
 
-  <section id="projects">
-
-    {% include projects.html %}
-
-  </section>
-
-    {% include footer.html %}
-    
-    <script src="{{ "/assets/js/main.js" | prepend: site.baseurl }}"></script>
-  </body>
-  </html>
+  <script src="{{ "/assets/js/main.js" | prepend: site.baseurl }}"></script>
+</body>
+</html>

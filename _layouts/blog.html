@@ -5,10 +5,9 @@
 <body>
   {% include site-nav.html %}
 
-  <main class="page-content">
-    <section id="about">
-      {{ content }}
-    </section>
+  <main id="content" class="page-content">
+    {{ content }}
+    {% include blog-index.html %}
   </main>
 
   {% include footer.html %}

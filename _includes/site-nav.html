@@ -1,0 +1,37 @@
+{% assign is_splash = false %}
+{% if page.url == "/" %}{% assign is_splash = true %}{% endif %}
+
+<nav class="site-nav{% if is_splash %} site-nav--splash{% endif %}" id="site-nav" aria-label="Primary">
+  <div class="site-nav__inner">
+    <a class="site-nav__brand" href="{{ "/" | prepend: site.baseurl }}" aria-label="Fallbrook Research & Analytics home">
+      <span class="site-nav__brand-mark">Fallbrook</span>
+      <span class="site-nav__brand-sub">Research &amp; Analytics</span>
+    </a>
+
+    <button class="site-nav__toggle" id="site-nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav-menu">
+      <span class="site-nav__toggle-bar"></span>
+      <span class="site-nav__toggle-bar"></span>
+      <span class="site-nav__toggle-bar"></span>
+    </button>
+
+    <ul class="site-nav__menu" id="site-nav-menu">
+      {% for link in site.data.navigation %}
+        {% assign is_active = false %}
+        {% if link.link == page.url %}{% assign is_active = true %}{% endif %}
+        {% if link.link == "/" and page.url == "/" %}{% assign is_active = true %}{% endif %}
+        <li class="site-nav__item">
+          <a class="site-nav__link{% if is_active %} is-active{% endif %}"
+             href="{{ link.link | prepend: site.baseurl }}"
+             {% if link.new_window %}target="_blank" rel="noopener"{% endif %}>
+            {{ link.name }}
+          </a>
+        </li>
+      {% endfor %}
+      <li class="site-nav__item site-nav__item--toggle">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+          <span class="theme-toggle-icon">🌙</span>
+        </button>
+      </li>
+    </ul>
+  </div>
+</nav>

@@ -1,4 +1,5 @@
 ---
-layout: post-plus-Index
-title: posts
+layout: blog
+title: Blog
+permalink: /posts/
 ---
