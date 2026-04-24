@@ -62,7 +62,8 @@
     {% assign featured_tag_slugs = "" | split: "" %}
     {% if featured_post.tags %}
       {% for tag in featured_post.tags %}
-        {% assign featured_tag_slugs = featured_tag_slugs | push: tag | slugify %}
+        {% assign tag_slug = tag | slugify %}
+        {% assign featured_tag_slugs = featured_tag_slugs | push: tag_slug %}
       {% endfor %}
     {% endif %}
     <article class="blog-hero"
@@ -107,7 +108,8 @@
         {% assign post_tag_slugs = "" | split: "" %}
         {% if post.tags %}
           {% for tag in post.tags %}
-            {% assign post_tag_slugs = post_tag_slugs | push: tag | slugify %}
+            {% assign tag_slug = tag | slugify %}
+            {% assign post_tag_slugs = post_tag_slugs | push: tag_slug %}
           {% endfor %}
         {% endif %}
         <article class="post-card"
