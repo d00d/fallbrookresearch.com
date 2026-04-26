@@ -5031,7 +5031,7 @@ article.feature-image > div > header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: #fff;
+    color: #fff !important;
     overflow: hidden;
     isolation: isolate;
 }
@@ -5041,10 +5041,11 @@ article.feature-image > div > header::before {
     position: absolute;
     inset: 0;
     background: linear-gradient(180deg,
-        rgba(8, 16, 36, 0.35) 0%,
-        rgba(8, 16, 36, 0.55) 55%,
-        rgba(8, 16, 36, 0.82) 100%);
+        rgba(8, 16, 36, 0.55) 0%,
+        rgba(8, 16, 36, 0.78) 55%,
+        rgba(8, 16, 36, 0.92) 100%);
     z-index: 0;
+    pointer-events: none;
 }
 
 article.feature-image > div > header > * {
@@ -5053,36 +5054,42 @@ article.feature-image > div > header > * {
 }
 
 article.feature-image > div > header .title,
-article.feature-image > div > header h2.title {
-    color: #fff;
-    margin: 0 0 0.75rem;
-    padding-top: 0;
-    font-size: 2.25rem;
-    line-height: 1.2;
-    font-weight: 700;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.45);
+article.feature-image > div > header h2.title,
+article.feature-image > div > header h2 {
+    color: #ffffff !important;
+    margin: 0 0 0.75rem !important;
+    padding-top: 0 !important;
+    font-size: 2.25rem !important;
+    line-height: 1.2 !important;
+    font-weight: 700 !important;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.65) !important;
     max-width: 42ch;
 }
 
-article.feature-image > div > header .subtitle {
-    color: rgba(255, 255, 255, 0.92);
-    margin: 0 0 0.75rem;
-    padding-top: 0;
-    font-size: 1.25rem;
-    font-weight: 500;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
+article.feature-image > div > header .subtitle,
+article.feature-image > div > header h3.subtitle,
+article.feature-image > div > header h3 {
+    color: rgba(255, 255, 255, 0.95) !important;
+    margin: 0 0 0.75rem !important;
+    padding-top: 0 !important;
+    font-size: 1.25rem !important;
+    font-weight: 500 !important;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.55) !important;
 }
 
-article.feature-image > div > header .meta {
-    color: rgba(255, 255, 255, 0.88);
-    margin: 0;
-    font-size: 0.95rem;
+article.feature-image > div > header .meta,
+article.feature-image > div > header p.meta,
+article.feature-image > div > header p {
+    color: rgba(255, 255, 255, 0.92) !important;
+    margin: 0 !important;
+    font-size: 0.95rem !important;
     letter-spacing: 0.02em;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6) !important;
 }
 
-article.feature-image > div > header .meta a {
-    color: #ffd089;
+article.feature-image > div > header .meta a,
+article.feature-image > div > header p a {
+    color: #ffd089 !important;
 }
 
 @media (max-width: 640px) {
