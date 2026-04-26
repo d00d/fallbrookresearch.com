@@ -5018,3 +5018,94 @@ body:not(.has-splash) .page-content {
     }
 }
 
+/* ---------------------------------------------------------------------------
+   Post page: feature-image header (the hero atop a single article)
+   --------------------------------------------------------------------------- */
+article.feature-image > div > header {
+    position: relative;
+    min-height: 260px;
+    padding: 3.5rem 2rem 2.25rem;
+    margin: 0 0 2.5rem;
+    border-radius: 12px;
+    background-color: #0a1830;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff !important;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+article.feature-image > div > header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg,
+        rgba(8, 16, 36, 0.55) 0%,
+        rgba(8, 16, 36, 0.78) 55%,
+        rgba(8, 16, 36, 0.92) 100%);
+    z-index: 0;
+    pointer-events: none;
+}
+
+article.feature-image > div > header > * {
+    position: relative;
+    z-index: 1;
+}
+
+article.feature-image > div > header .title,
+article.feature-image > div > header h2.title,
+article.feature-image > div > header h2 {
+    color: #ffffff !important;
+    margin: 0 0 0.75rem !important;
+    padding-top: 0 !important;
+    font-size: 2.25rem !important;
+    line-height: 1.2 !important;
+    font-weight: 700 !important;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.65) !important;
+    max-width: 42ch;
+}
+
+article.feature-image > div > header .subtitle,
+article.feature-image > div > header h3.subtitle,
+article.feature-image > div > header h3 {
+    color: rgba(255, 255, 255, 0.95) !important;
+    margin: 0 0 0.75rem !important;
+    padding-top: 0 !important;
+    font-size: 1.25rem !important;
+    font-weight: 500 !important;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.55) !important;
+}
+
+article.feature-image > div > header .meta,
+article.feature-image > div > header p.meta,
+article.feature-image > div > header p {
+    color: rgba(255, 255, 255, 0.92) !important;
+    margin: 0 !important;
+    font-size: 0.95rem !important;
+    letter-spacing: 0.02em;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6) !important;
+}
+
+article.feature-image > div > header .meta a,
+article.feature-image > div > header p a {
+    color: #ffd089 !important;
+}
+
+@media (max-width: 640px) {
+    article.feature-image > div > header {
+        min-height: 200px;
+        padding: 2.5rem 1.25rem 1.5rem;
+        border-radius: 8px;
+    }
+
+    article.feature-image > div > header .title,
+    article.feature-image > div > header h2.title {
+        font-size: 1.6rem;
+    }
+
+    article.feature-image > div > header .meta {
+        font-size: 0.85rem;
+    }
+}
+
