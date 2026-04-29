@@ -13,7 +13,7 @@ giscus:
   theme: "preferred_color_scheme"
   lang: "en"
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
-# url: "localhost:3000" # the base hostname & protocol for your site
+url: "https://www.fallbrookresearch.com"
 
 # User settings
 username: Fallbrook
@@ -25,8 +25,8 @@ twitter_username: Fallbrook_RA
 github_username: d00d
 gplus_username:  rdubnick
 
-# Google-analytics
+# Google Analytics 4 (replaced sunset Universal Analytics in 2026)
 google-analytics:
-  id: "UA-117521095-1"
+  id: "G-8BVX73PSV1"
 
 exclude: ['src', 'node_modules', 'netlify.toml']
