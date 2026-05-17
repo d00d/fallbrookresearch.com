@@ -5,6 +5,7 @@ date: 2025-11-15 09:00 -0700
 feature-img: 2025-11-15-autonomous-devops-self-healing-infrastructure.jpg
 author: R. Dubnick
 tags: [DevOps, SRE, Observability, AI-Agents]
+audience: ["Engineering Leadership", "CIO / CTO"]
 comments: false
 published: true
 ---

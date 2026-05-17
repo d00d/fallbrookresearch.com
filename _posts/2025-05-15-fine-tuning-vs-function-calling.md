@@ -5,6 +5,7 @@ date: 2025-05-15 09:00 -0700
 feature-img: 2025-05-15-fine-tuning-vs-function-calling.jpg
 author: R. Dubnick
 tags: [LLMs, Fine-Tuning, Strategy, Enterprise]
+audience: ["Engineering Leadership", "Data & AI Leadership"]
 comments: false
 published: true
 ---

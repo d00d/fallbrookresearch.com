@@ -5,6 +5,7 @@ date: 2025-10-15 09:00 -0700
 feature-img: 2025-10-15-ai-native-applications-prompt-to-product.jpg
 author: R. Dubnick
 tags: [Product, AI-Native, Architecture, Design]
+audience: ["Engineering Leadership", "Board / CEO", "Data & AI Leadership"]
 comments: false
 published: true
 ---

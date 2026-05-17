@@ -5,6 +5,7 @@ date: 2025-08-15 09:00 -0700
 feature-img: 2025-08-15-real-time-ai-agents-streaming-event-driven.jpg
 author: R. Dubnick
 tags: [AI-Agents, Streaming, Event-Driven, Architecture]
+audience: ["Engineering Leadership", "Data & AI Leadership"]
 comments: false
 published: true
 ---

@@ -5,6 +5,7 @@ date: 2025-12-15 09:00 -0700
 feature-img: 2025-12-15-regulation-meets-reality-auditing-ai.jpg
 author: R. Dubnick
 tags: [Regulation, Audit, Compliance, Enterprise]
+audience: ["Risk & Compliance", "Board / CEO"]
 comments: false
 published: true
 ---

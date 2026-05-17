@@ -5,6 +5,7 @@ date: 2025-04-15 09:00 -0700
 feature-img: 2025-04-15-ai-compliance-frameworks-eu-ai-act.jpg
 author: R. Dubnick
 tags: [AI-Ethics, Regulation, Compliance, Enterprise]
+audience: ["Risk & Compliance", "Board / CEO", "Data & AI Leadership"]
 comments: false
 published: true
 ---

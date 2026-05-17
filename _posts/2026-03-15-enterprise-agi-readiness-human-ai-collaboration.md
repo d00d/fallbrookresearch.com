@@ -5,6 +5,7 @@ date: 2026-03-15 09:00 -0700
 feature-img: 2026-03-15-enterprise-agi-readiness-human-ai-collaboration.jpg
 author: R. Dubnick
 tags: [AGI, Org-Design, Human-AI, Strategy]
+audience: ["Board / CEO", "CIO / CTO", "CHRO / People"]
 comments: false
 published: true
 ---

@@ -5,6 +5,7 @@ date: 2026-02-15 09:00 -0700
 feature-img: 2026-02-15-ai-data-supply-chains.jpg
 author: R. Dubnick
 tags: [Data, Synthetic-Data, RLHF, Architecture]
+audience: ["Data & AI Leadership", "Risk & Compliance", "Engineering Leadership"]
 comments: false
 published: true
 ---

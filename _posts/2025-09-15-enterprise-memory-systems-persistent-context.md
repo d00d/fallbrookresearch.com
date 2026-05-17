@@ -5,6 +5,7 @@ date: 2025-09-15 09:00 -0700
 feature-img: 2025-09-15-enterprise-memory-systems-persistent-context.jpg
 author: R. Dubnick
 tags: [Memory, Architecture, LLMs, Enterprise]
+audience: ["Engineering Leadership", "Data & AI Leadership"]
 comments: false
 published: true
 ---

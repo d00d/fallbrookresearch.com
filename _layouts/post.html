@@ -39,6 +39,13 @@ layout: blog-layout
           {% if page.author %} - {{ page.author }}{% endif %}
           • {% include reading-time.html %}
        </p>
+
+       {% if page.audience and page.audience.size > 0 %}
+       <p class="audience-line" aria-label="Intended audience">
+          <span class="audience-label">For</span>
+          {% for aud in page.audience %}{% unless forloop.first %}<span class="audience-sep">·</span>{% endunless %}{{ aud }}{% endfor %}
+       </p>
+       {% endif %}
     </header>
 
     <section class="post-content">{{ content }}</section>

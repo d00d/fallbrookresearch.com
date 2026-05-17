@@ -5,6 +5,7 @@ date: 2025-06-15 09:00 -0700
 feature-img: 2025-06-15-post-rag-architectures.jpg
 author: R. Dubnick
 tags: [RAG, GenAI, Architecture, LLMs]
+audience: ["Engineering Leadership", "Data & AI Leadership"]
 comments: false
 published: true
 ---

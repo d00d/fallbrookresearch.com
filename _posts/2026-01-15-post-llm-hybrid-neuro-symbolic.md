@@ -5,6 +5,7 @@ date: 2026-01-15 09:00 -0700
 feature-img: 2026-01-15-post-llm-hybrid-neuro-symbolic.jpg
 author: R. Dubnick
 tags: [Architecture, Neuro-Symbolic, LLMs, Strategy]
+audience: ["Engineering Leadership", "Data & AI Leadership"]
 comments: false
 published: true
 ---

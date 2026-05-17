@@ -5,6 +5,7 @@ date: 2026-04-15 09:00 -0700
 feature-img: 2026-04-15-ai-operating-model-autonomous-business-processes.jpg
 author: R. Dubnick
 tags: [Operating-Model, Autonomous-Systems, Enterprise, Strategy]
+audience: ["Board / CEO", "CIO / CTO", "Data & AI Leadership"]
 comments: false
 published: true
 ---

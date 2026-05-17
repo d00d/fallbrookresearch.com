@@ -5,6 +5,7 @@ date: 2025-07-15 09:00 -0700
 feature-img: 2025-07-15-decoding-the-rise-of-agentic-ai.jpg
 author: R. Dubnick
 tags: [AI-Agents, GenAI, Enterprise, Strategy]
+audience: ["Board / CEO", "CIO / CTO", "Data & AI Leadership"]
 comments: false
 published: true
 ---

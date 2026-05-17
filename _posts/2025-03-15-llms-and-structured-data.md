@@ -5,6 +5,7 @@ date: 2025-03-15 09:00 -0700
 feature-img: 2025-03-15-llms-and-structured-data.jpg
 author: R. Dubnick
 tags: [LLMs, Databases, GenAI, Architecture]
+audience: ["Engineering Leadership", "Data & AI Leadership"]
 comments: false
 published: true
 ---
